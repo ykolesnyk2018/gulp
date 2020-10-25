@@ -1,0 +1,1371 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">        
+    <meta name="author" content="CHANGE-ME">
+    <meta name="description" content="CHANGE-ME">
+    <!-- Mobile Stuff -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="msapplication-tap-highlight" content="no">
+    <!-- Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes"> 
+    <meta name="application-name" content="CHANGE-ME"> 
+    <!-- Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="CHANGE-ME"> 
+    
+    <link rel="shortcut icon" href="favicon.ico">
+    <title>Name of project</title>
+    <link href='css/style.css' rel='stylesheet' type='text/css'>    
+</head>
+<body>
+	<div class="search-bg"></div>
+	<header>
+		<div class="container">
+			<div class="toggle main-menu-btn" data-target="mobil-menu">
+				<span></span>
+				<span></span>
+			</div>
+			<div class="logo">
+				<a href="index.html">
+					<img src="images/logo.png" alt="">
+				</a>
+			</div> 
+			<nav class="main-menu">
+				<ul>
+					<li>
+						<a href="#">
+							<span>Категории</span>							
+							<svg width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M1 1L5 5L9 1" stroke-width="2"/>
+							</svg>
+						</a>
+						<div>
+							<ul>
+								<li><a href="#">Телефоны / Аксессуары</a></li>
+								<li><a href="#">Компьютеры</a></li>
+								<li><a href="#">Оргтехника</a></li>
+								<li><a href="#">Электроника</a></li>
+								<li><a href="#">Бытовая техника</a></li>
+								<li><a href="#">Красота</a></li>
+							</ul>
+							<ul>
+								<li><a href="#">Одежда для женщин</a></li>
+								<li><a href="#">Одежда для мужчин</a></li>
+								<li><a href="#">Всё для детей</a></li>
+								<li><a href="#">Бижутерия</a></li>
+								<li><a href="#">Часы</a></li>
+								<li><a href="#">Спорт и развлечения</a></li>
+							</ul>
+							<ul>
+								<li><a href="#">Сумки</a></li>
+								<li><a href="#">Обувь</a></li>
+								<li><a href="#">Дом</a></li>
+								<li><a href="#">Зоотовары</a></li>
+								<li><a href="#">Автотовары</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="active"><a href="#">Товары</a></li>
+					<li class="burn"><a href="#">Горящие товары %</a></li>
+				</ul>
+			</nav>
+			<div class="currency-lan">
+				<div class="toggle" data-target="currency-lan">
+					<div class="currency-lan-img">
+						<img src="images/icons/ru.svg" alt="">
+					</div>
+					<div class="currency-lan-middle">
+						USD
+					</div>
+					<div class="currency-lan-arrow">
+						<svg width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M1 1L5 5L9 1" stroke-width="2"/>
+						</svg>
+					</div>
+				</div>
+				<div class="currency-lan-block" id="currency-lan">
+					<div class="currency-lan-block-top">
+						<div class="currency-lan-block-title">Язык</div>
+						<ul>
+							<li class="active">
+								<a href="#">
+									<img src="images/icons/ru.svg" alt="">
+									<span>Русский</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="images/icons/gb.svg" alt="">
+									<span>English</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="images/icons/by.svg" alt="">
+									<span>Беларускі</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="currency-lan-block-bottom">
+						<div class="currency-lan-block-title">Выбор валюты</div>
+						<ul>
+							<li>
+								<a href="#">
+									<img src="images/icons/ru.svg" alt="">
+									<span>RUB</span>
+								</a>
+							</li>
+							<li class="active">
+								<a href="#">
+									<img src="images/icons/gb.svg" alt="">
+									<span>USD</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="images/icons/by.svg" alt="">
+									<span>EUR</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<button>Применить</button>
+				</div>
+			</div>
+			<div class="toggle search-btn" data-target="search-form">
+				<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M19.7291 18.2696L15.9966 14.5757C18.8293 11.0483 18.5627 5.85691 15.33 2.62895C13.6304 0.93178 11.3975 0 8.99806 0C6.59858 0 4.3324 0.93178 2.63277 2.62895C0.933132 4.32612 0 6.55574 0 8.98503C0 11.4143 0.933132 13.6439 2.63277 15.3411C4.3324 17.005 6.56525 17.9701 8.99806 17.9701C11.031 17.9701 13.0305 17.2712 14.5969 16.0067L18.2961 19.7005C18.496 19.9002 18.7293 20 18.9959 20C19.2625 20 19.5291 19.9002 19.6958 19.7005C20.0957 19.3012 20.0957 18.6689 19.7291 18.2696ZM15.9966 8.98503C15.9966 10.8486 15.2634 12.6123 13.9303 13.9102C12.5973 15.208 10.8643 15.9734 8.99806 15.9734C7.1318 15.9734 5.36551 15.2413 4.06579 13.9102C2.76607 12.579 1.99957 10.8486 1.99957 8.98503C1.99957 7.12146 2.73275 5.35774 4.06579 4.0599C5.39884 2.76206 7.09847 1.99667 8.99806 1.99667C10.8643 1.99667 12.6306 2.72879 13.9303 4.0599C15.2301 5.39102 15.9966 7.08819 15.9966 8.98503Z" fill="#1B0033"/>
+				</svg>
+				<span>Отмена</span>
+			</div>
+		</div>
+	</header>
+	<div class="mobil-menu" id="mobil-menu">
+		<div class="container">
+			<div class="mobil-menu-block">
+				<div class="mobil-menu-title">Навигация</div>
+				<ul>
+					<li><a href="#">Товары</a></li>
+					<li><a href="#">Горящие товары</a></li>
+					<li>
+						<a href="#" class="toggle">
+							<span>Категории</span>
+							<svg width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M1 6L5 2L9 6" stroke-width="2"/>
+							</svg>
+						</a>
+						<ul>
+							<li><a href="#">Все</a></li>
+							<li><a href="#">Телефоны и Аксессуары</a></li>
+							<li><a href="#">Компьютеры</a></li>
+							<li><a href="#">Оргтехника</a></li>
+							<li><a href="#">Электроника</a></li>
+							<li><a href="#">Бытовая техника</a></li>
+							<li><a href="#">Красота</a></li>
+							<li><a href="#">Одежда для мужчин</a></li>
+							<li><a href="#">Одежда для женщин</a></li>
+							<li><a href="#">Всё для детей</a></li>
+							<li><a href="#">Бижутерия</a></li>
+							<li><a href="#">Часы</a></li>
+							<li><a href="#">Спорт и развлечения</a></li>
+							<li><a href="#">Сумки</a></li>
+							<li><a href="#">Обувь</a></li>
+							<li><a href="#">Дом</a></li>
+							<li><a href="#">Зоотовары</a></li>
+							<li><a href="#">Автотовары</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div class="mobil-menu-block">
+				<div class="mobil-menu-title">Язык</div>
+				<div class="mobil-menu-a">
+					<a href="#" class="active">
+						<img src="images/icons/ru.svg" alt="">
+						<span>Русский</span>
+					</a>
+					<a href="#">
+						<img src="images/icons/gb.svg" alt="">
+						<span>English</span>
+					</a>
+				</div>
+			</div>
+			<div class="mobil-menu-block">
+				<div class="mobil-menu-title">Выбор валюты</div>
+				<div class="mobil-menu-a">
+					<a href="#">RUB</a>
+					<a href="#" class="active">USD</a>
+					<a href="#">EUR</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="content container">
+		<div class="breadcrumbs">
+			<a href="#">Главные</a> 
+			<span>/</span> 
+			<a href="#">Графические планшеты</a> 
+			<span>/</span> 
+			<a href="#">ПК оборудование</a>
+		</div>
+		<div class="search-form" id="search-form">
+			<form>
+				<input type="text" placeholder="Введи название товара, чтобы найти его" id="tags">
+				<div class="close-autocomplete"></div>
+				<button>
+					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M23.6749 21.9235L19.1959 17.4909C22.5951 13.2579 22.2752 7.02829 18.396 3.15474C16.3565 1.11814 13.6771 0 10.7977 0C7.9183 0 5.19888 1.11814 3.15932 3.15474C1.11976 5.19135 0 7.86689 0 10.782C0 13.6972 1.11976 16.3727 3.15932 18.4093C5.19888 20.406 7.87831 21.5641 10.7977 21.5641C13.2372 21.5641 15.6366 20.7255 17.5162 19.208L21.9553 23.6406C22.1952 23.8802 22.4752 24 22.7951 24C23.115 24 23.435 23.8802 23.6349 23.6406C24.1148 23.1614 24.1148 22.4027 23.6749 21.9235ZM19.1959 10.782C19.1959 13.0183 18.3161 15.1348 16.7164 16.6922C15.1167 18.2496 13.0372 19.1681 10.7977 19.1681C8.55816 19.1681 6.43862 18.2895 4.87895 16.6922C3.31929 15.0948 2.39948 13.0183 2.39948 10.782C2.39948 8.54576 3.27929 6.42929 4.87895 4.87188C6.47861 3.31448 8.51817 2.39601 10.7977 2.39601C13.0372 2.39601 15.1567 3.27454 16.7164 4.87188C18.2761 6.46922 19.1959 8.50582 19.1959 10.782Z"/>
+					</svg>
+				</button>
+			</form>
+		</div>
+		<div class="product-inside">
+			<div class="product-inside-left">
+				<div class="product-inside-slider">
+					<div class="for-mobil">
+						<div class="fm-product-inside-sub-title">Мобильный телефон</div>
+						<div class="fm-product-inside-title">Mate 35</div>
+						<div class="fm-product-inside-share">
+							<a href="#">
+								<svg width="23" height="16" viewBox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M14.4494 0.0061328C14.597 0.0267068 14.7357 0.0889572 14.8491 0.185575L22.6793 6.71076C22.7668 6.78426 22.8371 6.87602 22.8853 6.97958C22.9336 7.08315 22.9586 7.19601 22.9586 7.31026C22.9586 7.42451 22.9336 7.53736 22.8853 7.64093C22.8371 7.74449 22.7668 7.83625 22.6793 7.90976L14.8491 14.4349C14.7351 14.5287 14.5969 14.5884 14.4505 14.607C14.304 14.6256 14.1553 14.6025 14.0214 14.5403C13.8876 14.478 13.774 14.3792 13.6939 14.2552C13.6138 14.1312 13.5703 13.9871 13.5685 13.8395V11.2376C11.8031 11.2543 5.73078 11.5903 1.29306 15.4708C1.16374 15.5818 1.00176 15.6475 0.831692 15.6581C0.661622 15.6687 0.492744 15.6235 0.350679 15.5294C0.208615 15.4353 0.101117 15.2974 0.0444965 15.1367C-0.0121244 14.976 -0.0147789 14.8012 0.0369358 14.6389C2.22968 7.88313 8.82027 4.89259 13.5685 3.59498V0.789154C13.5677 0.67755 13.5907 0.567051 13.636 0.465062C13.6813 0.363073 13.7479 0.271942 13.8314 0.197794C13.9148 0.123646 14.0131 0.0681993 14.1197 0.0351425C14.2263 0.00208564 14.3387 -0.00780893 14.4494 0.0061328ZM15.1346 2.45308V4.18225C15.1347 4.35591 15.077 4.52465 14.9707 4.66197C14.8644 4.79928 14.7155 4.89737 14.5473 4.9408C10.7106 5.91209 5.51018 8.08671 2.76937 12.51C8.01334 9.42907 13.8949 9.64004 14.3923 9.6634C14.5929 9.67387 14.7817 9.76097 14.9198 9.90669C15.058 10.0524 15.1348 10.2456 15.1346 10.4464V12.1674L20.9665 7.31433L15.1346 2.45308Z"/>
+								</svg>
+							</a>
+						</div>
+					</div>
+					<div class="slider-for active popup-gallery">
+						<div>
+							<a href="images/1.webp">
+								<img src="images/1.webp" alt="">
+							</a>
+						</div>
+						<div>
+							<a href="images/2.webp">
+								<img src="images/2.webp" alt="">
+							</a>
+						</div>
+						<div>
+							<a href="images/3.webp">
+								<img src="images/3.webp" alt="">
+							</a>
+						</div>
+						<div>
+							<a href="images/1.webp">
+								<img src="images/1.webp" alt="">
+							</a>
+						</div>
+						<div>
+							<a href="images/2.webp">
+								<img src="images/2.webp" alt="">
+							</a>
+						</div>
+						<div>
+							<a href="images/3.webp">
+								<img src="images/3.webp" alt="">
+							</a>
+						</div>
+					</div>
+					<div class="slider-for2 popup-gallery2">
+						<div>
+							<a href="images/21.webp">
+								<img src="images/21.webp" alt="">
+							</a>
+						</div>
+						<div>
+							<a href="images/22.webp">
+								<img src="images/22.webp" alt="">
+							</a>
+						</div>
+						<div>
+							<a href="images/23.webp">
+								<img src="images/23.webp" alt="">
+							</a>
+						</div>
+						<div>
+							<a href="images/21.webp">
+								<img src="images/21.webp" alt="">
+							</a>
+						</div>
+						<div>
+							<a href="images/22.webp">
+								<img src="images/22.webp" alt="">
+							</a>
+						</div>
+						<div>
+							<a href="images/23.webp">
+								<img src="images/23.webp" alt="">
+							</a>
+						</div>
+					</div>
+					<div class="slider-shell popup-gallery no-for-mobil">
+						<div class="slider-nav">
+							<div><img src="images/1.webp" alt=""></div>
+							<div><img src="images/2.webp" alt=""></div>
+							<div><img src="images/3.webp" alt=""></div>
+							<div><img src="images/1.webp" alt=""></div>
+							<div><img src="images/2.webp" alt=""></div>
+							<div><img src="images/3.webp" alt=""></div>
+						</div>
+						<a href="images/1.webp" class="all-photo">Все фото</a>
+					</div>
+					<div class="slider-shell popup-gallery2">
+						<p>Фото от покупателей</p>
+						<div class="slider-nav2">
+							<div><img src="images/21.webp" alt=""></div>
+							<div><img src="images/22.webp" alt=""></div>
+							<div><img src="images/23.webp" alt=""></div>
+							<div><img src="images/21.webp" alt=""></div>
+							<div><img src="images/22.webp" alt=""></div>
+							<div><img src="images/23.webp" alt=""></div>
+						</div>
+						<a href="images/21.webp" class="all-photo">Все фото</a>
+					</div>
+				</div>
+				<div class="product-inside-description">
+					<div class="product-inside-sub-title">Мобильный телефон</div>
+					<h1 class="product-inside-title">Mate 35</h1>
+					<div class="product-bottom">
+						<div class="product-assesment">
+							<span>4.3</span>
+							<img src="images/icons/star.svg" alt="">
+						</div>
+						<div class="product-comments">
+							<img src="images/icons/comment.svg" alt="">
+							<span>12984</span>
+						</div>
+						<div class="product-purchases">
+							<img src="images/icons/cart.svg" alt="">
+							<span>3500</span>
+						</div>
+					</div>
+					<div class="product-inside-text">Mate35, 6,3 дюймов, 4G, смартфон, 6 ГБ ОЗУ, 128 Гб ПЗУ, экран капли воды, мобильный телефон, Распознавание отпечатков пальцев и лица, разблокировка, сотовый телефон</div>
+					<div class="product-inside-price">
+						<span>450.50 $</span>
+						<b>87%</b>
+						136.69 $
+					</div>
+					<a href="#" class="btn shadowHover">Купить в Aliexpress</a>
+					<div class="delivery">
+						<img src="images/icons/delivery.svg" alt="">
+						<span>Включена доставка 15р</span>
+					</div>
+					<div class="product-insite-tab">
+						<div class="product-insite-tab-block">
+							<div class="toggle product-insite-tab-block-top" data-target="pc-tab1">
+								<span>Описание</span>
+								<svg width="9" height="7" viewBox="0 0 9 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M1.28174 1.56403L4.56379 4.84608L7.84584 1.56403" stroke-width="1.64103"/>
+								</svg>
+							</div>
+							<div class="product-insite-tab-content" id="pc-tab1">
+								<div class="product-inside-text">Mate35, 6,3 дюймов, 4G, смартфон, 6 ГБ ОЗУ, 128 Гб ПЗУ, экран капли воды, мобильный телефон, Распознавание отпечатков пальцев и лица, разблокировка, сотовый телефон</div>
+							</div>
+						</div>
+						<div class="product-insite-tab-block">
+							<div class="toggle product-insite-tab-block-top" data-target="pc-tab2">
+								<span>Характеристики</span>
+								<svg width="9" height="7" viewBox="0 0 9 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M1.28174 1.56403L4.56379 4.84608L7.84584 1.56403" stroke-width="1.64103"/>
+								</svg>
+							</div>
+							<div class="product-insite-tab-content" id="pc-tab2">
+								<ul>
+									<li><span>Название бренда:</span> Aogue</li>
+									<li><span>Материал:</span> Металл</li>
+									<li><span>Тип фурнитуры для ювелирных изделий:</span> Соединители</li>
+									<li><span>Тип товара:</span> Заключения ювелирных изделий</li>
+									<li><span>Brand Name:</span> Aogue</li>
+									<li><span>Material:</span> Metal</li>
+									<li><span>Jewelry Findings Type:</span> Connectors</li>
+									<li><span>Item Type:</span> Jewelry Findings</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="seller">
+						<div class="seller-desc">
+							<div class="seller-title">Продавец:</div>
+							<div class="seller-name">Oemoo Jewelry Accessories Firm</div>
+							<div class="seller-btn toggle" data-target="seller-hidden">
+								<a class="toggle">
+									<span>Подробнее</span>
+									<svg width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1 1L5 5L9 1" stroke-width="2"/>
+									</svg>
+								</a>
+							</div>
+						</div>
+						<div class="circle c100 p87 big green">
+							<span>
+								87<b>%</b>
+								<span>Надёжность<br> продавца</span>
+							</span>
+							<div class="slice">
+								<div class="bar"></div>
+								<div class="fill"></div>
+							</div>
+						</div>
+						<div class="seller-hidden" id="seller-hidden">
+							<ul>
+								<li>На площадке более 2 лет</li>
+								<li>Высокий общий рейтинг (30523)</li>
+								<li>Покупатели довольны общением</li>
+								<li>Товары соответствуют описанию</li>
+								<li>Быстро отправляет товары</li>
+								<li class="red">3.9% покупателей остались недовольны за последние 3 месяца</li>
+							</ul>
+						</div>
+					</div>
+					<div class="share">
+						<a class="toggle specifications-pbtn" data-target="specifications">
+							<svg width="26" height="6" viewBox="0 0 26 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<circle cx="3" cy="3" r="3" transform="rotate(-90 3 3)"/>
+								<circle cx="13" cy="3" r="3" transform="rotate(-90 13 3)"/>
+								<circle cx="23" cy="3" r="3" transform="rotate(-90 23 3)"/>
+							</svg>
+						</a>
+						<a href="#">
+							<svg width="30" height="24" viewBox="0 0 30 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M18.6103 2.00747C18.7901 2.03255 18.9591 2.10842 19.0973 2.22617L28.6404 10.1787C28.747 10.2683 28.8327 10.3802 28.8915 10.5064C28.9503 10.6326 28.9808 10.7701 28.9808 10.9094C28.9808 11.0486 28.9503 11.1862 28.8915 11.3124C28.8327 11.4386 28.747 11.5504 28.6404 11.64L19.0973 19.5926C18.9584 19.7069 18.79 19.7796 18.6115 19.8023C18.433 19.825 18.2518 19.7968 18.0886 19.7209C17.9255 19.6451 17.7871 19.5247 17.6894 19.3736C17.5918 19.2224 17.5388 19.0468 17.5367 18.8669V15.6958C15.385 15.7162 7.98439 16.1257 2.57592 20.855C2.41831 20.9903 2.2209 21.0704 2.01363 21.0833C1.80635 21.0962 1.60053 21.0411 1.42739 20.9264C1.25425 20.8118 1.12324 20.6438 1.05423 20.4479C0.985223 20.252 0.981988 20.039 1.04502 19.8411C3.71743 11.6076 11.7497 7.96284 17.5367 6.38138V2.96178C17.5356 2.82576 17.5636 2.69109 17.6189 2.56679C17.6741 2.4425 17.7553 2.33143 17.857 2.24106C17.9586 2.15069 18.0784 2.08312 18.2084 2.04283C18.3383 2.00254 18.4753 1.99048 18.6103 2.00747ZM19.4453 4.98969V7.09712C19.4454 7.30876 19.3751 7.51442 19.2455 7.68177C19.116 7.84912 18.9345 7.96867 18.7295 8.0216C14.0535 9.20536 7.71553 11.8557 4.37517 17.2466C10.7663 13.4917 17.9344 13.7488 18.5407 13.7773C18.785 13.79 19.0152 13.8962 19.1835 14.0738C19.3519 14.2514 19.4456 14.4869 19.4453 14.7316V16.8291L26.5529 10.9143L19.4453 4.98969Z"/>
+							</svg>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="product-inside-right specifications" id="specifications">
+				<div class="toggle specifications-close" data-target="specifications">
+					<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<rect width="1.66249" height="26.5998" transform="matrix(0.707657 -0.706556 0.707657 0.706556 0 1.17465)"/>
+						<rect width="1.66249" height="26.5998" transform="matrix(0.707657 0.706556 0.707657 -0.706556 0 18.8229)"/>
+					</svg>
+				</div>
+				<div class="specifications-title">Характеристики</div>
+				<ul>
+					<li><span>Название бренда:</span> Aogue</li>
+					<li><span>Материал:</span> Металл</li>
+					<li><span>Тип фурнитуры для ювелирных изделий:</span> Соединители</li>
+					<li><span>Тип товара:</span> Заключения ювелирных изделий</li>
+					<li><span>Brand Name:</span> Aogue</li>
+					<li><span>Material:</span> Metal</li>
+					<li><span>Jewelry Findings Type:</span> Connectors</li>
+					<li><span>Item Type:</span> Jewelry Findings</li>
+				</ul>
+			</div>
+		</div>
+		<div class="schedule">
+			<div class="schedule-top">
+				<div class="schedule-title">
+					<span>Цена уменьшилась на 13 $ <b>|</b></span> дешевле на 21%
+					<div>
+						<div class="cheap">Подешевел</div>
+						<div class="similar">Обычная цена</div>
+						<div class="expensive">Подорожал</div>
+					</div>
+				</div>
+				<div class="schedule-btn">
+					<a class="show_popup" data-target="popup1">
+						<svg width="32" height="24" viewBox="0 0 32 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M23.469 16.3826C23.4336 16.3478 23.4336 16.2783 23.4336 16.2087V9.56522C23.4336 5.77391 20.4956 2.67826 16.708 2.29565V0.695652C16.708 0.313043 16.3894 0 16 0C15.6106 0 15.292 0.313043 15.292 0.695652V2.29565C11.5398 2.64348 8.56637 5.77391 8.56637 9.56522V16.2435C8.56637 16.313 8.53097 16.3478 8.49558 16.3826L6.72566 18.1217C6.40708 18.4348 6.26549 18.8174 6.26549 19.2696V19.7913C6.26549 20.6609 7.00885 21.3913 7.89381 21.3913H12.8496C13.0973 22.8522 14.4071 24 16 24C17.5929 24 18.9027 22.887 19.1504 21.3913H24.1062C24.9912 21.3913 25.7345 20.6609 25.7345 19.7913V19.2696C25.7345 18.8522 25.5575 18.4348 25.2743 18.1217L23.469 16.3826ZM16 22.6087C15.2212 22.6087 14.5487 22.087 14.3363 21.3913H17.6991C17.4513 22.087 16.7788 22.6087 16 22.6087ZM24.3186 19.7913C24.3186 19.8957 24.2124 20 24.1062 20H7.89381C7.78761 20 7.68142 19.8957 7.68142 19.7913V19.2696C7.68142 19.2 7.71682 19.1652 7.75221 19.1304L9.52213 17.3913C9.84071 17.0783 9.9823 16.6957 9.9823 16.2435V9.56522C9.9823 6.33043 12.6726 3.65217 16 3.65217C19.3274 3.65217 22.0177 6.29565 22.0177 9.56522V16.2435C22.0177 16.6609 22.1947 17.0783 22.4779 17.3913L24.2478 19.1304C24.2832 19.1652 24.3186 19.2348 24.3186 19.2696V19.7913ZM6.30089 15.6522C6.15929 15.7913 5.9823 15.8609 5.80531 15.8609C5.62832 15.8609 5.45133 15.7913 5.30973 15.6522C4.17699 14.5391 3.53982 13.0435 3.53982 11.4783C3.53982 9.91304 4.17699 8.41739 5.30973 7.30435C5.59292 7.02609 6.0177 7.02609 6.30089 7.30435C6.58407 7.58261 6.58407 8 6.30089 8.27826C5.41593 9.14783 4.95575 10.2609 4.95575 11.4783C4.95575 12.6957 5.45133 13.8087 6.30089 14.6783C6.58407 14.9565 6.58407 15.3739 6.30089 15.6522ZM3.78761 17.1478C4.0708 17.4261 4.0708 17.8435 3.78761 18.1217C3.64602 18.2609 3.46903 18.3304 3.29204 18.3304C3.11504 18.3304 2.93805 18.2609 2.79646 18.1217C0.99115 16.3478 0 13.9826 0 11.4783C0 8.97391 0.99115 6.6087 2.79646 4.83478C3.07965 4.55652 3.50443 4.55652 3.78761 4.83478C4.0708 5.11304 4.0708 5.53044 3.78761 5.8087C2.26549 7.30435 1.41593 9.32174 1.41593 11.4783C1.41593 13.6348 2.26549 15.6174 3.78761 17.1478ZM26.6903 15.6522C26.5487 15.7913 26.3717 15.8609 26.1947 15.8609C26.0177 15.8609 25.8407 15.7913 25.6991 15.6522C25.4159 15.3739 25.4159 14.9565 25.6991 14.6783C27.5044 12.9043 27.5044 10.0522 25.6991 8.27826C25.4159 8 25.4159 7.58261 25.6991 7.30435C25.9823 7.02609 26.4071 7.02609 26.6903 7.30435C29.0265 9.6 29.0265 13.3565 26.6903 15.6522ZM32 11.4783C32 13.9826 31.0089 16.3478 29.2035 18.1217C29.0619 18.2609 28.885 18.3304 28.708 18.3304C28.531 18.3304 28.354 18.2609 28.2124 18.1217C27.9292 17.8435 27.9292 17.4261 28.2124 17.1478C29.7345 15.6522 30.5841 13.6348 30.5841 11.4783C30.5841 9.32174 29.7345 7.33913 28.2124 5.8087C27.9292 5.53044 27.9292 5.11304 28.2124 4.83478C28.4956 4.55652 28.9204 4.55652 29.2035 4.83478C31.0089 6.6087 32 8.97391 32 11.4783Z"/>
+						</svg>
+						Отслеживать цену
+					</a>
+				</div>
+			</div>
+			<div id="myChart"></div>
+		</div>
+		<div class="prices">
+			<div class="prices-title-block">
+				<div class="prices-title">Цены на этот товар у других продавцов</div>
+				<div class="prices-btn">
+					<a class="toggle" data-target="show-hide">
+						<b>Показать</b> все 
+						<span>(8)</span> 
+						<svg width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M1 1L5 5L9 1" stroke-width="2"/>
+						</svg>
+					</a>
+				</div>
+			</div>
+			<div class="prices-content show-hide" id="show-hide">
+				<div class="prices-block">
+					<div class="prices-block-img">
+						<a href="#"></a>
+					</div>
+					<div class="prices-block-title">
+						<p>Mate35, 6,3 дюймов, 4G, смартфон, 6…</p>
+						<div class="product-bottom">
+							<div class="product-assesment">
+								<span>4.3</span>
+								<img src="images/icons/star.svg" alt="">
+							</div>
+							<div class="product-comments">
+								<img src="images/icons/comment.svg" alt="">
+								<span>12984</span>
+							</div>
+							<div class="product-purchases">
+								<img src="images/icons/cart.svg" alt="">
+								<span>3500</span>
+							</div>
+						</div>
+					</div>
+					<div class="prices-block-circle">
+						<div class="circle c100 p87 big green">
+							<span>
+								87<b>%</b>
+							</span>
+							<div class="slice">
+								<div class="bar"></div>
+								<div class="fill"></div>
+							</div>
+						</div>
+						<p>Oemoo Jewelry Accessories Firm</p>
+					</div>
+					<div class="prices-block-price">
+						<div>
+							<p>136.23 $</p>
+							<div>
+								<img src="images/icons/delivery.svg" alt="">
+								Включена доставка 15р
+							</div>
+						</div>
+					</div>
+					<div class="prices-block-btn">
+						<a href="#">К продавцу</a>
+					</div>
+				</div>
+				<div class="prices-block">
+					<div class="prices-block-img">
+						<a href="#"></a>
+					</div>
+					<div class="prices-block-title">
+						<p>Mate35, 6,3 дюймов, 4G, смартфон, 6…</p>
+						<div class="product-bottom">
+							<div class="product-assesment">
+								<span>4.3</span>
+								<img src="images/icons/star.svg" alt="">
+							</div>
+							<div class="product-comments">
+								<img src="images/icons/comment.svg" alt="">
+								<span>12984</span>
+							</div>
+							<div class="product-purchases">
+								<img src="images/icons/cart.svg" alt="">
+								<span>3500</span>
+							</div>
+						</div>
+					</div>
+					<div class="prices-block-circle">
+						<div class="circle c100 p14 big red">
+							<span>
+								14<b>%</b>
+							</span>
+							<div class="slice">
+								<div class="bar"></div>
+								<div class="fill"></div>
+							</div>
+						</div>
+						<p>Oemoo Jewelry Accessories Firm</p>
+					</div>
+					<div class="prices-block-price">
+						<div>
+							<p>136.23 $</p>
+							<div>
+								<img src="images/icons/delivery.svg" alt="">
+								Включена доставка 15р
+							</div>
+						</div>
+					</div>
+					<div class="prices-block-btn">
+						<a href="#">К продавцу</a>
+					</div>
+				</div>
+				<div class="prices-block">
+					<div class="prices-block-img">
+						<a href="#"></a>
+					</div>
+					<div class="prices-block-title">
+						<p>Mate35, 6,3 дюймов, 4G, смартфон, 6…</p>
+						<div class="product-bottom">
+							<div class="product-assesment">
+								<span>4.3</span>
+								<img src="images/icons/star.svg" alt="">
+							</div>
+							<div class="product-comments">
+								<img src="images/icons/comment.svg" alt="">
+								<span>12984</span>
+							</div>
+							<div class="product-purchases">
+								<img src="images/icons/cart.svg" alt="">
+								<span>3500</span>
+							</div>
+						</div>
+					</div>
+					<div class="prices-block-circle">
+						<div class="circle c100 p62 big orange">
+							<span>
+								62<b>%</b>
+							</span>
+							<div class="slice">
+								<div class="bar"></div>
+								<div class="fill"></div>
+							</div>
+						</div>
+						<p>Oemoo Jewelry Accessories Firm</p>
+					</div>
+					<div class="prices-block-price">
+						<div>
+							<p>136.23 $</p>
+							<div>
+								<img src="images/icons/delivery.svg" alt="">
+								Включена доставка 15р
+							</div>
+						</div>
+					</div>
+					<div class="prices-block-btn">
+						<a href="#">К продавцу</a>
+					</div>
+				</div>
+				<div class="prices-block">
+					<div class="prices-block-img">
+						<a href="#"></a>
+					</div>
+					<div class="prices-block-title">
+						<p>Mate35, 6,3 дюймов, 4G, смартфон, 6…</p>
+						<div class="product-bottom">
+							<div class="product-assesment">
+								<span>4.3</span>
+								<img src="images/icons/star.svg" alt="">
+							</div>
+							<div class="product-comments">
+								<img src="images/icons/comment.svg" alt="">
+								<span>12984</span>
+							</div>
+							<div class="product-purchases">
+								<img src="images/icons/cart.svg" alt="">
+								<span>3500</span>
+							</div>
+						</div>
+					</div>
+					<div class="prices-block-circle">
+						<div class="circle c100 p62 big orange">
+							<span>
+								62<b>%</b>
+							</span>
+							<div class="slice">
+								<div class="bar"></div>
+								<div class="fill"></div>
+							</div>
+						</div>
+						<p>Oemoo Jewelry Accessories Firm</p>
+					</div>
+					<div class="prices-block-price">
+						<div>
+							<p>136.23 $</p>
+							<div>
+								<img src="images/icons/delivery.svg" alt="">
+								Включена доставка 15р
+							</div>
+						</div>
+					</div>
+					<div class="prices-block-btn">
+						<a href="#">К продавцу</a>
+					</div>
+				</div>
+				<div class="prices-block">
+					<div class="prices-block-img">
+						<a href="#"></a>
+					</div>
+					<div class="prices-block-title">
+						<p>Mate35, 6,3 дюймов, 4G, смартфон, 6…</p>
+						<div class="product-bottom">
+							<div class="product-assesment">
+								<span>4.3</span>
+								<img src="images/icons/star.svg" alt="">
+							</div>
+							<div class="product-comments">
+								<img src="images/icons/comment.svg" alt="">
+								<span>12984</span>
+							</div>
+							<div class="product-purchases">
+								<img src="images/icons/cart.svg" alt="">
+								<span>3500</span>
+							</div>
+						</div>
+					</div>
+					<div class="prices-block-circle">
+						<div class="circle c100 p62 big orange">
+							<span>
+								62<b>%</b>
+							</span>
+							<div class="slice">
+								<div class="bar"></div>
+								<div class="fill"></div>
+							</div>
+						</div>
+						<p>Oemoo Jewelry Accessories Firm</p>
+					</div>
+					<div class="prices-block-price">
+						<div>
+							<p>136.23 $</p>
+							<div>
+								<img src="images/icons/delivery.svg" alt="">
+								Включена доставка 15р
+							</div>
+						</div>
+					</div>
+					<div class="prices-block-btn">
+						<a href="#">К продавцу</a>
+					</div>
+				</div>
+				<div class="prices-block">
+					<div class="prices-block-img">
+						<a href="#"></a>
+					</div>
+					<div class="prices-block-title">
+						<p>Mate35, 6,3 дюймов, 4G, смартфон, 6…</p>
+						<div class="product-bottom">
+							<div class="product-assesment">
+								<span>4.3</span>
+								<img src="images/icons/star.svg" alt="">
+							</div>
+							<div class="product-comments">
+								<img src="images/icons/comment.svg" alt="">
+								<span>12984</span>
+							</div>
+							<div class="product-purchases">
+								<img src="images/icons/cart.svg" alt="">
+								<span>3500</span>
+							</div>
+						</div>
+					</div>
+					<div class="prices-block-circle">
+						<div class="circle c100 p62 big orange">
+							<span>
+								62<b>%</b>
+							</span>
+							<div class="slice">
+								<div class="bar"></div>
+								<div class="fill"></div>
+							</div>
+						</div>
+						<p>Oemoo Jewelry Accessories Firm</p>
+					</div>
+					<div class="prices-block-price">
+						<div>
+							<p>136.23 $</p>
+							<div>
+								<img src="images/icons/delivery.svg" alt="">
+								Включена доставка 15р
+							</div>
+						</div>
+					</div>
+					<div class="prices-block-btn">
+						<a href="#">К продавцу</a>
+					</div>
+				</div>
+				<div class="prices-block">
+					<div class="prices-block-img">
+						<a href="#"></a>
+					</div>
+					<div class="prices-block-title">
+						<p>Mate35, 6,3 дюймов, 4G, смартфон, 6…</p>
+						<div class="product-bottom">
+							<div class="product-assesment">
+								<span>4.3</span>
+								<img src="images/icons/star.svg" alt="">
+							</div>
+							<div class="product-comments">
+								<img src="images/icons/comment.svg" alt="">
+								<span>12984</span>
+							</div>
+							<div class="product-purchases">
+								<img src="images/icons/cart.svg" alt="">
+								<span>3500</span>
+							</div>
+						</div>
+					</div>
+					<div class="prices-block-circle">
+						<div class="circle c100 p62 big orange">
+							<span>
+								62<b>%</b>
+							</span>
+							<div class="slice">
+								<div class="bar"></div>
+								<div class="fill"></div>
+							</div>
+						</div>
+						<p>Oemoo Jewelry Accessories Firm</p>
+					</div>
+					<div class="prices-block-price">
+						<div>
+							<p>136.23 $</p>
+							<div>
+								<img src="images/icons/delivery.svg" alt="">
+								Включена доставка 15р
+							</div>
+						</div>
+					</div>
+					<div class="prices-block-btn">
+						<a href="#">К продавцу</a>
+					</div>
+				</div>
+				<div class="prices-block">
+					<div class="prices-block-img">
+						<a href="#"></a>
+					</div>
+					<div class="prices-block-title">
+						<p>Mate35, 6,3 дюймов, 4G, смартфон, 6…</p>
+						<div class="product-bottom">
+							<div class="product-assesment">
+								<span>4.3</span>
+								<img src="images/icons/star.svg" alt="">
+							</div>
+							<div class="product-comments">
+								<img src="images/icons/comment.svg" alt="">
+								<span>12984</span>
+							</div>
+							<div class="product-purchases">
+								<img src="images/icons/cart.svg" alt="">
+								<span>3500</span>
+							</div>
+						</div>
+					</div>
+					<div class="prices-block-circle">
+						<div class="circle c100 p62 big orange">
+							<span>
+								62<b>%</b>
+							</span>
+							<div class="slice">
+								<div class="bar"></div>
+								<div class="fill"></div>
+							</div>
+						</div>
+						<p>Oemoo Jewelry Accessories Firm</p>
+					</div>
+					<div class="prices-block-price">
+						<div>
+							<p>136.23 $</p>
+							<div>
+								<img src="images/icons/delivery.svg" alt="">
+								Включена доставка 15р
+							</div>
+						</div>
+					</div>
+					<div class="prices-block-btn">
+						<a href="#">К продавцу</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="similar-products">
+			<h2 class="similar-products-title">Похожие товары <span>(52)</span></h2>
+			<div class="products" id="show-products">
+				<div class="product">
+					<div class="product-img">
+						<a href="#">
+						</a>
+					</div>
+					<div class="product-description">
+						<div class="product-price">
+							<span class="discount">
+								<span>40 $</span>
+								<b>87%</b>
+							</span>
+							15.23 $
+						</div>
+						<div class="product-text">Blackview BV9900E Helio P90 прочный смартфон 6 ГБ + 128 Гб IP68 …</div>
+						<div class="product-bottom">
+							<div class="product-assesment">
+								<span>4.3</span>
+								<img src="images/icons/star.svg" alt="">
+							</div>
+							<div class="product-comments">
+								<img src="images/icons/comment.svg" alt="">
+								<span>12984</span>
+							</div>
+							<div class="product-purchases">
+								<img src="images/icons/cart.svg" alt="">
+								<span>3500</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="product">
+					<div class="product-img">
+						<a href="#">
+						</a>
+					</div>
+					<div class="product-description">
+						<div class="product-price">
+							<span class="discount">
+								<span>40 $</span>
+								<b>87%</b>
+							</span>
+							15.23 $
+						</div>
+						<div class="product-text">Blackview BV9900E Helio P90 прочный смартфон 6 ГБ + 128 Гб IP68 …</div>
+						<div class="product-bottom">
+							<div class="product-assesment">
+								<span>4.3</span>
+								<img src="images/icons/star.svg" alt="">
+							</div>
+							<div class="product-comments">
+								<img src="images/icons/comment.svg" alt="">
+								<span>12984</span>
+							</div>
+							<div class="product-purchases">
+								<img src="images/icons/cart.svg" alt="">
+								<span>3500</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="product">
+					<div class="product-img">
+						<a href="#">
+						</a>
+					</div>
+					<div class="product-description">
+						<div class="product-price">
+							<span class="discount">
+								<span>40 $</span>
+								<b>87%</b>
+							</span>
+							15.23 $
+						</div>
+						<div class="product-text">Blackview BV9900E Helio P90 прочный смартфон 6 ГБ + 128 Гб IP68 …</div>
+						<div class="product-bottom">
+							<div class="product-assesment">
+								<span>4.3</span>
+								<img src="images/icons/star.svg" alt="">
+							</div>
+							<div class="product-comments">
+								<img src="images/icons/comment.svg" alt="">
+								<span>12984</span>
+							</div>
+							<div class="product-purchases">
+								<img src="images/icons/cart.svg" alt="">
+								<span>3500</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="product">
+					<div class="product-img">
+						<a href="#">
+						</a>
+					</div>
+					<div class="product-description">
+						<div class="product-price">
+							<span class="discount">
+								<span>40 $</span>
+								<b>87%</b>
+							</span>
+							15.23 $
+						</div>
+						<div class="product-text">Blackview BV9900E Helio P90 прочный смартфон 6 ГБ + 128 Гб IP68 …</div>
+						<div class="product-bottom">
+							<div class="product-assesment">
+								<span>4.3</span>
+								<img src="images/icons/star.svg" alt="">
+							</div>
+							<div class="product-comments">
+								<img src="images/icons/comment.svg" alt="">
+								<span>12984</span>
+							</div>
+							<div class="product-purchases">
+								<img src="images/icons/cart.svg" alt="">
+								<span>3500</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="product">
+					<div class="product-img">
+						<a href="#">
+						</a>
+					</div>
+					<div class="product-description">
+						<div class="product-price">
+							<span class="discount">
+								<span>40 $</span>
+								<b>87%</b>
+							</span>
+							15.23 $
+						</div>
+						<div class="product-text">Blackview BV9900E Helio P90 прочный смартфон 6 ГБ + 128 Гб IP68 …</div>
+						<div class="product-bottom">
+							<div class="product-assesment">
+								<span>4.3</span>
+								<img src="images/icons/star.svg" alt="">
+							</div>
+							<div class="product-comments">
+								<img src="images/icons/comment.svg" alt="">
+								<span>12984</span>
+							</div>
+							<div class="product-purchases">
+								<img src="images/icons/cart.svg" alt="">
+								<span>3500</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="product">
+					<div class="product-img">
+						<a href="#">
+						</a>
+					</div>
+					<div class="product-description">
+						<div class="product-price">
+							<span class="discount">
+								<span>40 $</span>
+								<b>87%</b>
+							</span>
+							15.23 $
+						</div>
+						<div class="product-text">Blackview BV9900E Helio P90 прочный смартфон 6 ГБ + 128 Гб IP68 …</div>
+						<div class="product-bottom">
+							<div class="product-assesment">
+								<span>4.3</span>
+								<img src="images/icons/star.svg" alt="">
+							</div>
+							<div class="product-comments">
+								<img src="images/icons/comment.svg" alt="">
+								<span>12984</span>
+							</div>
+							<div class="product-purchases">
+								<img src="images/icons/cart.svg" alt="">
+								<span>3500</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="product">
+					<div class="product-img">
+						<a href="#">
+						</a>
+					</div>
+					<div class="product-description">
+						<div class="product-price">
+							<span class="discount">
+								<span>40 $</span>
+								<b>87%</b>
+							</span>
+							15.23 $
+						</div>
+						<div class="product-text">Blackview BV9900E Helio P90 прочный смартфон 6 ГБ + 128 Гб IP68 …</div>
+						<div class="product-bottom">
+							<div class="product-assesment">
+								<span>4.3</span>
+								<img src="images/icons/star.svg" alt="">
+							</div>
+							<div class="product-comments">
+								<img src="images/icons/comment.svg" alt="">
+								<span>12984</span>
+							</div>
+							<div class="product-purchases">
+								<img src="images/icons/cart.svg" alt="">
+								<span>3500</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="product">
+					<div class="product-img">
+						<a href="#">
+						</a>
+					</div>
+					<div class="product-description">
+						<div class="product-price">
+							<span class="discount">
+								<span>40 $</span>
+								<b>87%</b>
+							</span>
+							15.23 $
+						</div>
+						<div class="product-text">Blackview BV9900E Helio P90 прочный смартфон 6 ГБ + 128 Гб IP68 …</div>
+						<div class="product-bottom">
+							<div class="product-assesment">
+								<span>4.3</span>
+								<img src="images/icons/star.svg" alt="">
+							</div>
+							<div class="product-comments">
+								<img src="images/icons/comment.svg" alt="">
+								<span>12984</span>
+							</div>
+							<div class="product-purchases">
+								<img src="images/icons/cart.svg" alt="">
+								<span>3500</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="product">
+					<div class="product-img">
+						<a href="#">
+						</a>
+					</div>
+					<div class="product-description">
+						<div class="product-price">
+							<span class="discount">
+								<span>40 $</span>
+								<b>87%</b>
+							</span>
+							15.23 $
+						</div>
+						<div class="product-text">Blackview BV9900E Helio P90 прочный смартфон 6 ГБ + 128 Гб IP68 …</div>
+						<div class="product-bottom">
+							<div class="product-assesment">
+								<span>4.3</span>
+								<img src="images/icons/star.svg" alt="">
+							</div>
+							<div class="product-comments">
+								<img src="images/icons/comment.svg" alt="">
+								<span>12984</span>
+							</div>
+							<div class="product-purchases">
+								<img src="images/icons/cart.svg" alt="">
+								<span>3500</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="product">
+					<div class="product-img">
+						<a href="#">
+						</a>
+					</div>
+					<div class="product-description">
+						<div class="product-price">
+							<span class="discount">
+								<span>40 $</span>
+								<b>87%</b>
+							</span>
+							15.23 $
+						</div>
+						<div class="product-text">Blackview BV9900E Helio P90 прочный смартфон 6 ГБ + 128 Гб IP68 …</div>
+						<div class="product-bottom">
+							<div class="product-assesment">
+								<span>4.3</span>
+								<img src="images/icons/star.svg" alt="">
+							</div>
+							<div class="product-comments">
+								<img src="images/icons/comment.svg" alt="">
+								<span>12984</span>
+							</div>
+							<div class="product-purchases">
+								<img src="images/icons/cart.svg" alt="">
+								<span>3500</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="product">
+					<div class="product-img">
+						<a href="#">
+						</a>
+					</div>
+					<div class="product-description">
+						<div class="product-price">
+							<span class="discount">
+								<span>40 $</span>
+								<b>87%</b>
+							</span>
+							15.23 $
+						</div>
+						<div class="product-text">Blackview BV9900E Helio P90 прочный смартфон 6 ГБ + 128 Гб IP68 …</div>
+						<div class="product-bottom">
+							<div class="product-assesment">
+								<span>4.3</span>
+								<img src="images/icons/star.svg" alt="">
+							</div>
+							<div class="product-comments">
+								<img src="images/icons/comment.svg" alt="">
+								<span>12984</span>
+							</div>
+							<div class="product-purchases">
+								<img src="images/icons/cart.svg" alt="">
+								<span>3500</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="product">
+					<div class="product-img">
+						<a href="#">
+						</a>
+					</div>
+					<div class="product-description">
+						<div class="product-price">
+							<span class="discount">
+								<span>40 $</span>
+								<b>87%</b>
+							</span>
+							15.23 $
+						</div>
+						<div class="product-text">Blackview BV9900E Helio P90 прочный смартфон 6 ГБ + 128 Гб IP68 …</div>
+						<div class="product-bottom">
+							<div class="product-assesment">
+								<span>4.3</span>
+								<img src="images/icons/star.svg" alt="">
+							</div>
+							<div class="product-comments">
+								<img src="images/icons/comment.svg" alt="">
+								<span>12984</span>
+							</div>
+							<div class="product-purchases">
+								<img src="images/icons/cart.svg" alt="">
+								<span>3500</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="text-center">
+					<a class="toggle btn" data-target="show-products">Смотреть больше</a> 
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<div class="container">
+			<div class="footer-left">
+				<div class="footer-logo">
+					<a href="index.html">
+						<img src="images/logo.png" alt="">
+					</a>
+				</div>
+				<p>
+					Адрес:	123317, г. Москва,<br> 
+					Пресненская набережная, <br>
+					д. 8, строение 1, эт. 3, пом. 1, к. 10
+				</p>
+				<a href="mailto:info@alidog.io">info@alidog.io</a>
+			</div>
+			<div class="footer-menu">
+				<ul>
+					<li><a href="#">Товары</a></li>
+					<li><a href="#">Политика конфидициальности</a></li>
+					<li><a href="#">Горящие товары</a></li>
+					<li><a href="#">Пользовательское соглашение</a></li>
+				</ul>
+			</div>
+			<div class="footer-right">
+				<a href="#" class="btn">Смотреть товары</a>
+			</div>
+			<div class="copyright">
+				<span>Все права защищены 2020. Дизайн сделан</span>
+				<a href="https://www.behance.net/ankdesign_" target="_blank">
+					<img src="images/copyright.svg" alt="">
+				</a>
+			</div>
+		</div>
+	</footer>
+	<div class="overlay"></div>
+	<div class="popup" id="popup1">
+		<div class="popup-close">
+			<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<rect width="1.66249" height="26.5998" transform="matrix(0.707657 -0.706556 0.707657 0.706556 0 1.17465)"/>
+				<rect width="1.66249" height="26.5998" transform="matrix(0.707657 0.706556 0.707657 -0.706556 0 18.8229)"/>
+			</svg>
+		</div>
+		<div class="popup-content">
+			<div class="popup-title">Отслеживание цены</div>
+			<div class="tracking">
+				<img src="images/popup-img.svg" alt="">
+				<p>Пришлём вам уведомление, когда цена снизится.<br> Чтобы отменить уведомления, нажмите кнопку ещё раз</p>
+				<form>
+					<label>Введите ваш Email</label>
+					<input type="text" placeholder="dezigner.ni.kotov@gmail.com">
+					<button class="btn shadowHover">Отслеживать цену</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/script.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<link href="css/mag.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $('.popup-gallery').magnificPopup({
+          delegate: 'a',
+          type: 'image',
+          tLoading: 'Loading image #%curr%...',
+          mainClass: 'mfp-img-mobile',
+          gallery: {
+            enabled: true,
+            navigateByImgClick: true,
+            preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+          }
+        });
+		  
+        $('.popup-gallery2').magnificPopup({
+          delegate: 'a',
+          type: 'image',
+          tLoading: 'Loading image #%curr%...',
+          mainClass: 'mfp-img-mobile',
+          gallery: {
+            enabled: true,
+            navigateByImgClick: true,
+            preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+          }
+        });
+      });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script>
+		var options = {
+		  chart: {
+			type: 'line',
+    		height: '300px'
+		  },
+		  colors: ['#5FEE3C','#F5D152', '#F5526F'],
+		  series: [
+			{
+				name: 'Подешевел',
+				data: [10,20,35,40,39,50,60,81,115],
+		  	},
+			{
+				name: 'Обычная цена',
+				data: [30,40,45,50,49,60,70,91,125],
+		  	},
+			{
+				name: 'Подорожал',
+				data: [40,70,55,90,69,70,90,121,125],
+		  	}
+		  ],
+		  markers: {
+			  size: 1
+		  },
+        legend: {
+          position: 'top',
+          horizontalAlign: 'left',
+          floating: true,
+          offsetY: -5,
+          offsetX: -20
+        },
+		  xaxis: {
+			  categories: ['Май', 'Июн', 'Июл', 'Авг', 'Сен', 'Окт'],
+			  title: {
+			  }
+		  },
+		  yaxis: {
+			  categories: ['min','med', 'max'],
+			  title: {
+			  },
+			  min: 0,
+			  max: 150
+		  }
+		}
+
+		var chart = new ApexCharts(document.querySelector("#myChart"), options);
+
+		chart.render();
+	</script>
+</body>
+</html>

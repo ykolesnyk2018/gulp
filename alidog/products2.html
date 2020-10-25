@@ -1,0 +1,1351 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">        
+    <meta name="author" content="CHANGE-ME">
+    <meta name="description" content="CHANGE-ME">
+    <!-- Mobile Stuff -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="msapplication-tap-highlight" content="no">
+    <!-- Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes"> 
+    <meta name="application-name" content="CHANGE-ME"> 
+    <!-- Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="CHANGE-ME"> 
+    
+    <link rel="shortcut icon" href="favicon.ico">
+    <title>Name of project</title>
+    <link href='css/style.css' rel='stylesheet' type='text/css'>    
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div class="toggle main-menu-btn" data-target="mobil-menu">
+				<span></span>
+				<span></span>
+			</div>
+			<div class="logo">
+				<a href="index.html">
+					<img src="images/logo.png" alt="">
+				</a>
+			</div>
+			<nav class="main-menu">
+				<ul>
+					<li>
+						<a href="#">
+							<span>Категории</span>							
+							<svg width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M1 1L5 5L9 1" stroke-width="2"/>
+							</svg>
+						</a>
+						<div>
+							<ul>
+								<li><a href="#">Телефоны / Аксессуары</a></li>
+								<li><a href="#">Компьютеры</a></li>
+								<li><a href="#">Оргтехника</a></li>
+								<li><a href="#">Электроника</a></li>
+								<li><a href="#">Бытовая техника</a></li>
+								<li><a href="#">Красота</a></li>
+							</ul>
+							<ul>
+								<li><a href="#">Одежда для женщин</a></li>
+								<li><a href="#">Одежда для мужчин</a></li>
+								<li><a href="#">Всё для детей</a></li>
+								<li><a href="#">Бижутерия</a></li>
+								<li><a href="#">Часы</a></li>
+								<li><a href="#">Спорт и развлечения</a></li>
+							</ul>
+							<ul>
+								<li><a href="#">Сумки</a></li>
+								<li><a href="#">Обувь</a></li>
+								<li><a href="#">Дом</a></li>
+								<li><a href="#">Зоотовары</a></li>
+								<li><a href="#">Автотовары</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="active"><a href="#">Товары</a></li>
+					<li class="burn"><a href="#">Горящие товары %</a></li>
+				</ul>
+			</nav>
+			<div class="currency-lan">
+				<div class="toggle" data-target="currency-lan">
+					<div class="currency-lan-img">
+						<img src="images/icons/ru.svg" alt="">
+					</div>
+					<div class="currency-lan-middle">
+						USD
+					</div>
+					<div class="currency-lan-arrow">
+						<svg width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M1 1L5 5L9 1" stroke-width="2"/>
+						</svg>
+					</div>
+				</div>
+				<div class="currency-lan-block" id="currency-lan">
+					<div class="currency-lan-block-top">
+						<div class="currency-lan-block-title">Язык</div>
+						<ul>
+							<li class="active">
+								<a href="#">
+									<img src="images/icons/ru.svg" alt="">
+									<span>Русский</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="images/icons/gb.svg" alt="">
+									<span>English</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="images/icons/by.svg" alt="">
+									<span>Беларускі</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="currency-lan-block-bottom">
+						<div class="currency-lan-block-title">Выбор валюты</div>
+						<ul>
+							<li>
+								<a href="#">
+									<img src="images/icons/ru.svg" alt="">
+									<span>RUB</span>
+								</a>
+							</li>
+							<li class="active">
+								<a href="#">
+									<img src="images/icons/gb.svg" alt="">
+									<span>USD</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="images/icons/by.svg" alt="">
+									<span>EUR</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<button>Применить</button>
+				</div>
+			</div>
+			<div class="toggle search-btn" data-target="search-form">
+				<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M19.7291 18.2696L15.9966 14.5757C18.8293 11.0483 18.5627 5.85691 15.33 2.62895C13.6304 0.93178 11.3975 0 8.99806 0C6.59858 0 4.3324 0.93178 2.63277 2.62895C0.933132 4.32612 0 6.55574 0 8.98503C0 11.4143 0.933132 13.6439 2.63277 15.3411C4.3324 17.005 6.56525 17.9701 8.99806 17.9701C11.031 17.9701 13.0305 17.2712 14.5969 16.0067L18.2961 19.7005C18.496 19.9002 18.7293 20 18.9959 20C19.2625 20 19.5291 19.9002 19.6958 19.7005C20.0957 19.3012 20.0957 18.6689 19.7291 18.2696ZM15.9966 8.98503C15.9966 10.8486 15.2634 12.6123 13.9303 13.9102C12.5973 15.208 10.8643 15.9734 8.99806 15.9734C7.1318 15.9734 5.36551 15.2413 4.06579 13.9102C2.76607 12.579 1.99957 10.8486 1.99957 8.98503C1.99957 7.12146 2.73275 5.35774 4.06579 4.0599C5.39884 2.76206 7.09847 1.99667 8.99806 1.99667C10.8643 1.99667 12.6306 2.72879 13.9303 4.0599C15.2301 5.39102 15.9966 7.08819 15.9966 8.98503Z" fill="#1B0033"/>
+				</svg>
+				<span>Отмена</span>
+			</div>
+		</div>
+	</header>
+	<div class="mobil-menu" id="mobil-menu">
+		<div class="container">
+			<div class="mobil-menu-block">
+				<div class="mobil-menu-title">Навигация</div>
+				<ul>
+					<li><a href="#">Товары</a></li>
+					<li><a href="#">Горящие товары</a></li>
+					<li>
+						<a href="#" class="toggle">
+							<span>Категории</span>
+							<svg width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M1 6L5 2L9 6" stroke-width="2"/>
+							</svg>
+						</a>
+						<ul>
+							<li><a href="#">Все</a></li>
+							<li><a href="#">Телефоны и Аксессуары</a></li>
+							<li><a href="#">Компьютеры</a></li>
+							<li><a href="#">Оргтехника</a></li>
+							<li><a href="#">Электроника</a></li>
+							<li><a href="#">Бытовая техника</a></li>
+							<li><a href="#">Красота</a></li>
+							<li><a href="#">Одежда для мужчин</a></li>
+							<li><a href="#">Одежда для женщин</a></li>
+							<li><a href="#">Всё для детей</a></li>
+							<li><a href="#">Бижутерия</a></li>
+							<li><a href="#">Часы</a></li>
+							<li><a href="#">Спорт и развлечения</a></li>
+							<li><a href="#">Сумки</a></li>
+							<li><a href="#">Обувь</a></li>
+							<li><a href="#">Дом</a></li>
+							<li><a href="#">Зоотовары</a></li>
+							<li><a href="#">Автотовары</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div class="mobil-menu-block">
+				<div class="mobil-menu-title">Язык</div>
+				<div class="mobil-menu-a">
+					<a href="#" class="active">
+						<img src="images/icons/ru.svg" alt="">
+						<span>Русский</span>
+					</a>
+					<a href="#">
+						<img src="images/icons/gb.svg" alt="">
+						<span>English</span>
+					</a>
+				</div>
+			</div>
+			<div class="mobil-menu-block">
+				<div class="mobil-menu-title">Выбор валюты</div>
+				<div class="mobil-menu-a">
+					<a href="#">RUB</a>
+					<a href="#" class="active">USD</a>
+					<a href="#">EUR</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="content container">
+		<div class="breadcrumbs">
+			<a href="#">Товары</a> 
+			<span>/</span> 
+			<a href="#">Графические планшеты</a>
+			<span>/</span>
+			<a href="#">ПК оборудование</a>
+		</div>
+		<div class="search-form" id="search-form">
+			<form>
+				<input type="text" placeholder="Введи название товара, чтобы найти его" id="tags">
+				<div class="close-autocomplete"></div>
+				<button>
+					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M23.6749 21.9235L19.1959 17.4909C22.5951 13.2579 22.2752 7.02829 18.396 3.15474C16.3565 1.11814 13.6771 0 10.7977 0C7.9183 0 5.19888 1.11814 3.15932 3.15474C1.11976 5.19135 0 7.86689 0 10.782C0 13.6972 1.11976 16.3727 3.15932 18.4093C5.19888 20.406 7.87831 21.5641 10.7977 21.5641C13.2372 21.5641 15.6366 20.7255 17.5162 19.208L21.9553 23.6406C22.1952 23.8802 22.4752 24 22.7951 24C23.115 24 23.435 23.8802 23.6349 23.6406C24.1148 23.1614 24.1148 22.4027 23.6749 21.9235ZM19.1959 10.782C19.1959 13.0183 18.3161 15.1348 16.7164 16.6922C15.1167 18.2496 13.0372 19.1681 10.7977 19.1681C8.55816 19.1681 6.43862 18.2895 4.87895 16.6922C3.31929 15.0948 2.39948 13.0183 2.39948 10.782C2.39948 8.54576 3.27929 6.42929 4.87895 4.87188C6.47861 3.31448 8.51817 2.39601 10.7977 2.39601C13.0372 2.39601 15.1567 3.27454 16.7164 4.87188C18.2761 6.46922 19.1959 8.50582 19.1959 10.782Z"/>
+					</svg>
+				</button>
+			</form>
+		</div>
+		<div class="search-products">
+			<div class="search-products-top big">
+				<h1>Горящие товары</h1>
+				<div class="toggle filter-btn" data-target="filter"></div>
+			</div>
+			<div class="left-bar" id="filter">
+				<div class="toggle filter-btn2 for-mobil" data-target="filter"></div>
+				<div class="filter-bg">
+					<div class="filter">
+						<div class="filter-small-title">Цена</div>
+						<div class="filter-slider">
+							<div id="slider-range"></div>
+							<div class="sl-slider">
+								<div>
+									<label for="amount">От</label>
+									<input id="amount" type="text"/>
+								</div>
+								<div>
+									<label for="amount_1">До</label>
+									<input id="amount_1" type="text"/>
+								</div>
+							</div>
+						</div>
+						<div class="filter-small-title">Рейтинг</div>
+						<div class="filter-rating">
+							<a href="#"></a>
+							<a href="#"></a>
+							<a href="#"></a>
+							<a href="#"></a>
+							<a href="#"></a>
+						</div>
+					</div>
+				</div>
+				<div class="filter-bg">
+					<div class="filter">
+						<div class="toggle filter-title active">
+							Категории
+							<svg width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M1 1L5 5L9 1" stroke-width="2"/>
+							</svg>
+						</div>
+						<div class="filter-block">
+							<div class="checkbox">
+								<input type="checkbox" id="c1">
+								<label for="c1">Телефоны и Аксессуары</label>
+							</div>
+							<div class="checkbox">
+								<input type="checkbox" id="c2">
+								<label for="c2">Компьютеры</label>
+							</div>
+							<div class="checkbox">
+								<input type="checkbox" id="c3">
+								<label for="c3">Оргтехника</label>
+							</div>
+							<div class="checkbox">
+								<input type="checkbox" id="c4">
+								<label for="c4">Электроника</label>
+							</div>
+							<div class="checkbox">
+								<input type="checkbox" id="c5">
+								<label for="c5">Бытовая техника</label>
+							</div>
+							<div class="checkbox">
+								<input type="checkbox" id="c6">
+								<label for="c6">Всё для детей</label>
+							</div>
+							<div class="checkbox">
+								<input type="checkbox" id="c7">
+								<label for="c7">Одежда для мужчин</label>
+							</div>
+							<div class="checkbox">
+								<input type="checkbox" id="c8">
+								<label for="c8">Одежда для женщин</label>
+							</div>
+							<div class="checkbox">
+								<input type="checkbox" id="c9">
+								<label for="c9">Часы</label>
+							</div>
+							<div class="checkbox">
+								<input type="checkbox" id="c10">
+								<label for="c10">Сумки</label>
+							</div>
+							<div class="checkbox">
+								<input type="checkbox" id="c11">
+								<label for="c11">Обувь</label>
+							</div>
+							<div class="checkbox">
+								<input type="checkbox" id="c12">
+								<label for="c12">Дом</label>
+							</div>
+							<div class="checkbox">
+								<input type="checkbox" id="c13">
+								<label for="c13">Бижутерия</label>
+							</div>
+							<div class="checkbox">
+								<input type="checkbox" id="c14">
+								<label for="c14">Красота</label>
+							</div>
+							<div class="checkbox">
+								<input type="checkbox" id="c15">
+								<label for="c15">Спорт и развлечения</label>
+							</div>
+							<div class="checkbox">
+								<input type="checkbox" id="c16">
+								<label for="c16">Автотовары</label>
+							</div>
+							<div class="checkbox">
+								<input type="checkbox" id="c17">
+								<label for="c17">Зоотовары</label>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="filter-bg">
+					<div class="filter">
+						<div class="toggle filter-title">
+							Характеристики
+							<svg width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M1 1L5 5L9 1" stroke-width="2"/>
+							</svg>
+						</div>
+						<div class="filter-block">
+							<div class="filter">
+								<div class="toggle filter-title">
+									Бренд
+									<svg width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1 1L5 5L9 1" stroke-width="2"/>
+									</svg>
+								</div>
+								<div class="filter-block">
+									<p>2</p>
+								</div>
+							</div>
+							<div class="filter">
+								<div class="toggle filter-title">
+									Габаритыне размеры
+									<svg width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1 1L5 5L9 1" stroke-width="2"/>
+									</svg>
+								</div>
+								<div class="filter-block">
+									<p>3</p>
+								</div>
+							</div>
+							<div class="filter">
+								<div class="toggle filter-title">
+									Тип
+									<svg width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1 1L5 5L9 1" stroke-width="2"/>
+									</svg>
+								</div>
+								<div class="filter-block">
+									<p>4</p>
+								</div>
+							</div>
+							<div class="filter">
+								<div class="toggle filter-title">
+									Предназначение
+									<svg width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1 1L5 5L9 1" stroke-width="2"/>
+									</svg>
+								</div>
+								<div class="filter-block">
+									<p>5</p>
+								</div>
+							</div>
+							<div class="filter">
+								<div class="toggle filter-title">
+									Тип рисунка
+									<svg width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1 1L5 5L9 1" stroke-width="2"/>
+									</svg>
+								</div>
+								<div class="filter-block">
+									<div class="checkbox">
+										<input type="checkbox" id="c21">
+										<label for="c21">Пейзаж</label>
+									</div>
+									<div class="checkbox">
+										<input type="checkbox" id="c22">
+										<label for="c22">Экспозиция</label>
+									</div>
+									<div class="checkbox">
+										<input type="checkbox" id="c23">
+										<label for="c23">Портрет</label>
+									</div>
+									<div class="checkbox">
+										<input type="checkbox" id="c24">
+										<label for="c24">Комбинация множества изображений</label>
+									</div>
+								</div>
+							</div>
+							<div class="filter">
+								<div class="toggle filter-title">
+									Способ укладки холста
+									<svg width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1 1L5 5L9 1" stroke-width="2"/>
+									</svg>
+								</div>
+								<div class="filter-block">
+									<p>8</p>
+								</div>
+							</div>
+							<div class="filter">
+								<div class="toggle filter-title">
+									Рама
+									<svg width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1 1L5 5L9 1" stroke-width="2"/>
+									</svg>
+								</div>
+								<div class="filter-block">
+									<p>9</p>
+								</div>
+							</div>
+							<div class="filter">
+								<div class="toggle filter-title">
+									Внешняя упаковка
+									<svg width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1 1L5 5L9 1" stroke-width="2"/>
+									</svg>
+								</div>
+								<div class="filter-block">
+									<p>10</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="filter-btns">
+					<a href="#" class="btn">Применить</a>
+					<a href="#" class="btn-default">Сбросить</a>
+				</div>
+			</div>
+			<div class="right-bar">
+				<div class="selection">
+					<a href="#">Все</a>
+					<a href="#" class="active">По размеру скидки</a>
+					<a href="#">По количеству заказов</a>
+					<a href="#">По рейтингу</a>
+					<a href="#">По цене</a>
+				</div>
+				<div class="products">
+					<div class="product">
+						<div class="product-img">
+							<a href="#">
+							</a>
+						</div>
+						<div class="product-description">
+							<div class="product-price">
+								15.67 $
+							</div>
+							<div class="product-text">Blackview BV9900E Helio P90 прочный смартфон 6 ГБ + 128 Гб IP68 …</div>
+							<div class="product-bottom">
+								<div class="product-assesment">
+									<span>4.3</span>
+									<img src="images/icons/star.svg" alt="">
+								</div>
+								<div class="product-comments">
+									<img src="images/icons/comment.svg" alt="">
+									<span>12984</span>
+								</div>
+								<div class="product-purchases">
+									<img src="images/icons/cart.svg" alt="">
+									<span>3500</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="product">
+						<div class="product-img">
+							<a href="#">
+							</a>
+						</div>
+						<div class="product-description">
+							<div class="product-price">
+								<span class="discount">
+									<span>40 $</span>
+									<b>87%</b>
+								</span>
+								15.23 $
+							</div>
+							<div class="product-text">Blackview BV9900E Helio P90 прочный смартфон 6 ГБ + 128 Гб IP68 …</div>
+							<div class="product-bottom">
+								<div class="product-assesment">
+									<span>4.3</span>
+									<img src="images/icons/star.svg" alt="">
+								</div>
+								<div class="product-comments">
+									<img src="images/icons/comment.svg" alt="">
+									<span>12984</span>
+								</div>
+								<div class="product-purchases">
+									<img src="images/icons/cart.svg" alt="">
+									<span>3500</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="product">
+						<div class="product-img">
+							<a href="#">
+							</a>
+						</div>
+						<div class="product-description">
+							<div class="product-price">
+								15.67 $
+							</div>
+							<div class="product-text">Blackview BV9900E Helio P90 прочный смартфон 6 ГБ + 128 Гб IP68 …</div>
+							<div class="product-bottom">
+								<div class="product-assesment">
+									<span>4.3</span>
+									<img src="images/icons/star.svg" alt="">
+								</div>
+								<div class="product-comments">
+									<img src="images/icons/comment.svg" alt="">
+									<span>12984</span>
+								</div>
+								<div class="product-purchases">
+									<img src="images/icons/cart.svg" alt="">
+									<span>3500</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="product">
+						<div class="product-img">
+							<a href="#">
+							</a>
+						</div>
+						<div class="product-description">
+							<div class="product-price">
+								<span class="discount">
+									<span>40 $</span>
+									<b>87%</b>
+								</span>
+								15.23 $
+							</div>
+							<div class="product-text">Blackview BV9900E Helio P90 прочный смартфон 6 ГБ + 128 Гб IP68 …</div>
+							<div class="product-bottom">
+								<div class="product-assesment">
+									<span>4.3</span>
+									<img src="images/icons/star.svg" alt="">
+								</div>
+								<div class="product-comments">
+									<img src="images/icons/comment.svg" alt="">
+									<span>12984</span>
+								</div>
+								<div class="product-purchases">
+									<img src="images/icons/cart.svg" alt="">
+									<span>3500</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="product">
+						<div class="product-img">
+							<a href="#">
+							</a>
+						</div>
+						<div class="product-description">
+							<div class="product-price">
+								15.67 $
+							</div>
+							<div class="product-text">Blackview BV9900E Helio P90 прочный смартфон 6 ГБ + 128 Гб IP68 …</div>
+							<div class="product-bottom">
+								<div class="product-assesment">
+									<span>4.3</span>
+									<img src="images/icons/star.svg" alt="">
+								</div>
+								<div class="product-comments">
+									<img src="images/icons/comment.svg" alt="">
+									<span>12984</span>
+								</div>
+								<div class="product-purchases">
+									<img src="images/icons/cart.svg" alt="">
+									<span>3500</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="product">
+						<div class="product-img">
+							<a href="#">
+							</a>
+						</div>
+						<div class="product-description">
+							<div class="product-price">
+								15.67 $
+							</div>
+							<div class="product-text">Blackview BV9900E Helio P90 прочный смартфон 6 ГБ + 128 Гб IP68 …</div>
+							<div class="product-bottom">
+								<div class="product-assesment">
+									<span>4.3</span>
+									<img src="images/icons/star.svg" alt="">
+								</div>
+								<div class="product-comments">
+									<img src="images/icons/comment.svg" alt="">
+									<span>12984</span>
+								</div>
+								<div class="product-purchases">
+									<img src="images/icons/cart.svg" alt="">
+									<span>3500</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="product">
+						<div class="product-img">
+							<a href="#">
+							</a>
+						</div>
+						<div class="product-description">
+							<div class="product-price">
+								15.67 $
+							</div>
+							<div class="product-text">Blackview BV9900E Helio P90 прочный смартфон 6 ГБ + 128 Гб IP68 …</div>
+							<div class="product-bottom">
+								<div class="product-assesment">
+									<span>4.3</span>
+									<img src="images/icons/star.svg" alt="">
+								</div>
+								<div class="product-comments">
+									<img src="images/icons/comment.svg" alt="">
+									<span>12984</span>
+								</div>
+								<div class="product-purchases">
+									<img src="images/icons/cart.svg" alt="">
+									<span>3500</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="product">
+						<div class="product-img">
+							<a href="#">
+							</a>
+						</div>
+						<div class="product-description">
+							<div class="product-price">
+								<span class="discount">
+									<span>40 $</span>
+									<b>87%</b>
+								</span>
+								15.23 $
+							</div>
+							<div class="product-text">Blackview BV9900E Helio P90 прочный смартфон 6 ГБ + 128 Гб IP68 …</div>
+							<div class="product-bottom">
+								<div class="product-assesment">
+									<span>4.3</span>
+									<img src="images/icons/star.svg" alt="">
+								</div>
+								<div class="product-comments">
+									<img src="images/icons/comment.svg" alt="">
+									<span>12984</span>
+								</div>
+								<div class="product-purchases">
+									<img src="images/icons/cart.svg" alt="">
+									<span>3500</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="product">
+						<div class="product-img">
+							<a href="#">
+							</a>
+						</div>
+						<div class="product-description">
+							<div class="product-price">
+								15.67 $
+							</div>
+							<div class="product-text">Blackview BV9900E Helio P90 прочный смартфон 6 ГБ + 128 Гб IP68 …</div>
+							<div class="product-bottom">
+								<div class="product-assesment">
+									<span>4.3</span>
+									<img src="images/icons/star.svg" alt="">
+								</div>
+								<div class="product-comments">
+									<img src="images/icons/comment.svg" alt="">
+									<span>12984</span>
+								</div>
+								<div class="product-purchases">
+									<img src="images/icons/cart.svg" alt="">
+									<span>3500</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="product">
+						<div class="product-img">
+							<a href="#">
+							</a>
+						</div>
+						<div class="product-description">
+							<div class="product-price">
+								<span class="discount">
+									<span>40 $</span>
+									<b>87%</b>
+								</span>
+								15.23 $
+							</div>
+							<div class="product-text">Blackview BV9900E Helio P90 прочный смартфон 6 ГБ + 128 Гб IP68 …</div>
+							<div class="product-bottom">
+								<div class="product-assesment">
+									<span>4.3</span>
+									<img src="images/icons/star.svg" alt="">
+								</div>
+								<div class="product-comments">
+									<img src="images/icons/comment.svg" alt="">
+									<span>12984</span>
+								</div>
+								<div class="product-purchases">
+									<img src="images/icons/cart.svg" alt="">
+									<span>3500</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="product">
+						<div class="product-img">
+							<a href="#">
+							</a>
+						</div>
+						<div class="product-description">
+							<div class="product-price">
+								15.67 $
+							</div>
+							<div class="product-text">Blackview BV9900E Helio P90 прочный смартфон 6 ГБ + 128 Гб IP68 …</div>
+							<div class="product-bottom">
+								<div class="product-assesment">
+									<span>4.3</span>
+									<img src="images/icons/star.svg" alt="">
+								</div>
+								<div class="product-comments">
+									<img src="images/icons/comment.svg" alt="">
+									<span>12984</span>
+								</div>
+								<div class="product-purchases">
+									<img src="images/icons/cart.svg" alt="">
+									<span>3500</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="product">
+						<div class="product-img">
+							<a href="#">
+							</a>
+						</div>
+						<div class="product-description">
+							<div class="product-price">
+								15.67 $
+							</div>
+							<div class="product-text">Blackview BV9900E Helio P90 прочный смартфон 6 ГБ + 128 Гб IP68 …</div>
+							<div class="product-bottom">
+								<div class="product-assesment">
+									<span>4.3</span>
+									<img src="images/icons/star.svg" alt="">
+								</div>
+								<div class="product-comments">
+									<img src="images/icons/comment.svg" alt="">
+									<span>12984</span>
+								</div>
+								<div class="product-purchases">
+									<img src="images/icons/cart.svg" alt="">
+									<span>3500</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="product">
+						<div class="product-img">
+							<a href="#">
+							</a>
+						</div>
+						<div class="product-description">
+							<div class="product-price">
+								15.67 $
+							</div>
+							<div class="product-text">Blackview BV9900E Helio P90 прочный смартфон 6 ГБ + 128 Гб IP68 …</div>
+							<div class="product-bottom">
+								<div class="product-assesment">
+									<span>4.3</span>
+									<img src="images/icons/star.svg" alt="">
+								</div>
+								<div class="product-comments">
+									<img src="images/icons/comment.svg" alt="">
+									<span>12984</span>
+								</div>
+								<div class="product-purchases">
+									<img src="images/icons/cart.svg" alt="">
+									<span>3500</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="product">
+						<div class="product-img">
+							<a href="#">
+							</a>
+						</div>
+						<div class="product-description">
+							<div class="product-price">
+								<span class="discount">
+									<span>40 $</span>
+									<b>87%</b>
+								</span>
+								15.23 $
+							</div>
+							<div class="product-text">Blackview BV9900E Helio P90 прочный смартфон 6 ГБ + 128 Гб IP68 …</div>
+							<div class="product-bottom">
+								<div class="product-assesment">
+									<span>4.3</span>
+									<img src="images/icons/star.svg" alt="">
+								</div>
+								<div class="product-comments">
+									<img src="images/icons/comment.svg" alt="">
+									<span>12984</span>
+								</div>
+								<div class="product-purchases">
+									<img src="images/icons/cart.svg" alt="">
+									<span>3500</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="product">
+						<div class="product-img">
+							<a href="#">
+							</a>
+						</div>
+						<div class="product-description">
+							<div class="product-price">
+								15.67 $
+							</div>
+							<div class="product-text">Blackview BV9900E Helio P90 прочный смартфон 6 ГБ + 128 Гб IP68 …</div>
+							<div class="product-bottom">
+								<div class="product-assesment">
+									<span>4.3</span>
+									<img src="images/icons/star.svg" alt="">
+								</div>
+								<div class="product-comments">
+									<img src="images/icons/comment.svg" alt="">
+									<span>12984</span>
+								</div>
+								<div class="product-purchases">
+									<img src="images/icons/cart.svg" alt="">
+									<span>3500</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="product">
+						<div class="product-img">
+							<a href="#">
+							</a>
+						</div>
+						<div class="product-description">
+							<div class="product-price">
+								<span class="discount">
+									<span>40 $</span>
+									<b>87%</b>
+								</span>
+								15.23 $
+							</div>
+							<div class="product-text">Blackview BV9900E Helio P90 прочный смартфон 6 ГБ + 128 Гб IP68 …</div>
+							<div class="product-bottom">
+								<div class="product-assesment">
+									<span>4.3</span>
+									<img src="images/icons/star.svg" alt="">
+								</div>
+								<div class="product-comments">
+									<img src="images/icons/comment.svg" alt="">
+									<span>12984</span>
+								</div>
+								<div class="product-purchases">
+									<img src="images/icons/cart.svg" alt="">
+									<span>3500</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="product">
+						<div class="product-img">
+							<a href="#">
+							</a>
+						</div>
+						<div class="product-description">
+							<div class="product-price">
+								15.67 $
+							</div>
+							<div class="product-text">Blackview BV9900E Helio P90 прочный смартфон 6 ГБ + 128 Гб IP68 …</div>
+							<div class="product-bottom">
+								<div class="product-assesment">
+									<span>4.3</span>
+									<img src="images/icons/star.svg" alt="">
+								</div>
+								<div class="product-comments">
+									<img src="images/icons/comment.svg" alt="">
+									<span>12984</span>
+								</div>
+								<div class="product-purchases">
+									<img src="images/icons/cart.svg" alt="">
+									<span>3500</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="product">
+						<div class="product-img">
+							<a href="#">
+							</a>
+						</div>
+						<div class="product-description">
+							<div class="product-price">
+								15.67 $
+							</div>
+							<div class="product-text">Blackview BV9900E Helio P90 прочный смартфон 6 ГБ + 128 Гб IP68 …</div>
+							<div class="product-bottom">
+								<div class="product-assesment">
+									<span>4.3</span>
+									<img src="images/icons/star.svg" alt="">
+								</div>
+								<div class="product-comments">
+									<img src="images/icons/comment.svg" alt="">
+									<span>12984</span>
+								</div>
+								<div class="product-purchases">
+									<img src="images/icons/cart.svg" alt="">
+									<span>3500</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="product">
+						<div class="product-img">
+							<a href="#">
+							</a>
+						</div>
+						<div class="product-description">
+							<div class="product-price">
+								15.67 $
+							</div>
+							<div class="product-text">Blackview BV9900E Helio P90 прочный смартфон 6 ГБ + 128 Гб IP68 …</div>
+							<div class="product-bottom">
+								<div class="product-assesment">
+									<span>4.3</span>
+									<img src="images/icons/star.svg" alt="">
+								</div>
+								<div class="product-comments">
+									<img src="images/icons/comment.svg" alt="">
+									<span>12984</span>
+								</div>
+								<div class="product-purchases">
+									<img src="images/icons/cart.svg" alt="">
+									<span>3500</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="product">
+						<div class="product-img">
+							<a href="#">
+							</a>
+						</div>
+						<div class="product-description">
+							<div class="product-price">
+								<span class="discount">
+									<span>40 $</span>
+									<b>87%</b>
+								</span>
+								15.23 $
+							</div>
+							<div class="product-text">Blackview BV9900E Helio P90 прочный смартфон 6 ГБ + 128 Гб IP68 …</div>
+							<div class="product-bottom">
+								<div class="product-assesment">
+									<span>4.3</span>
+									<img src="images/icons/star.svg" alt="">
+								</div>
+								<div class="product-comments">
+									<img src="images/icons/comment.svg" alt="">
+									<span>12984</span>
+								</div>
+								<div class="product-purchases">
+									<img src="images/icons/cart.svg" alt="">
+									<span>3500</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="product">
+						<div class="product-img">
+							<a href="#">
+							</a>
+						</div>
+						<div class="product-description">
+							<div class="product-price">
+								15.67 $
+							</div>
+							<div class="product-text">Blackview BV9900E Helio P90 прочный смартфон 6 ГБ + 128 Гб IP68 …</div>
+							<div class="product-bottom">
+								<div class="product-assesment">
+									<span>4.3</span>
+									<img src="images/icons/star.svg" alt="">
+								</div>
+								<div class="product-comments">
+									<img src="images/icons/comment.svg" alt="">
+									<span>12984</span>
+								</div>
+								<div class="product-purchases">
+									<img src="images/icons/cart.svg" alt="">
+									<span>3500</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="product">
+						<div class="product-img">
+							<a href="#">
+							</a>
+						</div>
+						<div class="product-description">
+							<div class="product-price">
+								<span class="discount">
+									<span>40 $</span>
+									<b>87%</b>
+								</span>
+								15.23 $
+							</div>
+							<div class="product-text">Blackview BV9900E Helio P90 прочный смартфон 6 ГБ + 128 Гб IP68 …</div>
+							<div class="product-bottom">
+								<div class="product-assesment">
+									<span>4.3</span>
+									<img src="images/icons/star.svg" alt="">
+								</div>
+								<div class="product-comments">
+									<img src="images/icons/comment.svg" alt="">
+									<span>12984</span>
+								</div>
+								<div class="product-purchases">
+									<img src="images/icons/cart.svg" alt="">
+									<span>3500</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="product">
+						<div class="product-img">
+							<a href="#">
+							</a>
+						</div>
+						<div class="product-description">
+							<div class="product-price">
+								15.67 $
+							</div>
+							<div class="product-text">Blackview BV9900E Helio P90 прочный смартфон 6 ГБ + 128 Гб IP68 …</div>
+							<div class="product-bottom">
+								<div class="product-assesment">
+									<span>4.3</span>
+									<img src="images/icons/star.svg" alt="">
+								</div>
+								<div class="product-comments">
+									<img src="images/icons/comment.svg" alt="">
+									<span>12984</span>
+								</div>
+								<div class="product-purchases">
+									<img src="images/icons/cart.svg" alt="">
+									<span>3500</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="product">
+						<div class="product-img">
+							<a href="#">
+							</a>
+						</div>
+						<div class="product-description">
+							<div class="product-price">
+								15.67 $
+							</div>
+							<div class="product-text">Blackview BV9900E Helio P90 прочный смартфон 6 ГБ + 128 Гб IP68 …</div>
+							<div class="product-bottom">
+								<div class="product-assesment">
+									<span>4.3</span>
+									<img src="images/icons/star.svg" alt="">
+								</div>
+								<div class="product-comments">
+									<img src="images/icons/comment.svg" alt="">
+									<span>12984</span>
+								</div>
+								<div class="product-purchases">
+									<img src="images/icons/cart.svg" alt="">
+									<span>3500</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="product">
+						<div class="product-img">
+							<a href="#">
+							</a>
+						</div>
+						<div class="product-description">
+							<div class="product-price">
+								15.67 $
+							</div>
+							<div class="product-text">Blackview BV9900E Helio P90 прочный смартфон 6 ГБ + 128 Гб IP68 …</div>
+							<div class="product-bottom">
+								<div class="product-assesment">
+									<span>4.3</span>
+									<img src="images/icons/star.svg" alt="">
+								</div>
+								<div class="product-comments">
+									<img src="images/icons/comment.svg" alt="">
+									<span>12984</span>
+								</div>
+								<div class="product-purchases">
+									<img src="images/icons/cart.svg" alt="">
+									<span>3500</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="product">
+						<div class="product-img">
+							<a href="#">
+							</a>
+						</div>
+						<div class="product-description">
+							<div class="product-price">
+								<span class="discount">
+									<span>40 $</span>
+									<b>87%</b>
+								</span>
+								15.23 $
+							</div>
+							<div class="product-text">Blackview BV9900E Helio P90 прочный смартфон 6 ГБ + 128 Гб IP68 …</div>
+							<div class="product-bottom">
+								<div class="product-assesment">
+									<span>4.3</span>
+									<img src="images/icons/star.svg" alt="">
+								</div>
+								<div class="product-comments">
+									<img src="images/icons/comment.svg" alt="">
+									<span>12984</span>
+								</div>
+								<div class="product-purchases">
+									<img src="images/icons/cart.svg" alt="">
+									<span>3500</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="product">
+						<div class="product-img">
+							<a href="#">
+							</a>
+						</div>
+						<div class="product-description">
+							<div class="product-price">
+								15.67 $
+							</div>
+							<div class="product-text">Blackview BV9900E Helio P90 прочный смартфон 6 ГБ + 128 Гб IP68 …</div>
+							<div class="product-bottom">
+								<div class="product-assesment">
+									<span>4.3</span>
+									<img src="images/icons/star.svg" alt="">
+								</div>
+								<div class="product-comments">
+									<img src="images/icons/comment.svg" alt="">
+									<span>12984</span>
+								</div>
+								<div class="product-purchases">
+									<img src="images/icons/cart.svg" alt="">
+									<span>3500</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="product">
+						<div class="product-img">
+							<a href="#">
+							</a>
+						</div>
+						<div class="product-description">
+							<div class="product-price">
+								<span class="discount">
+									<span>40 $</span>
+									<b>87%</b>
+								</span>
+								15.23 $
+							</div>
+							<div class="product-text">Blackview BV9900E Helio P90 прочный смартфон 6 ГБ + 128 Гб IP68 …</div>
+							<div class="product-bottom">
+								<div class="product-assesment">
+									<span>4.3</span>
+									<img src="images/icons/star.svg" alt="">
+								</div>
+								<div class="product-comments">
+									<img src="images/icons/comment.svg" alt="">
+									<span>12984</span>
+								</div>
+								<div class="product-purchases">
+									<img src="images/icons/cart.svg" alt="">
+									<span>3500</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="product">
+						<div class="product-img">
+							<a href="#">
+							</a>
+						</div>
+						<div class="product-description">
+							<div class="product-price">
+								15.67 $
+							</div>
+							<div class="product-text">Blackview BV9900E Helio P90 прочный смартфон 6 ГБ + 128 Гб IP68 …</div>
+							<div class="product-bottom">
+								<div class="product-assesment">
+									<span>4.3</span>
+									<img src="images/icons/star.svg" alt="">
+								</div>
+								<div class="product-comments">
+									<img src="images/icons/comment.svg" alt="">
+									<span>12984</span>
+								</div>
+								<div class="product-purchases">
+									<img src="images/icons/cart.svg" alt="">
+									<span>3500</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="product">
+						<div class="product-img">
+							<a href="#">
+							</a>
+						</div>
+						<div class="product-description">
+							<div class="product-price">
+								15.67 $
+							</div>
+							<div class="product-text">Blackview BV9900E Helio P90 прочный смартфон 6 ГБ + 128 Гб IP68 …</div>
+							<div class="product-bottom">
+								<div class="product-assesment">
+									<span>4.3</span>
+									<img src="images/icons/star.svg" alt="">
+								</div>
+								<div class="product-comments">
+									<img src="images/icons/comment.svg" alt="">
+									<span>12984</span>
+								</div>
+								<div class="product-purchases">
+									<img src="images/icons/cart.svg" alt="">
+									<span>3500</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<ul class="navigation">
+						<li class="prev">
+							<a href="#">
+								<svg width="13" height="20" viewBox="0 0 13 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M11 2L3 10L11 18" stroke-width="3"/>
+								</svg>
+							</a>
+						</li>
+						<li><a href="#">1</a></li>
+						<li class="active"><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+						<li><a href="#">4</a></li>
+						<li><a href="#">5</a></li>
+						<li><a href="#">…</a></li>
+						<li><a href="#">15</a></li>
+						<li class="next">
+							<a href="#">
+								<svg width="13" height="20" viewBox="0 0 13 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M2 2L10 10L2 18" stroke-width="3"/>
+								</svg>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<div class="container">
+			<div class="footer-left">
+				<div class="footer-logo">
+					<a href="index.html">
+						<img src="images/logo.png" alt="">
+					</a>
+				</div>
+				<p>
+					Адрес:	123317, г. Москва,<br> 
+					Пресненская набережная, <br>
+					д. 8, строение 1, эт. 3, пом. 1, к. 10
+				</p>
+				<a href="mailto:info@alidog.io">info@alidog.io</a>
+			</div>
+			<div class="footer-menu">
+				<ul>
+					<li><a href="#">Товары</a></li>
+					<li><a href="#">Политика конфидициальности</a></li>
+					<li><a href="#">Горящие товары</a></li>
+					<li><a href="#">Пользовательское соглашение</a></li>
+				</ul>
+			</div>
+			<div class="footer-right">
+				<a href="#" class="btn">Смотреть товары</a>
+			</div>
+			<div class="copyright">
+				<span>Все права защищены 2020. Дизайн сделан</span>
+				<a href="https://www.behance.net/ankdesign_" target="_blank">
+					<img src="images/copyright.svg" alt="">
+				</a>
+			</div>
+		</div>
+	</footer>
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>
