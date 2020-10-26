@@ -30,7 +30,7 @@
 			</div>
 			<div class="logo">
 				<a href="index.html">
-					<img src="images/logo.png" alt="">
+					<img src="images/logo.svg" alt="">
 				</a>
 			</div> 
 			<nav class="main-menu">
@@ -89,45 +89,36 @@
 				<div class="currency-lan-block" id="currency-lan">
 					<div class="currency-lan-block-top">
 						<div class="currency-lan-block-title">Язык</div>
-						<ul>
-							<li class="active">
-								<a href="#">
+						<ul class="currency-language">
+							<li class="active" data-target="images/icons/ru.svg">
+								<a>
 									<img src="images/icons/ru.svg" alt="">
 									<span>Русский</span>
 								</a>
 							</li>
-							<li>
-								<a href="#">
+							<li data-target="images/icons/gb.svg">
+								<a>
 									<img src="images/icons/gb.svg" alt="">
 									<span>English</span>
-								</a>
-							</li>
-							<li>
-								<a href="#">
-									<img src="images/icons/by.svg" alt="">
-									<span>Беларускі</span>
 								</a>
 							</li>
 						</ul>
 					</div>
 					<div class="currency-lan-block-bottom">
 						<div class="currency-lan-block-title">Выбор валюты</div>
-						<ul>
-							<li>
-								<a href="#">
-									<img src="images/icons/ru.svg" alt="">
+						<ul class="currency">
+							<li data-target="RUB">
+								<a>
 									<span>RUB</span>
 								</a>
 							</li>
-							<li class="active">
-								<a href="#">
-									<img src="images/icons/gb.svg" alt="">
+							<li class="active" data-target="USD">
+								<a>
 									<span>USD</span>
 								</a>
 							</li>
-							<li>
-								<a href="#">
-									<img src="images/icons/by.svg" alt="">
+							<li data-target="EUR">
+								<a>
 									<span>EUR</span>
 								</a>
 							</li>
@@ -482,7 +473,7 @@
 				<div class="prices-title">Цены на этот товар у других продавцов</div>
 				<div class="prices-btn">
 					<a class="toggle" data-target="show-hide">
-						<b>Показать</b> все 
+						<b>Показать </b> все 
 						<span>(8)</span> 
 						<svg width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path d="M1 1L5 5L9 1" stroke-width="2"/>
@@ -1225,7 +1216,7 @@
 					</div>
 				</div>
 				<div class="text-center">
-					<a class="toggle btn" data-target="show-products">Смотреть больше</a> 
+					<a class="toggle btn shadowHover" data-target="show-products">Смотреть больше</a> 
 				</div>
 			</div>
 		</div>
@@ -1254,7 +1245,7 @@
 				</ul>
 			</div>
 			<div class="footer-right">
-				<a href="#" class="btn">Смотреть товары</a>
+				<a href="#" class="btn shadowHover">Смотреть товары</a>
 			</div>
 			<div class="copyright">
 				<span>Все права защищены 2020. Дизайн сделан</span>
@@ -1279,7 +1270,7 @@
 				<p>Пришлём вам уведомление, когда цена снизится.<br> Чтобы отменить уведомления, нажмите кнопку ещё раз</p>
 				<form>
 					<label>Введите ваш Email</label>
-					<input type="text" placeholder="dezigner.ni.kotov@gmail.com">
+					<input type="text" placeholder="dezigner.ni.kotov@gmail.com" required>
 					<button class="btn shadowHover">Отслеживать цену</button>
 				</form>
 			</div>
@@ -1317,7 +1308,7 @@
       });
     </script>
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script src="js/Chart.js"></script>
     <script>
 		var options = {
 		  chart: {
@@ -1346,11 +1337,11 @@
           position: 'top',
           horizontalAlign: 'left',
           floating: true,
-          offsetY: -5,
+          offsetY: -250,
           offsetX: -20
         },
 		  xaxis: {
-			  categories: ['Май', 'Июн', 'Июл', 'Авг', 'Сен', 'Окт'],
+			  categories: ['Май', 'Июн', 'Июл', 'Авг', 'Сен', 'Окт', 'Ноя', 'Дек', 'Янв'],
 			  title: {
 			  }
 		  },

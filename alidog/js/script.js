@@ -1,4 +1,18 @@
 $(document).ready(function(){
+	/* currency-language */
+    $('.currency-language li').click(function() {
+		var currency_language = $(this).attr("data-target");
+		$('.currency-language li').removeClass("active");
+		$(this).addClass("active");
+		$('.currency-lan-img img').attr("src", currency_language);
+	}); 
+    $('.currency li').click(function() {
+		var currency = $(this).attr("data-target");
+		$('.currency li').removeClass("active");
+		$(this).addClass("active");
+		$('.currency-lan-middle').text(currency);
+	}); 
+	/* currency-language */
 	$(function() {
 		$('select').styler();
   	});
@@ -127,12 +141,6 @@ $(document).ready(function(){
             $('header').toggleClass("main-menu-fix");
         }); 
     });
-    $(function() {
-        $(".filter-rating a").click(function(){
-			$(".filter-rating a").removeClass('active');
-            $(this).addClass("active");
-        }); 
-    });
 	$( "#slider-range" ).slider({
 	      // orientation: "vertical",
 	      // step: 15,
@@ -228,4 +236,130 @@ $(document).ready(function(){
 		$('.slider-for').addClass("active");
 		$('.slider-for2').removeClass("active");
 	}); 
+	$(document).mouseup(function (e){ // событие клика по веб-документу
+		var div = $(".currency-lan-block"); // тут указываем ID элемента
+		if (!div.is(e.target) // если клик был не по нашему блоку
+		    && div.has(e.target).length === 0) { // и не по его дочерним элементам
+			$('.currency-lan>.toggle').removeClass("active");
+			$('.currency-lan-block').removeClass("active");
+		}
+	}); 
+    $('.currency-lan-block button').click(function() {
+		$('.currency-lan>.toggle').removeClass("active");
+		$('.currency-lan-block').removeClass("active");
+	}); 
+	
+	
+	
+	
+	
+	
+    $(function() {
+		$('.slick-next').hover(function() {
+			$('.slick-prev').addClass("no-hover");
+		}); 
+		$(document).mouseout(function (e){ // событие клика по веб-документу
+			var slick_next = $(".slick-next"); // тут указываем ID элемента
+			if (!slick_next.is(e.target) // если клик был не по нашему блоку
+				&& slick_next.has(e.target).length === 0) { // и не по его дочерним элементам
+			$('.slick-prev').removeClass("no-hover");
+			}
+		}); 
+		$('.slick-prev').hover(function() {
+			$('.slick-next').addClass("no-hover");
+		}); 
+		$(document).mouseout(function (e){ // событие клика по веб-документу
+			var slick_prev = $(".slick-prev"); // тут указываем ID элемента
+			if (!slick_prev.is(e.target) // если клик был не по нашему блоку
+				&& slick_prev.has(e.target).length === 0) { // и не по его дочерним элементам
+			$('.slick-next').removeClass("no-hover");
+			}
+		}); 
+    });
+    $(function() {
+		$('.navigation li.next').hover(function() {
+			$('.navigation li.prev').addClass("no-hover");
+		}); 
+		$(document).mouseout(function (e){ // событие клика по веб-документу
+			var slick_next = $(".navigation li.next"); // тут указываем ID элемента
+			if (!slick_next.is(e.target) // если клик был не по нашему блоку
+				&& slick_next.has(e.target).length === 0) { // и не по его дочерним элементам
+			$('.navigation li.prev').removeClass("no-hover");
+			}
+		}); 
+		$('.navigation li.prev').hover(function() {
+			$('.navigation li.next').addClass("no-hover");
+		}); 
+		$(document).mouseout(function (e){ // событие клика по веб-документу
+			var slick_prev = $(".navigation li.prev"); // тут указываем ID элемента
+			if (!slick_prev.is(e.target) // если клик был не по нашему блоку
+				&& slick_prev.has(e.target).length === 0) { // и не по его дочерним элементам
+			$('.navigation li.next').removeClass("no-hover");
+			}
+		}); 
+    });
+    $(function() {
+		$('.filter-rating a').hover(function() {
+			$('.filter-rating').removeClass("one");
+			$('.filter-rating').removeClass("two");
+			$('.filter-rating').removeClass("three");
+			$('.filter-rating').removeClass("four");
+			$('.filter-rating').removeClass("five");
+		}); 
+		$('.filter-rating a:nth-child(1)').hover(function() {
+			$('.filter-rating').addClass("one");
+		}); 
+		$('.filter-rating a:nth-child(2)').hover(function() {
+			$('.filter-rating').addClass("two");
+		}); 
+		$('.filter-rating a:nth-child(3)').hover(function() {
+			$('.filter-rating').addClass("three");
+		}); 
+		$('.filter-rating a:nth-child(4)').hover(function() {
+			$('.filter-rating').addClass("four");
+		}); 
+		$('.filter-rating a:nth-child(5)').hover(function() {
+			$('.filter-rating').addClass("five");
+		}); 
+		
+		$(document).mouseout(function (e){ // событие клика по веб-документу
+			var filterHover = $(".filter-rating"); // тут указываем ID элемента
+			if (!filterHover.is(e.target) // если клик был не по нашему блоку
+				&& filterHover.has(e.target).length === 0) { // и не по его дочерним элементам
+				$('.filter-rating').removeClass("one");
+				$('.filter-rating').removeClass("two");
+				$('.filter-rating').removeClass("three");
+				$('.filter-rating').removeClass("four");
+				$('.filter-rating').removeClass("five");
+			}
+		}); 
+		$('.filter-rating a').click(function() {
+			$('.filter-rating a').removeClass("active");
+		}); 
+		$('.filter-rating a:nth-child(1)').click(function() {
+			$(this).addClass("active");
+		}); 
+		$('.filter-rating a:nth-child(2)').click(function() {
+			$('.filter-rating a:nth-child(1)').addClass("active");
+			$(this).addClass("active");
+		}); 
+		$('.filter-rating a:nth-child(3)').click(function() {
+			$('.filter-rating a:nth-child(1)').addClass("active");
+			$('.filter-rating a:nth-child(2)').addClass("active");
+			$(this).addClass("active");
+		}); 
+		$('.filter-rating a:nth-child(4)').click(function() {
+			$('.filter-rating a:nth-child(1)').addClass("active");
+			$('.filter-rating a:nth-child(2)').addClass("active");
+			$('.filter-rating a:nth-child(3)').addClass("active");
+			$(this).addClass("active");
+		}); 
+		$('.filter-rating a:nth-child(5)').click(function() {
+			$('.filter-rating a:nth-child(1)').addClass("active");
+			$('.filter-rating a:nth-child(2)').addClass("active");
+			$('.filter-rating a:nth-child(3)').addClass("active");
+			$('.filter-rating a:nth-child(4)').addClass("active");
+			$(this).addClass("active");
+		}); 
+    });
 });
