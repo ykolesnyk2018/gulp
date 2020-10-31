@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">        
+    <meta name="author" content="CHANGE-ME">
+    <meta name="description" content="CHANGE-ME">
+    <!-- Mobile Stuff -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="msapplication-tap-highlight" content="no">
+    <!-- Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes"> 
+    <meta name="application-name" content="CHANGE-ME"> 
+    <!-- Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="CHANGE-ME"> 
+    
+    <link rel="shortcut icon" href="favicon.ico">
+    <title>Name of project</title>
+    <link href='css/style.css' rel='stylesheet' type='text/css'>    
+</head>
+<body>
+	<div class="wrraper">
+		<header>
+			<div class="container">
+				<div class="logo">
+					<a href="#header">
+						<img src="images/logo.png" alt="">
+					</a>
+				</div>
+				<nav class="main-menu" id="main-menu">
+					<ul>
+						<li><a href="#flats">Квартиры</a></li>
+						<li><a href="#gallery">Галерея</a></li>
+						<li><a href="#about">О коплексе</a></li>
+						<li><a href="#map">Расположение на карте</a></li>
+					</ul>
+				</nav>
+				<div class="phone">
+					<a href="tel:+7(495)008-12-21">+7 (495) 008-12-21</a>
+				</div>
+				<div class="main-menu-btn toggle" data-target="main-menu">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</div>
+		</header>
+		<div class="main-banner">
+			<div class="container">
+				<div>
+					<h1 class="main-title">ЖК CAMEO MOSCOW VILLAS</h1>
+					<div class="main-sub-title">Понятие модернизации фактически интегрирует гуманизм. Политическое лидерство,<br> как бы это ни казалось парадоксальным</div>
+					<div class="main-btn">
+						<a href="#" class="btn">Оставить заявку</a>
+					</div>
+				</div>
+			</div>
+			<a href="#" class="mouse"></a>
+		</div>
+		<div class="container" id="flats">
+			<h2 class="choose-title">
+				Выбор квартир<br> 
+				в ЖК CAMEO MOSCOW VILLAS
+			</h2>
+			<div class="filter">
+				<div class="filter-top">
+					<div class="filter-top-left">Подберите по параметрам</div>
+					<div class="filter-top-right">
+						<a href="#">Очистить фильтр</a>
+					</div>
+				</div>
+				<div class="filter-content">
+					<form>
+						<div class="small">
+							<label>Площадь, м2</label>
+							<input type="text" value="25">
+							<span>-</span>
+							<input type="text" value="50">
+						</div>
+						<div class="medium">
+							<label>Стоимость, руб</label>
+							<input type="text" value="30 000 000">
+							<span>-</span>
+							<input type="text" value="60 000 000">
+						</div>
+						<div>
+							<label>Кол-во комнат</label>
+							<select>
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+							</select>
+						</div>
+						<div>
+							<label>Этаж</label>
+							<select>
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+							</select>
+						</div>
+						<div>
+							<button>Найти</button>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="table">
+				<div class="tr">
+					<div class="th">ID</div>
+					<div class="th">Квартира</div>
+					<div class="th">Комнат</div>
+					<div class="th">Корпус</div>
+					<div class="th">Этаж</div>
+					<div class="th">Площадь</div>
+					<div class="th">Цена</div>
+				</div>
+				<div class="tr">
+					<div class="td" data-label="ID">ID</div>
+					<div class="td" data-label="Квартира">№93</div>
+					<div class="td" data-label="Комнат">3</div>
+					<div class="td" data-label="Корпус">3</div>
+					<div class="td" data-label="Этаж">9</div>
+					<div class="td" data-label="Площадь">52 м<sup>2</sup></div>
+					<div class="td" data-label="Цена">По запросу</div>
+					<img src="images/table-img.png" alt="">
+				</div>
+				<div class="tr">
+					<div class="td" data-label="ID">ID</div>
+					<div class="td" data-label="Квартира">№93</div>
+					<div class="td" data-label="Комнат">3</div>
+					<div class="td" data-label="Корпус">3</div>
+					<div class="td" data-label="Этаж">9</div>
+					<div class="td" data-label="Площадь">52 м<sup>2</sup></div>
+					<div class="td" data-label="Цена">По запросу</div>
+					<img src="images/table-img.png" alt="">
+				</div>
+				<div class="tr">
+					<div class="td" data-label="ID">ID</div>
+					<div class="td" data-label="Квартира">№93</div>
+					<div class="td" data-label="Комнат">3</div>
+					<div class="td" data-label="Корпус">3</div>
+					<div class="td" data-label="Этаж">9</div>
+					<div class="td" data-label="Площадь">52 м<sup>2</sup></div>
+					<div class="td" data-label="Цена">По запросу</div>
+					<img src="images/table-img.png" alt="">
+				</div>
+				<div class="tr">
+					<div class="td" data-label="ID">ID</div>
+					<div class="td" data-label="Квартира">№93</div>
+					<div class="td" data-label="Комнат">3</div>
+					<div class="td" data-label="Корпус">3</div>
+					<div class="td" data-label="Этаж">9</div>
+					<div class="td" data-label="Площадь">52 м<sup>2</sup></div>
+					<div class="td" data-label="Цена">По запросу</div>
+					<img src="images/table-img.png" alt="">
+				</div>
+				<div class="tr">
+					<div class="td" data-label="ID">ID</div>
+					<div class="td" data-label="Квартира">№93</div>
+					<div class="td" data-label="Комнат">3</div>
+					<div class="td" data-label="Корпус">3</div>
+					<div class="td" data-label="Этаж">9</div>
+					<div class="td" data-label="Площадь">52 м<sup>2</sup></div>
+					<div class="td" data-label="Цена">По запросу</div>
+					<img src="images/table-img.png" alt="">
+				</div>
+			</div>
+			<div class="first_slider-block" id="gallery">
+				<h2 class="slider-title">ЖК CAMEO MOSCOW VILLAS</h2>
+			</div>
+		</div>
+		<div class="first_slider">
+			<div>
+				<img src="images/slider1.png" alt="">
+			</div>
+			<div>
+				<img src="images/slider1.png" alt="">
+			</div>
+			<div>
+				<img src="images/slider1.png" alt="">
+			</div>
+			<div>
+				<img src="images/slider1.png" alt="">
+			</div>
+			<div>
+				<img src="images/slider1.png" alt="">
+			</div>
+			<div>
+				<img src="images/slider1.png" alt="">
+			</div>
+			<div>
+				<img src="images/slider1.png" alt="">
+			</div>
+			<div>
+				<img src="images/slider1.png" alt="">
+			</div>
+			<div>
+				<img src="images/slider1.png" alt="">
+			</div>
+			<div>
+				<img src="images/slider1.png" alt="">
+			</div>
+			<div>
+				<img src="images/slider1.png" alt="">
+			</div>
+			<div>
+				<img src="images/slider1.png" alt="">
+			</div>
+		</div>
+		<div class="container" id="about">
+			<div class="about">
+				<div class="about-description">
+					<h3 class="about-title">О комплексе</h3>
+					<div class="about-text">
+						<p>Фузз продолжает композиционный хамбакер. Внутридискретное арпеджио, так или иначе, продолжает аккорд. Ощущение мономерности ритмического движения возникает, как правило, в условиях темповой стабильности, тем не менее внутридискретное арпеджио образует миксолидийский лайн-ап.</p>
+						<p>Гармоническое микророндо начинает тон-полутоновый фузз. Гармоническое микророндо волнообразно. Как было показано выше, глиссандо регрессийно трансформирует звукорядный громкостнoй прогрессийный период. Показательный пример – примочка продолжает мономерный лайн-ап.</p>
+						<div class="about-comm">
+							Фузз продолжает композиционный хамбакер.<br>
+							Внутридискретное арпеджио, так или иначе, продолжает аккорд. 
+						</div>
+						<p>Фузз продолжает композиционный хамбакер. Внутридискретное арпеджио, так или иначе, продолжает аккорд. Ощущение мономерности ритмического движения возникает, как правило, в условиях темповой стабильности, тем не менее внутридискретное арпеджио образует миксолидийский лайн-ап.</p>
+					</div>
+					<img src="images/about_img1.png" class="about_img1">
+					<img src="images/about_img2.png" class="about_img2">
+				</div>
+			</div>
+			<div class="infrastructure">
+				<div class="infrastructure-desc">
+					<div class="infrastructure-title">Инфраструктура</div>
+					<div class="faq">
+						<div class="faq-block">
+							<div class="faq-title toggle">Spa & Fitness</div>
+							<div class="faq-content">Фузз продолжает композиционный хамбакер. Внутридискретное арпеджио, так или иначе, продолжает аккорд. Ощущение мономерности ритмического движения возникает, как правило.</div>
+						</div>
+						<div class="faq-block">
+							<div class="faq-title toggle active">Детский сад</div>
+							<div class="faq-content">Фузз продолжает композиционный хамбакер. Внутридискретное арпеджио, так или иначе, продолжает аккорд. Ощущение мономерности ритмического движения возникает, как правило.</div>
+						</div>
+						<div class="faq-block">
+							<div class="faq-title toggle">Кафе & Рестораны</div>
+							<div class="faq-content">Фузз продолжает композиционный хамбакер. Внутридискретное арпеджио, так или иначе, продолжает аккорд. Ощущение мономерности ритмического движения возникает, как правило.</div>
+						</div>
+						<div class="faq-block">
+							<div class="faq-title toggle">Минимаркет</div>
+							<div class="faq-content">Фузз продолжает композиционный хамбакер. Внутридискретное арпеджио, так или иначе, продолжает аккорд. Ощущение мономерности ритмического движения возникает, как правило.</div>
+						</div>
+						<div class="faq-block">
+							<div class="faq-title toggle">Парки и речка</div>
+							<div class="faq-content">Фузз продолжает композиционный хамбакер. Внутридискретное арпеджио, так или иначе, продолжает аккорд. Ощущение мономерности ритмического движения возникает, как правило.</div>
+						</div>
+						<div class="faq-block">
+							<div class="faq-title toggle">Школы</div>
+							<div class="faq-content">Фузз продолжает композиционный хамбакер. Внутридискретное арпеджио, так или иначе, продолжает аккорд. Ощущение мономерности ритмического движения возникает, как правило.</div>
+						</div>
+					</div>
+				</div>
+				<img src="images/infrastructure.png" alt="" class="infrastructure_img">
+			</div>
+			<div class="advantages">
+				<div class="advantages-title">Преимущества</div>
+				<div class="advantages-slider">
+					<div>
+						<div class="advantages-img">
+							<img src="images/advantages1.png" alt="">
+						</div>
+						<div class="advantages-bottom">
+							<div class="advantages-bottom-left">Атмосфера загородной жизни</div>
+							<div class="advantages-bottom-right">Фузз продолжает композиционный хамбакер. Внутридискретное арпеджио, так или иначе, продолжает аккорд. Ощущение мономерности ритмического движения возникает, как правило, в условиях темповой стабильности, тем не менее внутридискретное арпеджио образует миксолидийский лайн-ап.Фузз продолжает композиционный хамбакер. Внутридискретное арпеджио.</div>
+						</div>
+					</div>
+					<div>
+						<div class="advantages-img">
+							<img src="images/advantages1.png" alt="">
+						</div>
+						<div class="advantages-bottom">
+							<div class="advantages-bottom-left">Атмосфера загородной жизни</div>
+							<div class="advantages-bottom-right">Фузз продолжает композиционный хамбакер. Внутридискретное арпеджио, так или иначе, продолжает аккорд. Ощущение мономерности ритмического движения возникает, как правило, в условиях темповой стабильности, тем не менее внутридискретное арпеджио образует миксолидийский лайн-ап.Фузз продолжает композиционный хамбакер. Внутридискретное арпеджио.</div>
+						</div>
+					</div>
+					<div>
+						<div class="advantages-img">
+							<img src="images/advantages1.png" alt="">
+						</div>
+						<div class="advantages-bottom">
+							<div class="advantages-bottom-left">Атмосфера загородной жизни</div>
+							<div class="advantages-bottom-right">Фузз продолжает композиционный хамбакер. Внутридискретное арпеджио, так или иначе, продолжает аккорд. Ощущение мономерности ритмического движения возникает, как правило, в условиях темповой стабильности, тем не менее внутридискретное арпеджио образует миксолидийский лайн-ап.Фузз продолжает композиционный хамбакер. Внутридискретное арпеджио.</div>
+						</div>
+					</div>
+					<div>
+						<div class="advantages-img">
+							<img src="images/advantages1.png" alt="">
+						</div>
+						<div class="advantages-bottom">
+							<div class="advantages-bottom-left">Атмосфера загородной жизни</div>
+							<div class="advantages-bottom-right">Фузз продолжает композиционный хамбакер. Внутридискретное арпеджио, так или иначе, продолжает аккорд. Ощущение мономерности ритмического движения возникает, как правило, в условиях темповой стабильности, тем не менее внутридискретное арпеджио образует миксолидийский лайн-ап.Фузз продолжает композиционный хамбакер. Внутридискретное арпеджио.</div>
+						</div>
+					</div>
+					<div>
+						<div class="advantages-img">
+							<img src="images/advantages1.png" alt="">
+						</div>
+						<div class="advantages-bottom">
+							<div class="advantages-bottom-left">Атмосфера загородной жизни</div>
+							<div class="advantages-bottom-right">Фузз продолжает композиционный хамбакер. Внутридискретное арпеджио, так или иначе, продолжает аккорд. Ощущение мономерности ритмического движения возникает, как правило, в условиях темповой стабильности, тем не менее внутридискретное арпеджио образует миксолидийский лайн-ап.Фузз продолжает композиционный хамбакер. Внутридискретное арпеджио.</div>
+						</div>
+					</div>
+					<div>
+						<div class="advantages-img">
+							<img src="images/advantages1.png" alt="">
+						</div>
+						<div class="advantages-bottom">
+							<div class="advantages-bottom-left">Атмосфера загородной жизни</div>
+							<div class="advantages-bottom-right">Фузз продолжает композиционный хамбакер. Внутридискретное арпеджио, так или иначе, продолжает аккорд. Ощущение мономерности ритмического движения возникает, как правило, в условиях темповой стабильности, тем не менее внутридискретное арпеджио образует миксолидийский лайн-ап.Фузз продолжает композиционный хамбакер. Внутридискретное арпеджио.</div>
+						</div>
+					</div>
+					<div>
+						<div class="advantages-img">
+							<img src="images/advantages1.png" alt="">
+						</div>
+						<div class="advantages-bottom">
+							<div class="advantages-bottom-left">Атмосфера загородной жизни</div>
+							<div class="advantages-bottom-right">Фузз продолжает композиционный хамбакер. Внутридискретное арпеджио, так или иначе, продолжает аккорд. Ощущение мономерности ритмического движения возникает, как правило, в условиях темповой стабильности, тем не менее внутридискретное арпеджио образует миксолидийский лайн-ап.Фузз продолжает композиционный хамбакер. Внутридискретное арпеджио.</div>
+						</div>
+					</div>
+					<div>
+						<div class="advantages-img">
+							<img src="images/advantages1.png" alt="">
+						</div>
+						<div class="advantages-bottom">
+							<div class="advantages-bottom-left">Атмосфера загородной жизни</div>
+							<div class="advantages-bottom-right">Фузз продолжает композиционный хамбакер. Внутридискретное арпеджио, так или иначе, продолжает аккорд. Ощущение мономерности ритмического движения возникает, как правило, в условиях темповой стабильности, тем не менее внутридискретное арпеджио образует миксолидийский лайн-ап.Фузз продолжает композиционный хамбакер. Внутридискретное арпеджио.</div>
+						</div>
+					</div>
+					<div>
+						<div class="advantages-img">
+							<img src="images/advantages1.png" alt="">
+						</div>
+						<div class="advantages-bottom">
+							<div class="advantages-bottom-left">Атмосфера загородной жизни</div>
+							<div class="advantages-bottom-right">Фузз продолжает композиционный хамбакер. Внутридискретное арпеджио, так или иначе, продолжает аккорд. Ощущение мономерности ритмического движения возникает, как правило, в условиях темповой стабильности, тем не менее внутридискретное арпеджио образует миксолидийский лайн-ап.Фузз продолжает композиционный хамбакер. Внутридискретное арпеджио.</div>
+						</div>
+					</div>
+					<div>
+						<div class="advantages-img">
+							<img src="images/advantages1.png" alt="">
+						</div>
+						<div class="advantages-bottom">
+							<div class="advantages-bottom-left">Атмосфера загородной жизни</div>
+							<div class="advantages-bottom-right">Фузз продолжает композиционный хамбакер. Внутридискретное арпеджио, так или иначе, продолжает аккорд. Ощущение мономерности ритмического движения возникает, как правило, в условиях темповой стабильности, тем не менее внутридискретное арпеджио образует миксолидийский лайн-ап.Фузз продолжает композиционный хамбакер. Внутридискретное арпеджио.</div>
+						</div>
+					</div>
+					<div>
+						<div class="advantages-img">
+							<img src="images/advantages1.png" alt="">
+						</div>
+						<div class="advantages-bottom">
+							<div class="advantages-bottom-left">Атмосфера загородной жизни</div>
+							<div class="advantages-bottom-right">Фузз продолжает композиционный хамбакер. Внутридискретное арпеджио, так или иначе, продолжает аккорд. Ощущение мономерности ритмического движения возникает, как правило, в условиях темповой стабильности, тем не менее внутридискретное арпеджио образует миксолидийский лайн-ап.Фузз продолжает композиционный хамбакер. Внутридискретное арпеджио.</div>
+						</div>
+					</div>
+					<div>
+						<div class="advantages-img">
+							<img src="images/advantages1.png" alt="">
+						</div>
+						<div class="advantages-bottom">
+							<div class="advantages-bottom-left">Атмосфера загородной жизни</div>
+							<div class="advantages-bottom-right">Фузз продолжает композиционный хамбакер. Внутридискретное арпеджио, так или иначе, продолжает аккорд. Ощущение мономерности ритмического движения возникает, как правило, в условиях темповой стабильности, тем не менее внутридискретное арпеджио образует миксолидийский лайн-ап.Фузз продолжает композиционный хамбакер. Внутридискретное арпеджио.</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="documents-block">
+				<div class="documents-title">Документы и сертификаты</div>
+				<div class="documents">
+					<a href="#" class="document">
+						<span class="document-img">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M21 8V20.993C21.0009 21.1243 20.976 21.2545 20.9266 21.3762C20.8772 21.4979 20.8043 21.6087 20.7121 21.7022C20.6199 21.7957 20.5101 21.8701 20.3892 21.9212C20.2682 21.9723 20.1383 21.9991 20.007 22H3.993C3.72981 22 3.47739 21.8955 3.2912 21.7095C3.105 21.5235 3.00027 21.2712 3 21.008V2.992C3 2.455 3.449 2 4.002 2H14.997L21 8ZM19 9H14V4H5V20H19V9Z"/>
+							</svg>
+						</span>
+						<span class="document-title">Разрешение<br> на строительство</span>
+						<span class="document-desc">
+							<span>2 mb</span>
+							<span>pdf</span>
+						</span>
+						<span class="document-link">
+							<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M26.6733 15.69L12.3283 30.035L9.97168 27.6783L24.315 13.3333H11.6733V10H30.0067V28.3333H26.6733V15.69Z" fill="white"/>
+							</svg>
+						</span>
+					</a>
+					<a href="#" class="document">
+						<span class="document-img">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M21 8V20.993C21.0009 21.1243 20.976 21.2545 20.9266 21.3762C20.8772 21.4979 20.8043 21.6087 20.7121 21.7022C20.6199 21.7957 20.5101 21.8701 20.3892 21.9212C20.2682 21.9723 20.1383 21.9991 20.007 22H3.993C3.72981 22 3.47739 21.8955 3.2912 21.7095C3.105 21.5235 3.00027 21.2712 3 21.008V2.992C3 2.455 3.449 2 4.002 2H14.997L21 8ZM19 9H14V4H5V20H19V9Z"/>
+							</svg>
+						</span>
+						<span class="document-title">Проектная <br> декларация</span>
+						<span class="document-desc">
+							<span>2 mb</span>
+							<span>pdf</span>
+						</span>
+						<span class="document-link">
+							<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M26.6733 15.69L12.3283 30.035L9.97168 27.6783L24.315 13.3333H11.6733V10H30.0067V28.3333H26.6733V15.69Z" fill="white"/>
+							</svg>
+						</span>
+					</a>
+					<a href="#" class="document">
+						<span class="document-img">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M21 8V20.993C21.0009 21.1243 20.976 21.2545 20.9266 21.3762C20.8772 21.4979 20.8043 21.6087 20.7121 21.7022C20.6199 21.7957 20.5101 21.8701 20.3892 21.9212C20.2682 21.9723 20.1383 21.9991 20.007 22H3.993C3.72981 22 3.47739 21.8955 3.2912 21.7095C3.105 21.5235 3.00027 21.2712 3 21.008V2.992C3 2.455 3.449 2 4.002 2H14.997L21 8ZM19 9H14V4H5V20H19V9Z"/>
+							</svg>
+						</span>
+						<span class="document-title">Инвестиционный <br> договор</span>
+						<span class="document-desc">
+							<span>2 mb</span>
+							<span>pdf</span>
+						</span>
+						<span class="document-link">
+							<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M26.6733 15.69L12.3283 30.035L9.97168 27.6783L24.315 13.3333H11.6733V10H30.0067V28.3333H26.6733V15.69Z" fill="white"/>
+							</svg>
+						</span>
+					</a>
+					<a href="#" class="document">
+						<span class="document-img">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M21 8V20.993C21.0009 21.1243 20.976 21.2545 20.9266 21.3762C20.8772 21.4979 20.8043 21.6087 20.7121 21.7022C20.6199 21.7957 20.5101 21.8701 20.3892 21.9212C20.2682 21.9723 20.1383 21.9991 20.007 22H3.993C3.72981 22 3.47739 21.8955 3.2912 21.7095C3.105 21.5235 3.00027 21.2712 3 21.008V2.992C3 2.455 3.449 2 4.002 2H14.997L21 8ZM19 9H14V4H5V20H19V9Z"/>
+							</svg>
+						</span>
+						<span class="document-title">Разрешение <br> на строительство</span>
+						<span class="document-desc">
+							<span>2 mb</span>
+							<span>pdf</span>
+						</span>
+						<span class="document-link">
+							<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M26.6733 15.69L12.3283 30.035L9.97168 27.6783L24.315 13.3333H11.6733V10H30.0067V28.3333H26.6733V15.69Z" fill="white"/>
+							</svg>
+						</span>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="form">
+			<div class="container">
+				<div class="form-left">
+					<div class="form-title">Ипотека</div>
+					<div class="form-text">Фузз продолжает композиционный хамбакер. Внутридискретное арпеджио, так или иначе, продолжает аккорд. Ощущение мономерности ритмического </div>
+					<div class="form-links">
+						<a href="#">
+							<img src="images/f1.png" alt="">
+						</a>
+						<a href="#">
+							<img src="images/f2.png" alt="">
+						</a>
+						<a href="#">
+							<img src="images/f3.png" alt="">
+						</a>
+						<a href="#">
+							<img src="images/f4.png" alt="">
+						</a>
+						<a href="#">
+							<img src="images/f5.png" alt="">
+						</a>
+						<a href="#">
+							<img src="images/f6.png" alt="">
+						</a>
+						<a href="#">
+							<img src="images/f7.png" alt="">
+						</a>
+						<a href="#">
+							<img src="images/f8.png" alt="">
+						</a>
+						<a href="#">
+							<img src="images/f9.png" alt="">
+						</a>
+						<a href="#">
+							<img src="images/f10.png" alt="">
+						</a>
+						<a href="#">
+							<img src="images/f11.png" alt="">
+						</a>
+						<a href="#">
+							<img src="images/f12.png" alt="">
+						</a>
+						<a href="#">
+							<img src="images/f13.png" alt="">
+						</a>
+						<a href="#">
+							<img src="images/f14.png" alt="">
+						</a>
+						<a href="#">
+							<img src="images/f15.png" alt="">
+						</a>
+						<a href="#">
+							<img src="images/f16.png" alt="">
+						</a>
+						<a href="#">
+							<img src="images/f17.png" alt="">
+						</a>
+						<a href="#">
+							<img src="images/f18.png" alt="">
+						</a>
+						<a href="#">
+							<img src="images/f19.png" alt="">
+						</a>
+					</div>
+				</div>
+				<div class="form-right">
+					<form>
+						<select>
+							<option>Ипотека</option>
+							<option>Ипотека 2</option>
+							<option>Ипотека 3</option>
+							<option>Ипотека 4</option>
+							<option>Ипотека 5</option>
+						</select>
+						<input type="text" placeholder="Ваше Имя">
+						<input type="text" placeholder="Ваш e-mail">
+						<div class="checkbox">
+							<input type="checkbox" id="c1">
+							<label for="c1">Я согласен(-на) на обработку персональных данных</label>
+						</div>
+						<button>Получить консультацию</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<iframe src="https://yandex.ua/map-widget/v1/?um=constructor%3Aa510c771b4cb7a49406399e13239a526be2ac6df54ec041343befe710508f62e&amp;source=constructor" frameborder="0" id="map"></iframe>
+		<footer>
+			<div class="container">
+				<div class="footer-top">
+					<ul>
+						<li><a href="#">Главная</a></li>
+						<li><a href="#">Каталог</a></li>
+						<li><a href="#">О нас</a></li>
+						<li><a href="#">Собственникам</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</div>
+				<div class="footer-bottom">
+					<div class="footer-bottom-left">
+						<a href="#">Политика конфиденциальности</a>
+					</div>
+					<div class="footer-bottom-center">
+						<a href="tel:+7(495)008-12-21" class="big">+ 7 (495) 008-12-21</a>
+						<p>г. Москва<br> Ул. Дербеневская Набережная, 11</p>
+						<a href="mailto:info@jpre.ru" class="small">info@jpre.ru</a>
+					</div>
+					<div class="footer-bottom-right">Сделано в Simplexx</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>
