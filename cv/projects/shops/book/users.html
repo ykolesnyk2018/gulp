@@ -1,0 +1,974 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">        
+    <meta name="author" content="CHANGE-ME">
+    <meta name="description" content="CHANGE-ME">
+    <!-- Mobile Stuff -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="images/icon/favicon.png" type="image/png">
+    <title>Детективное агентство.</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body> 
+    <div class="wrapper">
+        <header>
+            <div class="header-top">
+                <div class="container clearfix">
+                    <div class="main-menu-button">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="images/logo.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="search">
+                        <form>
+                            <input type="text" placeholder="Поиск...">
+                            <a href="#" class="close-btn">
+                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                 viewBox="-49 141 93 93" style="enable-background:new -49 141 93 93;" xml:space="preserve">
+                                <path d="M-45.243,234c-0.961,0-1.923-0.367-2.656-1.1c-1.467-1.467-1.467-3.846,0-5.313L37.587,142.1
+                                    c1.467-1.467,3.846-1.467,5.313,0c1.467,1.467,1.467,3.846,0,5.313L-42.587,232.9C-43.32,233.633-44.282,234-45.243,234z"/>
+                                <path d="M40.243,234c-0.961,0-1.923-0.367-2.656-1.1L-47.9,147.413c-1.467-1.467-1.467-3.846,0-5.313
+                                    c1.467-1.467,3.846-1.467,5.313,0L42.9,227.587c1.467,1.467,1.467,3.846,0,5.313C42.166,233.633,41.205,234,40.243,234z"/>
+                                </svg>
+
+                            </a>
+                            <a href="#">
+                                <svg version="1.1" 
+                                     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 38 29.674"
+                                     style="enable-background:new 0 0 38 29.674;" xml:space="preserve">
+                                <g>
+                                    <path d="M21.463,13.824h-0.638V1.825C20.825,0.817,20.008,0,19,0s-1.825,0.817-1.825,1.825v11.999h-0.639
+                                        c-1.512,0-2.737,1.226-2.737,2.737v0.201c0,1.512,1.226,2.737,2.737,2.737h0.639v8.35c0,1.008,0.817,1.825,1.825,1.825
+                                        s1.825-0.817,1.825-1.825v-8.35h0.638c1.512,0,2.737-1.226,2.737-2.737v-0.201C24.2,15.049,22.975,13.824,21.463,13.824
+                                        L21.463,13.824z M19.989,17.665h-1.977c-0.554,0-1.004-0.45-1.004-1.004c0-0.554,0.449-1.004,1.004-1.004h1.977
+                                        c0.554,0,1.003,0.45,1.003,1.004C20.992,17.216,20.543,17.665,19.989,17.665L19.989,17.665z M19.989,17.665"/>
+                                    <path d="M7.664,8.35H7.026V1.825C7.026,0.817,6.209,0,5.201,0C4.193,0,3.376,0.817,3.376,1.825V8.35H2.737
+                                        C1.226,8.35,0,9.575,0,11.087v0.201c0,1.512,1.226,2.737,2.737,2.737h0.639v13.824c0,1.008,0.817,1.825,1.825,1.825
+                                        c1.008,0,1.825-0.817,1.825-1.825V14.025h0.638c1.512,0,2.737-1.226,2.737-2.737v-0.201C10.401,9.575,9.175,8.35,7.664,8.35
+                                        L7.664,8.35z M6.189,12.191H4.212c-0.554,0-1.004-0.45-1.004-1.004c0-0.554,0.449-1.004,1.004-1.004h1.977
+                                        c0.554,0,1.004,0.45,1.004,1.004C7.193,11.742,6.743,12.191,6.189,12.191L6.189,12.191z M6.189,12.191"/>
+                                    <path d="M35.263,5.612h-0.639V1.825C34.624,0.817,33.807,0,32.799,0c-1.008,0-1.825,0.817-1.825,1.825v3.788h-0.639
+                                        c-1.512,0-2.737,1.226-2.737,2.737v0.201c0,1.512,1.226,2.737,2.737,2.737h0.639v16.561c0,1.008,0.817,1.825,1.825,1.825
+                                        c1.008,0,1.825-0.817,1.825-1.825V11.288h0.639c1.512,0,2.737-1.226,2.737-2.737V8.35C38,6.838,36.774,5.612,35.263,5.612
+                                        L35.263,5.612z M33.788,9.454h-1.977c-0.554,0-1.004-0.45-1.004-1.004c0-0.554,0.449-1.004,1.004-1.004h1.977
+                                        c0.554,0,1.004,0.45,1.004,1.004C34.792,9.004,34.342,9.454,33.788,9.454L33.788,9.454z M33.788,9.454"/>
+                                </g>
+                                </svg>
+                            </a>
+                            <button>
+                                <svg version="1.1"
+                                     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 34.501 36.763"
+                                     style="enable-background:new 0 0 34.501 36.763;" xml:space="preserve">
+                                <g>
+                                    <g>
+                                        <defs>
+                                            <rect width="34.501" height="36.763"/>
+                                        </defs>
+                                        <clipPath>
+                                            <use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+                                        </clipPath>
+                                        <path style="clip-path:url(#SVGID_2_);" d="M34.036,32.816l-8.518-8.859c2.191-2.606,3.391-5.883,3.391-9.295
+                                            c0-7.969-6.484-14.453-14.456-14.453C6.484,0.21,0,6.694,0,14.663c0,7.972,6.484,14.456,14.452,14.456
+                                            c2.992,0,5.846-0.902,8.282-2.617l8.586,8.929c0.359,0.375,0.841,0.58,1.36,0.58c0.488,0,0.951-0.187,1.304-0.527
+                                            C34.736,34.762,34.757,33.568,34.036,32.816L34.036,32.816z M14.452,3.981c5.892,0,10.685,4.793,10.685,10.682
+                                            c0,5.892-4.793,10.684-10.685,10.684c-5.888,0-10.681-4.793-10.681-10.684C3.771,8.775,8.564,3.981,14.452,3.981L14.452,3.981z
+                                             M14.452,3.981"/>
+                                    </g>
+                                </g>
+                                </svg>
+
+                            </button>
+                        </form>
+                    </div>
+                    <div class="header-right">
+                        <ul>
+                            <li class="child">
+                                <a href="#">
+                                    Жанры
+                                    <svg version="1.1"
+                                                 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 35.947 20.653"
+                                                 style="enable-background:new 0 0 35.947 20.653;" xml:space="preserve" >
+                                        <g>
+                                            <g>
+                                                <path  d="M19.05,20.305L35.591,3.763c0.236-0.238,0.355-0.51,0.355-0.817
+                                                        c0-0.308-0.119-0.581-0.355-0.817l-1.774-1.774C33.581,0.119,33.308,0,33,0c-0.309,0-0.581,0.119-0.817,0.355l-13.95,13.951
+                                                        L4.28,0.355C4.045,0.119,3.772,0,3.463,0C3.157,0,2.885,0.119,2.646,0.355L0.873,2.13C0.636,2.366,0.519,2.638,0.519,2.947
+                                                        c0,0.307,0.117,0.579,0.353,0.817l16.544,16.541c0.236,0.236,0.508,0.356,0.817,0.356C18.539,20.661,18.811,20.543,19.05,20.305
+                                                        L19.05,20.305z M19.05,20.305"/>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </a>
+                                <div>
+                                    <div class="popup-menu-title">
+                                        Популярные жанры <span>92 жанра</span>
+                                        <span class="close-popup-menu">
+                                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                 viewBox="-49 141 93 93" style="enable-background:new -49 141 93 93;" xml:space="preserve">
+                                            <path d="M-45.243,234c-0.961,0-1.923-0.367-2.656-1.1c-1.467-1.467-1.467-3.846,0-5.313L37.587,142.1
+                                                c1.467-1.467,3.846-1.467,5.313,0c1.467,1.467,1.467,3.846,0,5.313L-42.587,232.9C-43.32,233.633-44.282,234-45.243,234z"/>
+                                            <path d="M40.243,234c-0.961,0-1.923-0.367-2.656-1.1L-47.9,147.413c-1.467-1.467-1.467-3.846,0-5.313
+                                                c1.467-1.467,3.846-1.467,5.313,0L42.9,227.587c1.467,1.467,1.467,3.846,0,5.313C42.166,233.633,41.205,234,40.243,234z"/>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                    <ul>
+                                        <li><a href="#">Военное дело</a></li>
+                                        <li><a href="#">Любовные романы</a></li>
+                                        <li><a href="#">Религия и духовность</a></li>
+                                        <li><a href="#">Деловая литература</a></li>
+                                        <li><a href="#">Наука, Образование</a></li>
+                                        <li><a href="#">Справочная литература</a></li>
+                                        <li><a href="#">Детективы и Триллеры</a></li>
+                                        <li><a href="#">Неотсортированное</a></li>
+                                        <li><a href="#">Старинное</a></li>
+                                        <li><a href="#">Детское</a></li>
+                                        <li><a href="#">Поэзия</a></li>
+                                        <li><a href="#">Техника</a></li>
+                                        <li><a href="#">Домоводство (Дом и семья)</a></li>
+                                        <li><a href="#">Приключения</a></li>
+                                        <li><a href="#">Фантастика</a></li>
+                                        <li><a href="#">Драматургия</a></li>
+                                        <li><a href="#">Проза</a></li>
+                                        <li><a href="#">Фольклор</a></li>
+                                        <li><a href="#">Компьютеры и Интернет</a></li>
+                                        <li><a href="#">Прочее</a></li>
+                                        <li><a href="#">Юмор</a></li>
+                                    </ul>
+                                    <div class="all-genres">
+                                        <a href="#">Все жанры <span>→</span></a>
+                                    </div>
+                                </div>
+                            </li>       
+                            <li><a href="#">Серии</a></li>         
+                            <li><a href="#">Подборки</a></li>         
+                            <li><a href="#">Рецензии</a></li>         
+                            <li><a href="#">Авторы</a></li>         
+                            <li><a href="#">Читатели</a></li>
+                        </ul>
+                        <div class="user">
+                            <div class="user-img">
+                                <img src="images/user.png" alt="">
+                            </div>
+                            <div class="user-name">
+                                <span>Renata</span>
+                                <svg version="1.1"
+                                     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 35.947 20.653"
+                                     style="enable-background:new 0 0 35.947 20.653;" xml:space="preserve">
+                                <g>
+                                    <g>
+                                        <defs>
+                                            <rect width="35.947" height="20.653"/>
+                                        </defs>
+                                        <clipPath>
+                                            <use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+                                        </clipPath>
+                                        <path style="clip-path:url(#SVGID_2_);" d="M19.05,20.305L35.591,3.763c0.236-0.238,0.355-0.51,0.355-0.817
+                                            c0-0.308-0.119-0.581-0.355-0.817l-1.774-1.774C33.581,0.119,33.308,0,33,0c-0.309,0-0.581,0.119-0.817,0.355l-13.95,13.951
+                                            L4.28,0.355C4.045,0.119,3.772,0,3.463,0C3.157,0,2.885,0.119,2.646,0.355L0.873,2.13C0.636,2.366,0.519,2.638,0.519,2.947
+                                            c0,0.307,0.117,0.579,0.353,0.817l16.544,16.541c0.236,0.236,0.508,0.356,0.817,0.356C18.539,20.661,18.811,20.543,19.05,20.305
+                                            L19.05,20.305z M19.05,20.305"/>
+                                    </g>
+                                </g>
+                                </svg>
+
+                            </div>
+                        </div>
+                        <div class="user-menu">
+                            <div class="profile">
+                                <div class="profile-img">
+                                     <img src="images/user.png" alt="">
+                                </div>
+                                <div class="profile-title">Renata</div>
+                            </div>
+                            <div class="user-menu-top">
+                                <a href="#">Профиль</a>  
+                                <span>|</span>  
+                                <a href="#">Выход</a>
+                            </div>
+                            <div class="user-menu-content">
+                                <ul>
+                                    <li><a href="#">Мои данные</a></li>
+                                    <li><a href="#">Моя библиотека</a></li>
+                                    <li><a href="#">Мои рецензии</a></li>
+                                    <li>
+                                        <a href="#">Мои комментарии <span>2</span></a>
+                                    </li>
+                                    <li><a href="#">Мои оценки</a></li> 
+                                    <li><a href="#">Конфиденциальность</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="header-bottom">
+            <div class="header-bottom-hidden">
+                <div class="container clearfix">
+                    <div class="header-bottom-hidden-top">
+                        <div class="header-bottom-hidden-btn">Назад</div>
+                        <div class="header-bottom-hidden-right">
+                            <svg version="1.1" 
+                                         xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 38 29.674"
+                                         style="enable-background:new 0 0 38 29.674;" xml:space="preserve">
+                                <g>
+                                    <path d="M21.463,13.824h-0.638V1.825C20.825,0.817,20.008,0,19,0s-1.825,0.817-1.825,1.825v11.999h-0.639
+                                            c-1.512,0-2.737,1.226-2.737,2.737v0.201c0,1.512,1.226,2.737,2.737,2.737h0.639v8.35c0,1.008,0.817,1.825,1.825,1.825
+                                            s1.825-0.817,1.825-1.825v-8.35h0.638c1.512,0,2.737-1.226,2.737-2.737v-0.201C24.2,15.049,22.975,13.824,21.463,13.824
+                                            L21.463,13.824z M19.989,17.665h-1.977c-0.554,0-1.004-0.45-1.004-1.004c0-0.554,0.449-1.004,1.004-1.004h1.977
+                                            c0.554,0,1.003,0.45,1.003,1.004C20.992,17.216,20.543,17.665,19.989,17.665L19.989,17.665z M19.989,17.665"/>
+                                    <path d="M7.664,8.35H7.026V1.825C7.026,0.817,6.209,0,5.201,0C4.193,0,3.376,0.817,3.376,1.825V8.35H2.737
+                                            C1.226,8.35,0,9.575,0,11.087v0.201c0,1.512,1.226,2.737,2.737,2.737h0.639v13.824c0,1.008,0.817,1.825,1.825,1.825
+                                            c1.008,0,1.825-0.817,1.825-1.825V14.025h0.638c1.512,0,2.737-1.226,2.737-2.737v-0.201C10.401,9.575,9.175,8.35,7.664,8.35
+                                            L7.664,8.35z M6.189,12.191H4.212c-0.554,0-1.004-0.45-1.004-1.004c0-0.554,0.449-1.004,1.004-1.004h1.977
+                                            c0.554,0,1.004,0.45,1.004,1.004C7.193,11.742,6.743,12.191,6.189,12.191L6.189,12.191z M6.189,12.191"/>
+                                    <path d="M35.263,5.612h-0.639V1.825C34.624,0.817,33.807,0,32.799,0c-1.008,0-1.825,0.817-1.825,1.825v3.788h-0.639
+                                            c-1.512,0-2.737,1.226-2.737,2.737v0.201c0,1.512,1.226,2.737,2.737,2.737h0.639v16.561c0,1.008,0.817,1.825,1.825,1.825
+                                            c1.008,0,1.825-0.817,1.825-1.825V11.288h0.639c1.512,0,2.737-1.226,2.737-2.737V8.35C38,6.838,36.774,5.612,35.263,5.612
+                                            L35.263,5.612z M33.788,9.454h-1.977c-0.554,0-1.004-0.45-1.004-1.004c0-0.554,0.449-1.004,1.004-1.004h1.977
+                                            c0.554,0,1.004,0.45,1.004,1.004C34.792,9.004,34.342,9.454,33.788,9.454L33.788,9.454z M33.788,9.454"/>
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="header-bottom-hidden-bottom">
+                        <div class="header-bottom-hidden-bottom-content">
+                            <div class="advanced-search-title active">Параметры поиска</div>
+                            <div class="advanced-search-block">
+                                <form>
+                                    <div>
+                                        <label>Название</label>
+                                        <input type="text">
+                                    </div>
+                                    <div>
+                                        <label>Автор</label>
+                                        <input type="text">
+                                    </div>
+                                    <div>
+                                        <label>Серия</label>
+                                        <input type="text">
+                                    </div>
+                                    <div>
+                                        <label>Язык</label>
+                                        <select>
+                                            <option>--</option>
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <label>Год</label>
+                                        <select>
+                                            <option>--</option>
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <label>Рейтинг</label>
+                                        <div class="checkbox">
+                                            <input type="checkbox" id="radio1" name="rating">
+                                            <label for="radio1">1</label>
+                                            <input type="checkbox" id="radio2" name="rating">
+                                            <label for="radio2">2</label>
+                                            <input type="checkbox" id="radio3" name="rating">
+                                            <label for="radio3">3</label>
+                                            <input type="checkbox" id="radio4" name="rating">
+                                            <label for="radio4">4</label>
+                                            <input type="checkbox" id="radio5" name="rating">
+                                            <label for="radio5">5</label>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="advanced-search-title">Параметры поиска</div>
+                            <div class="advanced-search-block">2</div>
+                            <div class="advanced-search-title">Что-нибудь</div>
+                            <div class="advanced-search-block">3</div>
+                        </div>
+                        <div class="advanced-search-btns">
+                            <a href="#">Сбросить</a>
+                            <a href="#">Поиск [4]</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <div class="container clearfix">
+                    <div class="search">
+                        <form>
+                            <input type="text" placeholder="Поиск...">
+                            <a href="#" class="close-btn">
+                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                 viewBox="-49 141 93 93" style="enable-background:new -49 141 93 93;" xml:space="preserve">
+                                <path d="M-45.243,234c-0.961,0-1.923-0.367-2.656-1.1c-1.467-1.467-1.467-3.846,0-5.313L37.587,142.1
+                                    c1.467-1.467,3.846-1.467,5.313,0c1.467,1.467,1.467,3.846,0,5.313L-42.587,232.9C-43.32,233.633-44.282,234-45.243,234z"/>
+                                <path d="M40.243,234c-0.961,0-1.923-0.367-2.656-1.1L-47.9,147.413c-1.467-1.467-1.467-3.846,0-5.313
+                                    c1.467-1.467,3.846-1.467,5.313,0L42.9,227.587c1.467,1.467,1.467,3.846,0,5.313C42.166,233.633,41.205,234,40.243,234z"/>
+                                </svg>
+
+                            </a>
+                            <a href="#" class="open-mobil-filter">
+                                <svg version="1.1" 
+                                     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 38 29.674"
+                                     style="enable-background:new 0 0 38 29.674;" xml:space="preserve">
+                                <g>
+                                    <path d="M21.463,13.824h-0.638V1.825C20.825,0.817,20.008,0,19,0s-1.825,0.817-1.825,1.825v11.999h-0.639
+                                        c-1.512,0-2.737,1.226-2.737,2.737v0.201c0,1.512,1.226,2.737,2.737,2.737h0.639v8.35c0,1.008,0.817,1.825,1.825,1.825
+                                        s1.825-0.817,1.825-1.825v-8.35h0.638c1.512,0,2.737-1.226,2.737-2.737v-0.201C24.2,15.049,22.975,13.824,21.463,13.824
+                                        L21.463,13.824z M19.989,17.665h-1.977c-0.554,0-1.004-0.45-1.004-1.004c0-0.554,0.449-1.004,1.004-1.004h1.977
+                                        c0.554,0,1.003,0.45,1.003,1.004C20.992,17.216,20.543,17.665,19.989,17.665L19.989,17.665z M19.989,17.665"/>
+                                    <path d="M7.664,8.35H7.026V1.825C7.026,0.817,6.209,0,5.201,0C4.193,0,3.376,0.817,3.376,1.825V8.35H2.737
+                                        C1.226,8.35,0,9.575,0,11.087v0.201c0,1.512,1.226,2.737,2.737,2.737h0.639v13.824c0,1.008,0.817,1.825,1.825,1.825
+                                        c1.008,0,1.825-0.817,1.825-1.825V14.025h0.638c1.512,0,2.737-1.226,2.737-2.737v-0.201C10.401,9.575,9.175,8.35,7.664,8.35
+                                        L7.664,8.35z M6.189,12.191H4.212c-0.554,0-1.004-0.45-1.004-1.004c0-0.554,0.449-1.004,1.004-1.004h1.977
+                                        c0.554,0,1.004,0.45,1.004,1.004C7.193,11.742,6.743,12.191,6.189,12.191L6.189,12.191z M6.189,12.191"/>
+                                    <path d="M35.263,5.612h-0.639V1.825C34.624,0.817,33.807,0,32.799,0c-1.008,0-1.825,0.817-1.825,1.825v3.788h-0.639
+                                        c-1.512,0-2.737,1.226-2.737,2.737v0.201c0,1.512,1.226,2.737,2.737,2.737h0.639v16.561c0,1.008,0.817,1.825,1.825,1.825
+                                        c1.008,0,1.825-0.817,1.825-1.825V11.288h0.639c1.512,0,2.737-1.226,2.737-2.737V8.35C38,6.838,36.774,5.612,35.263,5.612
+                                        L35.263,5.612z M33.788,9.454h-1.977c-0.554,0-1.004-0.45-1.004-1.004c0-0.554,0.449-1.004,1.004-1.004h1.977
+                                        c0.554,0,1.004,0.45,1.004,1.004C34.792,9.004,34.342,9.454,33.788,9.454L33.788,9.454z M33.788,9.454"/>
+                                </g>
+                                </svg>
+                            </a>
+                            <button>
+                                <svg version="1.1"
+                                     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 34.501 36.763"
+                                     style="enable-background:new 0 0 34.501 36.763;" xml:space="preserve">
+                                <g>
+                                    <g>
+                                        <defs>
+                                            <rect width="34.501" height="36.763"/>
+                                        </defs>
+                                        <clipPath>
+                                            <use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+                                        </clipPath>
+                                        <path style="clip-path:url(#SVGID_2_);" d="M34.036,32.816l-8.518-8.859c2.191-2.606,3.391-5.883,3.391-9.295
+                                            c0-7.969-6.484-14.453-14.456-14.453C6.484,0.21,0,6.694,0,14.663c0,7.972,6.484,14.456,14.452,14.456
+                                            c2.992,0,5.846-0.902,8.282-2.617l8.586,8.929c0.359,0.375,0.841,0.58,1.36,0.58c0.488,0,0.951-0.187,1.304-0.527
+                                            C34.736,34.762,34.757,33.568,34.036,32.816L34.036,32.816z M14.452,3.981c5.892,0,10.685,4.793,10.685,10.682
+                                            c0,5.892-4.793,10.684-10.685,10.684c-5.888,0-10.681-4.793-10.681-10.684C3.771,8.775,8.564,3.981,14.452,3.981L14.452,3.981z
+                                             M14.452,3.981"/>
+                                    </g>
+                                </g>
+                                </svg>
+
+                            </button>
+                        </form>
+                    </div>
+                </div>
+        </div>
+        <div class="main-menu-mobil">
+            <div class="main-menu-mobil-container">
+                <div class="main-menu-mobil-top">
+                    <div class="main-menu-mobil-top-left">
+                        <a href="#">
+                           <img src="images/main-menu-mobil-top-left.png" alt="">
+                        </a>
+                    </div>
+                    <div class="main-menu-mobil-top-right">
+                        Геральт из Ривии
+                        <span>Постоянный читатель</span>
+                    </div>
+                </div>
+                <ul>
+                    <li class="child">
+                        <a href="#">Жанры</a>
+                        <div>
+                            <div class="prev">Назад</div>
+                            <ul>
+                                <li><a href="#">Военное дело</a></li>
+                                <li><a href="#">Деловая литература</a></li>
+                                <li><a href="#">Детективы и Триллеры</a></li>
+                                <li><a href="#">Детское</a></li>
+                                <li><a href="#">Домоводство (Дом и семья)</a></li>
+                                <li><a href="#">Драматургия</a></li>
+                                <li><a href="#">Компьютеры и Интернет</a></li>
+                                <li><a href="#">Любовные романы</a></li>
+                                <li><a href="#">Наука, Образование</a></li>
+                                <li><a href="#">Неотсортированное</a></li>
+                                <li><a href="#">Поэзия</a></li>
+                                <li><a href="#">Приключения</a></li>
+                                <li><a href="#">Проза</a></li>
+                                <li><a href="#">Прочее</a></li>
+                                <li><a href="#">Религия и духовность</a></li>
+                                <li><a href="#">Справочная литература</a></li>
+                                <li><a href="#">Старинное</a></li>
+                                <li><a href="#">Техника</a></li>
+                                <li><a href="#">Фантастика</a></li>
+                                <li><a href="#">Фольклор</a></li>
+                                <li><a href="#">Юмор</a></li>
+                            </ul>
+                            <div class="all-janrs2">
+                                <a href="#">Все жанры</a>
+                            </div>
+                        </div>
+                    </li>        
+                    <li><a href="#">Серии</a></li>         
+                    <li><a href="#">Подборки</a></li>         
+                    <li><a href="#">Рецензии</a></li>         
+                    <li><a href="#">Авторы</a></li>         
+                    <li><a href="#">Читатели</a></li>
+                </ul>
+                <ul class="setting-menu">
+                    <li><a href="#">Мой профиль</a></li>
+                    <li><a href="#">Стол заказов</a></li>
+                    <li><a href="#">Обратная связь</a></li>
+                    <li><a href="#">Добавить книгу</a></li>
+                </ul>
+            </div>
+            <div class="bg"></div>
+        </div>
+        <div class="advertising">
+            <a href="#">
+                <img src="images/reklama.jpg" alt="">
+            </a>
+        </div>
+        <div class="container clearfix">
+            <div class="breadcrumbs">
+                <a href="index.html">Главная</a>  
+                <span>></span>  
+                <a href="#">Читатели</a>
+            </div>
+            <div class="title">
+                <h1>
+                    Читатели
+                    <span>29 читателей</span>
+                </h1>
+            </div>
+            <div class="clearfix">
+                <div class="left-side">
+                    <div class="users">
+                        <div class="users-top clearfix">
+                            <div class="users-top-left">
+                                <form>
+                                    <input type="text" placeholder="Поиск по читателям">
+                                    <a href="#" class="close-btn">
+                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="-49 141 93 93" style="enable-background:new -49 141 93 93;" xml:space="preserve">
+                                            <path d="M-45.243,234c-0.961,0-1.923-0.367-2.656-1.1c-1.467-1.467-1.467-3.846,0-5.313L37.587,142.1
+                                                        c1.467-1.467,3.846-1.467,5.313,0c1.467,1.467,1.467,3.846,0,5.313L-42.587,232.9C-43.32,233.633-44.282,234-45.243,234z"></path>
+                                            <path d="M40.243,234c-0.961,0-1.923-0.367-2.656-1.1L-47.9,147.413c-1.467-1.467-1.467-3.846,0-5.313
+                                                        c1.467-1.467,3.846-1.467,5.313,0L42.9,227.587c1.467,1.467,1.467,3.846,0,5.313C42.166,233.633,41.205,234,40.243,234z"></path>
+                                        </svg>
+                                    </a>
+                                    <button>
+                                        <svg version="1.1" id="&#x421;&#x43B;&#x43E;&#x439;_1"
+                                             xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 34.501 36.763"
+                                             style="enable-background:new 0 0 34.501 36.763; fill: #cad3e0;" xml:space="preserve">
+                                        <g>
+                                            <g>
+                                                <defs>
+                                                    <rect id="SVGID_1_" width="34.501" height="36.763"/>
+                                                </defs>
+                                                <clipPath id="SVGID_2_">
+                                                    <use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+                                                </clipPath>
+                                                <path style="clip-path:url(#SVGID_2_);" d="M34.036,32.816l-8.518-8.859c2.191-2.606,3.391-5.883,3.391-9.295
+                                                    c0-7.969-6.484-14.453-14.456-14.453C6.484,0.21,0,6.694,0,14.663c0,7.972,6.484,14.456,14.452,14.456
+                                                    c2.992,0,5.846-0.902,8.282-2.617l8.586,8.929c0.359,0.375,0.841,0.58,1.36,0.58c0.488,0,0.951-0.187,1.304-0.527
+                                                    C34.736,34.762,34.757,33.568,34.036,32.816L34.036,32.816z M14.452,3.981c5.892,0,10.685,4.793,10.685,10.682
+                                                    c0,5.892-4.793,10.684-10.685,10.684c-5.888,0-10.681-4.793-10.681-10.684C3.771,8.775,8.564,3.981,14.452,3.981L14.452,3.981z
+                                                     M14.452,3.981"/>
+                                            </g>
+                                        </g>
+                                        </svg>
+                                    </button>
+                                </form>
+                            </div>
+                            <div class="users-top-right">
+                                <select>
+                                    <option>Выводить по 15</option>
+                                    <option>Выводить по 30</option>
+                                    <option>Выводить по 45</option>
+                                    <option>Выводить по 60</option>
+                                </select>
+                                <select>
+                                    <option>По имени</option>
+                                    <option>По имени 2</option>
+                                    <option>По имени 3</option>
+                                    <option>По имени 4</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="users-content">
+                            <div class="users-block">
+                                <div class="users-block-number">#1</div>
+                                <div class="users-block-img">
+                                    <a href="#">
+                                        <img src="images/user-img.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="users-block-description">
+                                    <div class="users-block-title">
+                                        <a href="#">Лепесток</a> 
+                                        <img src="images/icon/male.svg" alt="">
+                                    </div>
+                                    <div class="users-block-text">Настоящий мир не таков, каким кажется. Порой мы чувствуем, что живём не своей жизнью. Словно какой-то сбой в Матрице: мучаемся от одиночества</div>
+                                </div>
+                                <div class="users-block-status">
+                                    <span class="regular-reader">Постоянный читатель</span>
+                                </div>
+                                <div class="users-block-bals">1 986  баллов</div>
+                            </div>
+                            <div class="users-block">
+                                <div class="users-block-number">#2</div>
+                                <div class="users-block-img">
+                                    <a href="#">
+                                        <img src="images/user-img2.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="users-block-description">
+                                    <div class="users-block-title">
+                                        <a href="#">Эйлин</a> 
+                                        <img src="images/icon/male.svg" alt="">
+                                    </div>
+                                    <div class="users-block-text">Не жди, что станет легче, проще, лучше. Не станет. Трудности будут всегда. Учись быть счастливым прямо сейчас. Иначе не успеешь.</div>
+                                </div>
+                                <div class="users-block-status">
+                                    <span class="newbie">Новичок</span>
+                                </div>
+                                <div class="users-block-bals">215 баллов</div>
+                            </div>
+                            <div class="users-block">
+                                <div class="users-block-number">#3</div>
+                                <div class="users-block-img">
+                                    <a href="#">
+                                        <img src="images/user-img3.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="users-block-description">
+                                    <div class="users-block-title">
+                                        <a href="#">Антонина</a> 
+                                        <img src="images/icon/female.svg" alt="">
+                                    </div>
+                                    <div class="users-block-text">Как сложится судьба, никто не знает... Живи свободно и не бойся перемен... Когда Господь что-то забирает, не упусти того, что он дает взамен!</div>
+                                </div>
+                                <div class="users-block-status">
+                                    <span class="coryphaeus">Корифей</span>
+                                </div>
+                                <div class="users-block-bals">1 218 баллов</div>
+                            </div>
+                            <div class="users-block">
+                                <div class="users-block-number">#4</div>
+                                <div class="users-block-img">
+                                    <a href="#">
+                                        <img src="images/user-img4.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="users-block-description">
+                                    <div class="users-block-title">
+                                        <a href="#">Гарри Поттер</a> 
+                                        <img src="images/icon/male.svg" alt="">
+                                    </div>
+                                    <div class="users-block-text">Самый замечательный день - это ЗАВТРА! Завтра все сядут на диету, броят курить, займутся учёбой…</div>
+                                </div>
+                                <div class="users-block-status">
+                                    <span class="live-librarian">Живой библиотекарь</span>
+                                </div>
+                                <div class="users-block-bals">215 баллов</div>
+                            </div>
+                            <div class="users-block">
+                                <div class="users-block-number">#5</div>
+                                <div class="users-block-img">
+                                    <a href="#">
+                                        <img src="images/user-img5.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="users-block-description">
+                                    <div class="users-block-title">
+                                        <a href="#">Никифор</a> 
+                                        <img src="images/icon/male.svg" alt="">
+                                    </div>
+                                    <div class="users-block-text">Когда мне грустно, я пою... И я понимаю, что мой голос хуже чем мои проблемы...</div>
+                                </div>
+                                <div class="users-block-status">
+                                    <span class="visitor">Посетитель</span>
+                                </div>
+                                <div class="users-block-bals">1986 баллов</div>
+                            </div>
+                            <div class="users-block">
+                                <div class="users-block-number">#6</div>
+                                <div class="users-block-img">
+                                    <a href="#">
+                                        <img src="images/user-img6.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="users-block-description">
+                                    <div class="users-block-title">
+                                        <a href="#">Ульфрик Буревестник</a>
+                                        <img src="images/icon/male.svg" alt="">
+                                    </div>
+                                    <div class="users-block-text">Все мы гении. Но если вы будете судить рыбу по ее способности взбираться на дерево, она проживет всю жизнь, считая себя дурой. /А. Эйнштейн/</div>
+                                </div>
+                                <div class="users-block-status">
+                                    <span class="newbie">Восходящая звезда</span>
+                                </div>
+                                <div class="users-block-bals">215 баллов</div>
+                            </div>
+                            <div class="users-block">
+                                <div class="users-block-number">#7</div>
+                                <div class="users-block-img">
+                                    <a href="#">
+                                        <img src="images/user-img7.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="users-block-description">
+                                    <div class="users-block-title">
+                                        <a href="#">Далайла</a>
+                                        <img src="images/icon/female.svg" alt="">
+                                    </div>
+                                    <div class="users-block-text">Если хочешь узнать человека, не слушай, что о нём говорят другие, послушай, что он говорит о других.</div>
+                                </div>
+                                <div class="users-block-status">
+                                    <span class="reader">Читатель</span>
+                                </div>
+                                <div class="users-block-bals">1 218 баллов</div>
+                            </div>
+                            <div class="users-block">
+                                <div class="users-block-number">#8</div>
+                                <div class="users-block-img">
+                                    <a href="#">
+                                        <img src="images/user-img8.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="users-block-description">
+                                    <div class="users-block-title">
+                                        <a href="#">Гервант</a>
+                                        <img src="images/icon/male.svg" alt="">
+                                    </div>
+                                    <div class="users-block-text">Никогда ни кидай в людей грязью. Грязь до них может не долететь, а вот у вас на руках останется!</div>
+                                </div>
+                                <div class="users-block-status">
+                                    <span class="favorite-librarian">Любимый библиотекарь</span>
+                                </div>
+                                <div class="users-block-bals">116 баллов</div>
+                            </div>
+                            <div class="users-block">
+                                <div class="users-block-number">#9</div>
+                                <div class="users-block-img">
+                                    <a href="#">
+                                        <img src="images/user-img.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="users-block-description">
+                                    <div class="users-block-title">
+                                        <a href="#">Лепесток</a>
+                                        <img src="images/icon/male.svg" alt="">
+                                    </div>
+                                    <div class="users-block-text">Настоящий мир не таков, каким кажется. Порой мы чувствуем, что живём не своей жизнью. Словно какой-то сбой в Матрице: мучаемся от одиночества бессмысленности жизни, не понимаем</div>
+                                </div>
+                                <div class="users-block-status">
+                                    <span class="guru">
+                                        <img src="images/icon/white-star.svg" alt="">
+                                        Гуру
+                                    </span>
+                                </div>
+                                <div class="users-block-bals">1 986 баллов</div>
+                            </div>
+                            <div class="users-block">
+                                <div class="users-block-number">#10</div>
+                                <div class="users-block-img">
+                                    <a href="#">
+                                        <img src="images/user-img2.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="users-block-description">
+                                    <div class="users-block-title">
+                                        <a href="#">Эйлин</a> 
+                                        <img src="images/icon/male.svg" alt="">
+                                    </div>
+                                    <div class="users-block-text">Не жди, что станет легче, проще, лучше. Не станет. Трудности будут всегда. Учись быть счастливым прямо сейчас. Иначе не успеешь.</div>
+                                </div>
+                                <div class="users-block-status">
+                                    <span class="newbie">Постоянный читатель</span>
+                                </div>
+                                <div class="users-block-bals">215 баллов</div>
+                            </div>
+                            <div class="users-block">
+                                <div class="users-block-number">#11</div>
+                                <div class="users-block-img">
+                                    <a href="#">
+                                        <img src="images/user-img3.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="users-block-description">
+                                    <div class="users-block-title">
+                                        <a href="#">Антонина</a> 
+                                        <img src="images/icon/female.svg" alt="">
+                                    </div>
+                                    <div class="users-block-text">Как сложится судьба, никто не знает... Живи свободно и не бойся перемен... Когда Господь что-то забирает, не упусти того, что он дает взамен!</div>
+                                </div>
+                                <div class="users-block-status">
+                                    <span class="coryphaeus">Корифей</span>
+                                </div>
+                                <div class="users-block-bals">1 218 баллов</div>
+                            </div>
+                            <div class="users-block">
+                                <div class="users-block-number">#12</div>
+                                <div class="users-block-img">
+                                    <a href="#">
+                                        <img src="images/user-img4.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="users-block-description">
+                                    <div class="users-block-title">
+                                        <a href="#">Гарри Поттер</a> 
+                                        <img src="images/icon/male.svg" alt="">
+                                    </div>
+                                    <div class="users-block-text">Самый замечательный день - это ЗАВТРА! Завтра все сядут на диету, броят курить, займутся учёбой…</div>
+                                </div>
+                                <div class="users-block-status">
+                                    <span class="live-librarian">Живой библиотекарь</span>
+                                </div>
+                                <div class="users-block-bals">215 баллов</div>
+                            </div>
+                            <div class="users-block">
+                                <div class="users-block-number">#13</div>
+                                <div class="users-block-img">
+                                    <a href="#">
+                                        <img src="images/user-img5.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="users-block-description">
+                                    <div class="users-block-title">
+                                        <a href="#">Никифор</a> 
+                                        <img src="images/icon/male.svg" alt="">
+                                    </div>
+                                    <div class="users-block-text">Когда мне грустно, я пою... И я понимаю, что мой голос хуже чем мои проблемы...</div>
+                                </div>
+                                <div class="users-block-status">
+                                    <span class="visitor">Посетитель</span>
+                                </div>
+                                <div class="users-block-bals">1986 баллов</div>
+                            </div>
+                            <div class="users-block">
+                                <div class="users-block-number">#14</div>
+                                <div class="users-block-img">
+                                    <a href="#">
+                                        <img src="images/user-img6.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="users-block-description">
+                                    <div class="users-block-title">
+                                        <a href="#">Ульфрик Буревестник</a> 
+                                        <img src="images/icon/male.svg" alt="">
+                                    </div>
+                                    <div class="users-block-text">Все мы гении. Но если вы будете судить рыбу по ее способности взбираться на дерево, она проживет всю жизнь, считая себя дурой. /А. Эйнштейн/</div>
+                                </div>
+                                <div class="users-block-status">
+                                    <span class="newbie">Восходящая звезда</span>
+                                </div>
+                                <div class="users-block-bals">215 баллов</div>
+                            </div>
+                            <div class="users-block">
+                                <div class="users-block-number">#15</div>
+                                <div class="users-block-img">
+                                    <a href="#">
+                                        <img src="images/user-img7.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="users-block-description">
+                                    <div class="users-block-title">
+                                        <a href="#">Далайла</a>
+                                        <img src="images/icon/female.svg" alt="">
+                                    </div>
+                                    <div class="users-block-text">Если хочешь узнать человека, не слушай, что о нём говорят другие, послушай, что он говорит о других.</div>
+                                </div>
+                                <div class="users-block-status">
+                                    <span class="reader">Читатель</span>
+                                </div>
+                                <div class="users-block-bals">1 218 баллов</div>
+                            </div>
+                        </div>
+                        <div class="navigation clearfix">
+                            <div class="navigation-left">
+                                <span>Страница</span>
+                                <form>
+                                    <input type="text" placeholder="2">
+                                    <button>ОК</button>
+                                </form>
+                            </div>
+                            <div class="navigation-right">
+                                <ul>
+                                    <li><a href="#" class="prev"></a></li>
+                                    <li><a href="#">1</a></li>
+                                    <li class="active"><a href="#">2</a></li>
+                                    <li><a href="#">3</a></li>
+                                    <li><a href="#">4</a></li>
+                                    <li><a href="#">5</a></li>
+                                    <li><a href="#">6</a></li>
+                                    <li><a href="#">7</a></li>
+                                    <li><a href="#">8</a></li>
+                                    <li class="no-active"><a href="#">...</a></li>
+                                    <li><a href="#">328</a></li>
+                                    <li><a href="#" class="next"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-side">
+                    <div class="advertising-block">
+                        <a href="#">
+                            <img src="images/advertising-block.png" alt="">
+                        </a>
+                    </div>
+                    <div class="advertising-block">
+                        <a href="#">
+                            <img src="images/advertising-block.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="container clearfix">
+                <div class="footer-right">
+                    <div class="footer-colum colum1">
+                        <div>Санктуариум</div>
+                        <ul>
+                            <li><a href="#">О сайте</a></li>
+                            <li><a href="#">Политика обработки персональных данных</a></li>
+                            <li><a href="#">Соглашение и правила</a></li>
+                            <li><a href="#">Карта сайта</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-colum colum2">
+                        <div>Поддержка</div>
+                        <ul>
+                            <li><a href="#">Часто задаваемые вопросы</a></li>
+                            <li><a href="#">Предложить улучшение</a></li>
+                            <li><a href="#">Обратная связь</a></li>
+                            <li><a href="#">Сообщить об ошибке</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-colum colum3">
+                        <div>Библиотека</div>
+                        <ul>
+                            <li><a href="#">Добавить книгу</a></li>
+                            <li><a href="#">Программы для чтения</a></li>
+                            <li><a href="#">Стол заказов</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-left">
+                    <div class="footer-logo">
+                        <a href="index.html">
+                            <img src="images/footer-logo.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="copyright">
+                        © 2018 Все права защищены
+                    </div>
+                    <div class="social">
+                        <a href="#">
+                            <img src="images/icon/vk.svg" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="images/icon/ok.svg" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="images/icon/fb.svg" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="images/icon/insta.svg" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="images/icon/twitter.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="mobil-overflow"></div>
+        <div class="overflow"></div>
+        <div class="popup popup1">
+            <div class="popup-title">
+                Зарегистрируйтесь
+                <p>или <a href="#">войдите в аккаунт</a></p>
+            </div>
+            <div class="close">
+                <img src="images/icon/close.svg" alt="">
+            </div>
+            <form>
+                <input type="text" placeholder="Email">
+                <input type="text" placeholder="Пароль">
+                <button>Зарегистрироваться</button>
+            </form>
+            <div class="popup-social">
+                <p>Регистрация через соц. сеть</p>
+                <a href="#">
+                    <img src="images/icon/vk.svg" alt="">
+                </a>
+                <a href="#" class="ok">
+                    <img src="images/icon/ok.svg" alt="">
+                </a>
+                <a href="#" class="fb">
+                    <img src="images/icon/fb.svg" alt="">
+                </a>
+                <a href="#" class="tw">
+                    <img src="images/icon/twitter.svg" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="popup popup2">
+            <div class="forgot-hidden">
+                <div class="popup-title">
+                    Войдите
+                    <p>или <a href="#">или зарегистрируйтесь</a></p>
+                </div>
+                <form>
+                    <input type="text" placeholder="Email">
+                    <input type="text" placeholder="Пароль">
+                    <div class="forgot">
+                        <a href="#" class="forgot-btn">Забыли пароль?</a>
+                        <button>Вход</button>
+                    </div>
+                </form>
+                <div class="popup-social">
+                    <p>Регистрация через соц. сеть</p>
+                    <a href="#">
+                        <img src="images/icon/vk.svg" alt="">
+                    </a>
+                    <a href="#" class="ok">
+                        <img src="images/icon/ok.svg" alt="">
+                    </a>
+                    <a href="#" class="fb">
+                        <img src="images/icon/fb.svg" alt="">
+                    </a>
+                    <a href="#" class="tw">
+                        <img src="images/icon/twitter.svg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="forgot-content">
+                <div class="popup-title">
+                    Восстановить доступ
+                    <p><a href="#">Зарегистрируйтесь</a> или <a href="#">войдите в аккаунт</a></p>
+                </div>
+                <form>
+                    <input type="text" placeholder="Ваш  Email">
+                    <button>Восстановить пароль</button>
+                </form>
+            </div>
+            <div class="close">
+                <img src="images/icon/close.svg" alt="">
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/framework.js"></script>
+    <script src="js/common.js"></script>
+</body>
+</html>

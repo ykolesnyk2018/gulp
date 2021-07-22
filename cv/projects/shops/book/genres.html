@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">        
+    <meta name="author" content="CHANGE-ME">
+    <meta name="description" content="CHANGE-ME">
+    <!-- Mobile Stuff -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="images/icon/favicon.png" type="image/png">
+    <title>Детективное агентство.</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body> 
+    <div class="wrapper">
+        <header>
+            <div class="header-top">
+                <div class="container clearfix">
+                    <div class="main-menu-button">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="images/logo.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="search">
+                        <form>
+                            <input type="text" placeholder="Поиск...">
+                            <a href="#" class="close-btn">
+                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                 viewBox="-49 141 93 93" style="enable-background:new -49 141 93 93;" xml:space="preserve">
+                                <path d="M-45.243,234c-0.961,0-1.923-0.367-2.656-1.1c-1.467-1.467-1.467-3.846,0-5.313L37.587,142.1
+                                    c1.467-1.467,3.846-1.467,5.313,0c1.467,1.467,1.467,3.846,0,5.313L-42.587,232.9C-43.32,233.633-44.282,234-45.243,234z"/>
+                                <path d="M40.243,234c-0.961,0-1.923-0.367-2.656-1.1L-47.9,147.413c-1.467-1.467-1.467-3.846,0-5.313
+                                    c1.467-1.467,3.846-1.467,5.313,0L42.9,227.587c1.467,1.467,1.467,3.846,0,5.313C42.166,233.633,41.205,234,40.243,234z"/>
+                                </svg>
+
+                            </a>
+                            <a href="#">
+                                <svg version="1.1" 
+                                     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 38 29.674"
+                                     style="enable-background:new 0 0 38 29.674;" xml:space="preserve">
+                                <g>
+                                    <path d="M21.463,13.824h-0.638V1.825C20.825,0.817,20.008,0,19,0s-1.825,0.817-1.825,1.825v11.999h-0.639
+                                        c-1.512,0-2.737,1.226-2.737,2.737v0.201c0,1.512,1.226,2.737,2.737,2.737h0.639v8.35c0,1.008,0.817,1.825,1.825,1.825
+                                        s1.825-0.817,1.825-1.825v-8.35h0.638c1.512,0,2.737-1.226,2.737-2.737v-0.201C24.2,15.049,22.975,13.824,21.463,13.824
+                                        L21.463,13.824z M19.989,17.665h-1.977c-0.554,0-1.004-0.45-1.004-1.004c0-0.554,0.449-1.004,1.004-1.004h1.977
+                                        c0.554,0,1.003,0.45,1.003,1.004C20.992,17.216,20.543,17.665,19.989,17.665L19.989,17.665z M19.989,17.665"/>
+                                    <path d="M7.664,8.35H7.026V1.825C7.026,0.817,6.209,0,5.201,0C4.193,0,3.376,0.817,3.376,1.825V8.35H2.737
+                                        C1.226,8.35,0,9.575,0,11.087v0.201c0,1.512,1.226,2.737,2.737,2.737h0.639v13.824c0,1.008,0.817,1.825,1.825,1.825
+                                        c1.008,0,1.825-0.817,1.825-1.825V14.025h0.638c1.512,0,2.737-1.226,2.737-2.737v-0.201C10.401,9.575,9.175,8.35,7.664,8.35
+                                        L7.664,8.35z M6.189,12.191H4.212c-0.554,0-1.004-0.45-1.004-1.004c0-0.554,0.449-1.004,1.004-1.004h1.977
+                                        c0.554,0,1.004,0.45,1.004,1.004C7.193,11.742,6.743,12.191,6.189,12.191L6.189,12.191z M6.189,12.191"/>
+                                    <path d="M35.263,5.612h-0.639V1.825C34.624,0.817,33.807,0,32.799,0c-1.008,0-1.825,0.817-1.825,1.825v3.788h-0.639
+                                        c-1.512,0-2.737,1.226-2.737,2.737v0.201c0,1.512,1.226,2.737,2.737,2.737h0.639v16.561c0,1.008,0.817,1.825,1.825,1.825
+                                        c1.008,0,1.825-0.817,1.825-1.825V11.288h0.639c1.512,0,2.737-1.226,2.737-2.737V8.35C38,6.838,36.774,5.612,35.263,5.612
+                                        L35.263,5.612z M33.788,9.454h-1.977c-0.554,0-1.004-0.45-1.004-1.004c0-0.554,0.449-1.004,1.004-1.004h1.977
+                                        c0.554,0,1.004,0.45,1.004,1.004C34.792,9.004,34.342,9.454,33.788,9.454L33.788,9.454z M33.788,9.454"/>
+                                </g>
+                                </svg>
+                            </a>
+                            <button>
+                                <svg version="1.1"
+                                     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 34.501 36.763"
+                                     style="enable-background:new 0 0 34.501 36.763;" xml:space="preserve">
+                                <g>
+                                    <g>
+                                        <defs>
+                                            <rect width="34.501" height="36.763"/>
+                                        </defs>
+                                        <clipPath>
+                                            <use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+                                        </clipPath>
+                                        <path style="clip-path:url(#SVGID_2_);" d="M34.036,32.816l-8.518-8.859c2.191-2.606,3.391-5.883,3.391-9.295
+                                            c0-7.969-6.484-14.453-14.456-14.453C6.484,0.21,0,6.694,0,14.663c0,7.972,6.484,14.456,14.452,14.456
+                                            c2.992,0,5.846-0.902,8.282-2.617l8.586,8.929c0.359,0.375,0.841,0.58,1.36,0.58c0.488,0,0.951-0.187,1.304-0.527
+                                            C34.736,34.762,34.757,33.568,34.036,32.816L34.036,32.816z M14.452,3.981c5.892,0,10.685,4.793,10.685,10.682
+                                            c0,5.892-4.793,10.684-10.685,10.684c-5.888,0-10.681-4.793-10.681-10.684C3.771,8.775,8.564,3.981,14.452,3.981L14.452,3.981z
+                                             M14.452,3.981"/>
+                                    </g>
+                                </g>
+                                </svg>
+
+                            </button>
+                        </form>
+                    </div>
+                    <div class="header-right">
+                        <ul>
+                            <li class="child">
+                                <a href="#">
+                                    Жанры
+                                    <svg version="1.1"
+                                                 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 35.947 20.653"
+                                                 style="enable-background:new 0 0 35.947 20.653;" xml:space="preserve" >
+                                        <g>
+                                            <g>
+                                                <path  d="M19.05,20.305L35.591,3.763c0.236-0.238,0.355-0.51,0.355-0.817
+                                                        c0-0.308-0.119-0.581-0.355-0.817l-1.774-1.774C33.581,0.119,33.308,0,33,0c-0.309,0-0.581,0.119-0.817,0.355l-13.95,13.951
+                                                        L4.28,0.355C4.045,0.119,3.772,0,3.463,0C3.157,0,2.885,0.119,2.646,0.355L0.873,2.13C0.636,2.366,0.519,2.638,0.519,2.947
+                                                        c0,0.307,0.117,0.579,0.353,0.817l16.544,16.541c0.236,0.236,0.508,0.356,0.817,0.356C18.539,20.661,18.811,20.543,19.05,20.305
+                                                        L19.05,20.305z M19.05,20.305"/>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </a>
+                                <div>
+                                    <div class="popup-menu-title">
+                                        Популярные жанры <span>92 жанра</span>
+                                        <span class="close-popup-menu">
+                                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                 viewBox="-49 141 93 93" style="enable-background:new -49 141 93 93;" xml:space="preserve">
+                                            <path d="M-45.243,234c-0.961,0-1.923-0.367-2.656-1.1c-1.467-1.467-1.467-3.846,0-5.313L37.587,142.1
+                                                c1.467-1.467,3.846-1.467,5.313,0c1.467,1.467,1.467,3.846,0,5.313L-42.587,232.9C-43.32,233.633-44.282,234-45.243,234z"/>
+                                            <path d="M40.243,234c-0.961,0-1.923-0.367-2.656-1.1L-47.9,147.413c-1.467-1.467-1.467-3.846,0-5.313
+                                                c1.467-1.467,3.846-1.467,5.313,0L42.9,227.587c1.467,1.467,1.467,3.846,0,5.313C42.166,233.633,41.205,234,40.243,234z"/>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                    <ul>
+                                        <li><a href="#">Военное дело</a></li>
+                                        <li><a href="#">Любовные романы</a></li>
+                                        <li><a href="#">Религия и духовность</a></li>
+                                        <li><a href="#">Деловая литература</a></li>
+                                        <li><a href="#">Наука, Образование</a></li>
+                                        <li><a href="#">Справочная литература</a></li>
+                                        <li><a href="#">Детективы и Триллеры</a></li>
+                                        <li><a href="#">Неотсортированное</a></li>
+                                        <li><a href="#">Старинное</a></li>
+                                        <li><a href="#">Детское</a></li>
+                                        <li><a href="#">Поэзия</a></li>
+                                        <li><a href="#">Техника</a></li>
+                                        <li><a href="#">Домоводство (Дом и семья)</a></li>
+                                        <li><a href="#">Приключения</a></li>
+                                        <li><a href="#">Фантастика</a></li>
+                                        <li><a href="#">Драматургия</a></li>
+                                        <li><a href="#">Проза</a></li>
+                                        <li><a href="#">Фольклор</a></li>
+                                        <li><a href="#">Компьютеры и Интернет</a></li>
+                                        <li><a href="#">Прочее</a></li>
+                                        <li><a href="#">Юмор</a></li>
+                                    </ul>
+                                    <div class="all-genres">
+                                        <a href="#">Все жанры <span>→</span></a>
+                                    </div>
+                                </div>
+                            </li>       
+                            <li><a href="#">Серии</a></li>         
+                            <li><a href="#">Подборки</a></li>         
+                            <li><a href="#">Рецензии</a></li>         
+                            <li><a href="#">Авторы</a></li>         
+                            <li><a href="#">Читатели</a></li>
+                        </ul>
+                        <div class="user">
+                            <div class="user-img">
+                                <img src="images/user.png" alt="">
+                            </div>
+                            <div class="user-name">
+                                <span>Renata</span>
+                                <svg version="1.1"
+                                     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 35.947 20.653"
+                                     style="enable-background:new 0 0 35.947 20.653;" xml:space="preserve">
+                                <g>
+                                    <g>
+                                        <defs>
+                                            <rect width="35.947" height="20.653"/>
+                                        </defs>
+                                        <clipPath>
+                                            <use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+                                        </clipPath>
+                                        <path style="clip-path:url(#SVGID_2_);" d="M19.05,20.305L35.591,3.763c0.236-0.238,0.355-0.51,0.355-0.817
+                                            c0-0.308-0.119-0.581-0.355-0.817l-1.774-1.774C33.581,0.119,33.308,0,33,0c-0.309,0-0.581,0.119-0.817,0.355l-13.95,13.951
+                                            L4.28,0.355C4.045,0.119,3.772,0,3.463,0C3.157,0,2.885,0.119,2.646,0.355L0.873,2.13C0.636,2.366,0.519,2.638,0.519,2.947
+                                            c0,0.307,0.117,0.579,0.353,0.817l16.544,16.541c0.236,0.236,0.508,0.356,0.817,0.356C18.539,20.661,18.811,20.543,19.05,20.305
+                                            L19.05,20.305z M19.05,20.305"/>
+                                    </g>
+                                </g>
+                                </svg>
+
+                            </div>
+                        </div>
+                        <div class="user-menu">
+                            <div class="profile">
+                                <div class="profile-img">
+                                     <img src="images/user.png" alt="">
+                                </div>
+                                <div class="profile-title">Renata</div>
+                            </div>
+                            <div class="user-menu-top">
+                                <a href="#">Профиль</a>  
+                                <span>|</span>  
+                                <a href="#">Выход</a>
+                            </div>
+                            <div class="user-menu-content">
+                                <ul>
+                                    <li><a href="#">Мои данные</a></li>
+                                    <li><a href="#">Моя библиотека</a></li>
+                                    <li><a href="#">Мои рецензии</a></li>
+                                    <li>
+                                        <a href="#">Мои комментарии <span>2</span></a>
+                                    </li>
+                                    <li><a href="#">Мои оценки</a></li> 
+                                    <li><a href="#">Конфиденциальность</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="header-bottom">
+            <div class="header-bottom-hidden">
+                <div class="container clearfix">
+                    <div class="header-bottom-hidden-top">
+                        <div class="header-bottom-hidden-btn">Назад</div>
+                        <div class="header-bottom-hidden-right">
+                            <svg version="1.1" 
+                                         xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 38 29.674"
+                                         style="enable-background:new 0 0 38 29.674;" xml:space="preserve">
+                                <g>
+                                    <path d="M21.463,13.824h-0.638V1.825C20.825,0.817,20.008,0,19,0s-1.825,0.817-1.825,1.825v11.999h-0.639
+                                            c-1.512,0-2.737,1.226-2.737,2.737v0.201c0,1.512,1.226,2.737,2.737,2.737h0.639v8.35c0,1.008,0.817,1.825,1.825,1.825
+                                            s1.825-0.817,1.825-1.825v-8.35h0.638c1.512,0,2.737-1.226,2.737-2.737v-0.201C24.2,15.049,22.975,13.824,21.463,13.824
+                                            L21.463,13.824z M19.989,17.665h-1.977c-0.554,0-1.004-0.45-1.004-1.004c0-0.554,0.449-1.004,1.004-1.004h1.977
+                                            c0.554,0,1.003,0.45,1.003,1.004C20.992,17.216,20.543,17.665,19.989,17.665L19.989,17.665z M19.989,17.665"/>
+                                    <path d="M7.664,8.35H7.026V1.825C7.026,0.817,6.209,0,5.201,0C4.193,0,3.376,0.817,3.376,1.825V8.35H2.737
+                                            C1.226,8.35,0,9.575,0,11.087v0.201c0,1.512,1.226,2.737,2.737,2.737h0.639v13.824c0,1.008,0.817,1.825,1.825,1.825
+                                            c1.008,0,1.825-0.817,1.825-1.825V14.025h0.638c1.512,0,2.737-1.226,2.737-2.737v-0.201C10.401,9.575,9.175,8.35,7.664,8.35
+                                            L7.664,8.35z M6.189,12.191H4.212c-0.554,0-1.004-0.45-1.004-1.004c0-0.554,0.449-1.004,1.004-1.004h1.977
+                                            c0.554,0,1.004,0.45,1.004,1.004C7.193,11.742,6.743,12.191,6.189,12.191L6.189,12.191z M6.189,12.191"/>
+                                    <path d="M35.263,5.612h-0.639V1.825C34.624,0.817,33.807,0,32.799,0c-1.008,0-1.825,0.817-1.825,1.825v3.788h-0.639
+                                            c-1.512,0-2.737,1.226-2.737,2.737v0.201c0,1.512,1.226,2.737,2.737,2.737h0.639v16.561c0,1.008,0.817,1.825,1.825,1.825
+                                            c1.008,0,1.825-0.817,1.825-1.825V11.288h0.639c1.512,0,2.737-1.226,2.737-2.737V8.35C38,6.838,36.774,5.612,35.263,5.612
+                                            L35.263,5.612z M33.788,9.454h-1.977c-0.554,0-1.004-0.45-1.004-1.004c0-0.554,0.449-1.004,1.004-1.004h1.977
+                                            c0.554,0,1.004,0.45,1.004,1.004C34.792,9.004,34.342,9.454,33.788,9.454L33.788,9.454z M33.788,9.454"/>
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="header-bottom-hidden-bottom">
+                        <div class="header-bottom-hidden-bottom-content">
+                            <div class="advanced-search-title active">Параметры поиска</div>
+                            <div class="advanced-search-block">
+                                <form>
+                                    <div>
+                                        <label>Название</label>
+                                        <input type="text">
+                                    </div>
+                                    <div>
+                                        <label>Автор</label>
+                                        <input type="text">
+                                    </div>
+                                    <div>
+                                        <label>Серия</label>
+                                        <input type="text">
+                                    </div>
+                                    <div>
+                                        <label>Язык</label>
+                                        <select>
+                                            <option>--</option>
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <label>Год</label>
+                                        <select>
+                                            <option>--</option>
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <label>Рейтинг</label>
+                                        <div class="checkbox">
+                                            <input type="checkbox" id="radio1" name="rating">
+                                            <label for="radio1">1</label>
+                                            <input type="checkbox" id="radio2" name="rating">
+                                            <label for="radio2">2</label>
+                                            <input type="checkbox" id="radio3" name="rating">
+                                            <label for="radio3">3</label>
+                                            <input type="checkbox" id="radio4" name="rating">
+                                            <label for="radio4">4</label>
+                                            <input type="checkbox" id="radio5" name="rating">
+                                            <label for="radio5">5</label>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="advanced-search-title">Параметры поиска</div>
+                            <div class="advanced-search-block">2</div>
+                            <div class="advanced-search-title">Что-нибудь</div>
+                            <div class="advanced-search-block">3</div>
+                        </div>
+                        <div class="advanced-search-btns">
+                            <a href="#">Сбросить</a>
+                            <a href="#">Поиск [4]</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <div class="container clearfix">
+                    <div class="search">
+                        <form>
+                            <input type="text" placeholder="Поиск...">
+                            <a href="#" class="close-btn">
+                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                 viewBox="-49 141 93 93" style="enable-background:new -49 141 93 93;" xml:space="preserve">
+                                <path d="M-45.243,234c-0.961,0-1.923-0.367-2.656-1.1c-1.467-1.467-1.467-3.846,0-5.313L37.587,142.1
+                                    c1.467-1.467,3.846-1.467,5.313,0c1.467,1.467,1.467,3.846,0,5.313L-42.587,232.9C-43.32,233.633-44.282,234-45.243,234z"/>
+                                <path d="M40.243,234c-0.961,0-1.923-0.367-2.656-1.1L-47.9,147.413c-1.467-1.467-1.467-3.846,0-5.313
+                                    c1.467-1.467,3.846-1.467,5.313,0L42.9,227.587c1.467,1.467,1.467,3.846,0,5.313C42.166,233.633,41.205,234,40.243,234z"/>
+                                </svg>
+
+                            </a>
+                            <a href="#" class="open-mobil-filter">
+                                <svg version="1.1" 
+                                     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 38 29.674"
+                                     style="enable-background:new 0 0 38 29.674;" xml:space="preserve">
+                                <g>
+                                    <path d="M21.463,13.824h-0.638V1.825C20.825,0.817,20.008,0,19,0s-1.825,0.817-1.825,1.825v11.999h-0.639
+                                        c-1.512,0-2.737,1.226-2.737,2.737v0.201c0,1.512,1.226,2.737,2.737,2.737h0.639v8.35c0,1.008,0.817,1.825,1.825,1.825
+                                        s1.825-0.817,1.825-1.825v-8.35h0.638c1.512,0,2.737-1.226,2.737-2.737v-0.201C24.2,15.049,22.975,13.824,21.463,13.824
+                                        L21.463,13.824z M19.989,17.665h-1.977c-0.554,0-1.004-0.45-1.004-1.004c0-0.554,0.449-1.004,1.004-1.004h1.977
+                                        c0.554,0,1.003,0.45,1.003,1.004C20.992,17.216,20.543,17.665,19.989,17.665L19.989,17.665z M19.989,17.665"/>
+                                    <path d="M7.664,8.35H7.026V1.825C7.026,0.817,6.209,0,5.201,0C4.193,0,3.376,0.817,3.376,1.825V8.35H2.737
+                                        C1.226,8.35,0,9.575,0,11.087v0.201c0,1.512,1.226,2.737,2.737,2.737h0.639v13.824c0,1.008,0.817,1.825,1.825,1.825
+                                        c1.008,0,1.825-0.817,1.825-1.825V14.025h0.638c1.512,0,2.737-1.226,2.737-2.737v-0.201C10.401,9.575,9.175,8.35,7.664,8.35
+                                        L7.664,8.35z M6.189,12.191H4.212c-0.554,0-1.004-0.45-1.004-1.004c0-0.554,0.449-1.004,1.004-1.004h1.977
+                                        c0.554,0,1.004,0.45,1.004,1.004C7.193,11.742,6.743,12.191,6.189,12.191L6.189,12.191z M6.189,12.191"/>
+                                    <path d="M35.263,5.612h-0.639V1.825C34.624,0.817,33.807,0,32.799,0c-1.008,0-1.825,0.817-1.825,1.825v3.788h-0.639
+                                        c-1.512,0-2.737,1.226-2.737,2.737v0.201c0,1.512,1.226,2.737,2.737,2.737h0.639v16.561c0,1.008,0.817,1.825,1.825,1.825
+                                        c1.008,0,1.825-0.817,1.825-1.825V11.288h0.639c1.512,0,2.737-1.226,2.737-2.737V8.35C38,6.838,36.774,5.612,35.263,5.612
+                                        L35.263,5.612z M33.788,9.454h-1.977c-0.554,0-1.004-0.45-1.004-1.004c0-0.554,0.449-1.004,1.004-1.004h1.977
+                                        c0.554,0,1.004,0.45,1.004,1.004C34.792,9.004,34.342,9.454,33.788,9.454L33.788,9.454z M33.788,9.454"/>
+                                </g>
+                                </svg>
+                            </a>
+                            <button>
+                                <svg version="1.1"
+                                     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 34.501 36.763"
+                                     style="enable-background:new 0 0 34.501 36.763;" xml:space="preserve">
+                                <g>
+                                    <g>
+                                        <defs>
+                                            <rect width="34.501" height="36.763"/>
+                                        </defs>
+                                        <clipPath>
+                                            <use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+                                        </clipPath>
+                                        <path style="clip-path:url(#SVGID_2_);" d="M34.036,32.816l-8.518-8.859c2.191-2.606,3.391-5.883,3.391-9.295
+                                            c0-7.969-6.484-14.453-14.456-14.453C6.484,0.21,0,6.694,0,14.663c0,7.972,6.484,14.456,14.452,14.456
+                                            c2.992,0,5.846-0.902,8.282-2.617l8.586,8.929c0.359,0.375,0.841,0.58,1.36,0.58c0.488,0,0.951-0.187,1.304-0.527
+                                            C34.736,34.762,34.757,33.568,34.036,32.816L34.036,32.816z M14.452,3.981c5.892,0,10.685,4.793,10.685,10.682
+                                            c0,5.892-4.793,10.684-10.685,10.684c-5.888,0-10.681-4.793-10.681-10.684C3.771,8.775,8.564,3.981,14.452,3.981L14.452,3.981z
+                                             M14.452,3.981"/>
+                                    </g>
+                                </g>
+                                </svg>
+
+                            </button>
+                        </form>
+                    </div>
+                </div>
+        </div>
+        <div class="main-menu-mobil">
+            <div class="main-menu-mobil-container">
+                <div class="main-menu-mobil-top">
+                    <div class="main-menu-mobil-top-left">
+                        <a href="#">
+                           <img src="images/main-menu-mobil-top-left.png" alt="">
+                        </a>
+                    </div>
+                    <div class="main-menu-mobil-top-right">
+                        Геральт из Ривии
+                        <span>Постоянный читатель</span>
+                    </div>
+                </div>
+                <ul>
+                    <li class="child">
+                        <a href="#">Жанры</a>
+                        <div>
+                            <div class="prev">Назад</div>
+                            <ul>
+                                <li><a href="#">Военное дело</a></li>
+                                <li><a href="#">Деловая литература</a></li>
+                                <li><a href="#">Детективы и Триллеры</a></li>
+                                <li><a href="#">Детское</a></li>
+                                <li><a href="#">Домоводство (Дом и семья)</a></li>
+                                <li><a href="#">Драматургия</a></li>
+                                <li><a href="#">Компьютеры и Интернет</a></li>
+                                <li><a href="#">Любовные романы</a></li>
+                                <li><a href="#">Наука, Образование</a></li>
+                                <li><a href="#">Неотсортированное</a></li>
+                                <li><a href="#">Поэзия</a></li>
+                                <li><a href="#">Приключения</a></li>
+                                <li><a href="#">Проза</a></li>
+                                <li><a href="#">Прочее</a></li>
+                                <li><a href="#">Религия и духовность</a></li>
+                                <li><a href="#">Справочная литература</a></li>
+                                <li><a href="#">Старинное</a></li>
+                                <li><a href="#">Техника</a></li>
+                                <li><a href="#">Фантастика</a></li>
+                                <li><a href="#">Фольклор</a></li>
+                                <li><a href="#">Юмор</a></li>
+                            </ul>
+                            <div class="all-janrs2">
+                                <a href="#">Все жанры</a>
+                            </div>
+                        </div>
+                    </li>        
+                    <li><a href="#">Серии</a></li>         
+                    <li><a href="#">Подборки</a></li>         
+                    <li><a href="#">Рецензии</a></li>         
+                    <li><a href="#">Авторы</a></li>         
+                    <li><a href="#">Читатели</a></li>
+                </ul>
+                <ul class="setting-menu">
+                    <li><a href="#">Мой профиль</a></li>
+                    <li><a href="#">Стол заказов</a></li>
+                    <li><a href="#">Обратная связь</a></li>
+                    <li><a href="#">Добавить книгу</a></li>
+                </ul>
+            </div>
+            <div class="bg"></div>
+        </div>
+        <div class="advertising">
+            <a href="#">
+                <img src="images/reklama.jpg" alt="">
+            </a>
+        </div>
+        <div class="container clearfix">
+            <div class="breadcrumbs">
+                <a href="index.html">Главная</a>  
+                <span>></span>  
+                <a href="#">Жанры</a>
+            </div>
+            <div class="title">
+                <h1>Жанры</h1>
+            </div>
+            <div class="clearfix">
+                <div class="left-side">
+                    <div class="genres clearfix">
+                        <div class="genres-colum">
+                            <div class="genres-block">
+                                <div class="genres-block-title active">
+                                    <a href="#">Военное дело</a>
+                                </div>
+                                <ul>
+                                    <li><a href="#">Cпецслужбы <span>1732</span></a></li>
+                                    <li><a href="#">Боевые искусства <span>645</span></a></li>
+                                    <li><a href="#">Военная документалистика <span>274</span></a></li>
+                                    <li><a href="#">Военная история <span>879</span></a></li>
+                                    <li><a href="#">Военная техника и вооружение  <span>895</span></a></li>
+                                    <li><a href="#">Военное дело: прочее <span>567</span></a></li>
+                                    <li><a href="#">О войне <span>658</span></a></li>
+                                </ul>
+                            </div>
+                            <div class="genres-block">
+                                <div class="genres-block-title">
+                                    <a href="#">Деловая литература</a>
+                                </div>
+                                <ul>
+                                    <li><a href="#">Банковское дело  <span>1732</span></a></li>
+                                    <li><a href="#">Бухучет и аудит  <span>1732</span></a></li>
+                                    <li><a href="#">Внешняя торговля  <span>1732</span></a></li>
+                                    <li><a href="#">Делопроизводство  <span>1732</span></a></li>
+                                    <li><a href="#">Корпоративная культура  <span>1732</span></a></li>
+                                    <li><a href="#">Личные финансы  <span>1732</span></a></li>
+                                    <li><a href="#">Малый бизнес  <span>1732</span></a></li>
+                                    <li><a href="#">Маркетинг, PR, реклама  <span>1732</span></a></li>
+                                    <li><a href="#">Недвижимость  <span>1732</span></a></li>
+                                    <li><a href="#">О бизнесе популярно  <span>1732</span></a></li>
+                                    <li><a href="#">Отраслевые издания  <span>1732</span></a></li>
+                                    <li><a href="#">Поиск работы, карьера  <span>1732</span></a></li>
+                                    <li><a href="#">Управление, подбор персонала  <span>1732</span></a></li>
+                                    <li><a href="#">Ценные бумаги, инвестиции  <span>1732</span></a></li>
+                                    <li><a href="#">Экономика  <span>1732</span></a></li>
+                                </ul>
+                            </div>
+                            <div class="genres-block">
+                                <div class="genres-block-title">
+                                    <a href="#">Детское</a>
+                                </div>
+                                <ul>
+                                    <li><a href="#">Детская литература: прочее</a></li>
+                                    <li><a href="#">Детская проза</a></li>
+                                    <li><a href="#">Детская фантастика</a></li>
+                                    <li><a href="#">Детские остросюжетные</a></li>
+                                    <li><a href="#">Книга-игра</a></li>
+                                    <li><a href="#">Образовательная литература</a></li>
+                                    <li><a href="#">Подростковая литература</a></li>
+                                    <li><a href="#">Сказка</a></li>
+                                </ul>
+                            </div>
+                            <div class="genres-block">
+                                <div class="genres-block-title">
+                                    <a href="#">Детективы и триллеры</a>
+                                </div>
+                                <ul>
+                                    <li><a href="#">Боевик</a></li>
+                                    <li><a href="#">Детективная фантастика</a></li>
+                                    <li><a href="#">Детективы: прочее</a></li>
+                                    <li><a href="#">Иронический детектив</a></li>
+                                    <li><a href="#">Исторический детектив</a></li>
+                                    <li><a href="#">Классический детектив</a></li>
+                                    <li><a href="#">Криминальный детектив</a></li>
+                                    <li><a href="#">Крутой детектив</a></li>
+                                    <li><a href="#">Маньяки</a></li>
+                                    <li><a href="#">Медицинский триллер</a></li>
+                                    <li><a href="#">Политический детектив</a></li>
+                                    <li><a href="#">Полицейский детектив</a></li>
+                                    <li><a href="#">Техно триллер</a></li>
+                                    <li><a href="#">Триллер</a></li>
+                                    <li><a href="#">Шпионский детектив</a></li>
+                                    <li><a href="#">Юридический триллер</a></li>
+                                </ul>
+                            </div>
+                            <div class="genres-block">
+                                <div class="genres-block-title">
+                                    <a href="#">Документальная литература</a>
+                                </div>
+                                <ul>
+                                    <li><a href="#">Биографии и Мемуары</a></li>
+                                    <li><a href="#">Документальная литература</a></li>
+                                    <li><a href="#">Критика</a></li>
+                                    <li><a href="#">Научпоп</a></li>
+                                    <li><a href="#">Публицистика</a></li>
+                                </ul>
+                            </div>
+                            <div class="genres-block">
+                                <div class="genres-block-title">
+                                    <a href="#">Домоводство (Дом и семья)</a>
+                                </div>
+                                <ul>
+                                    <li><a href="#">Домашние животные</a></li>
+                                    <li><a href="#">Домоводство</a></li>
+                                    <li><a href="#">Здоровье</a></li>
+                                    <li><a href="#">Коллекционирование</a></li>
+                                    <li><a href="#">Кулинария</a></li>
+                                    <li><a href="#">Развлечения</a></li>
+                                    <li><a href="#">Сад и огород</a></li>
+                                    <li><a href="#">Сделай сам</a></li>
+                                    <li><a href="#">Спорт</a></li>
+                                    <li><a href="#">Хобби и ремесла</a></li>
+                                    <li><a href="#">Эротика, Секс</a></li>
+                                </ul>
+                            </div>
+                            <div class="genres-block">
+                                <div class="genres-block-title">
+                                    <a href="#">Драматургия</a>
+                                </div>
+                                <ul>
+                                    <li><a href="#">Водевиль</a></li>
+                                    <li><a href="#">Драма</a></li>
+                                    <li><a href="#">Драматургия: прочее</a></li>
+                                    <li><a href="#">Киносценарии</a></li>
+                                    <li><a href="#">Комедия</a></li>
+                                    <li><a href="#">Мистерия</a></li>
+                                    <li><a href="#">Сценарии</a></li>
+                                </ul>
+                            </div>
+                            <div class="genres-block">
+                                <div class="genres-block-title">
+                                    <a href="#">Компьютеры и интернет</a>
+                                </div>
+                                <ul>
+                                    <li><a href="#">Аппаратное обеспечение</a></li>
+                                    <li><a href="#">Базы данных</a></li>
+                                    <li><a href="#">Интернет</a></li>
+                                    <li><a href="#">Околокомпьютерная литература</a></li>
+                                    <li><a href="#">ОС и Сети</a></li>
+                                    <li><a href="#">Программирование</a></li>
+                                    <li><a href="#">Программы</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="genres-colum">
+                            <div class="genres-block">
+                                <div class="genres-block-title">
+                                    <a href="#">Прочее</a>
+                                </div>
+                                <ul>
+                                    <li><a href="#">Газеты и журналы  <span>1732</span></a></li>
+                                    <li><a href="#">Изобразительное искусство, фотография  <span>1732</span></a></li>
+                                    <li><a href="#">Кино <span>1732</span></a></li>
+                                    <li><a href="#">Музыка <span>1732</span></a></li>
+                                    <li><a href="#">Недописанное <span>1732</span></a></li>
+                                    <li><a href="#">Неотсортированное <span>1732</span></a></li>
+                                    <li><a href="#">Театр <span>1732</span></a></li>
+                                    <li><a href="#">Фанфик <span>1732</span></a></li>
+                                </ul>
+                            </div>
+                            <div class="genres-block">
+                                <div class="genres-block-title">
+                                    <a href="#">Наука и образование</a>
+                                </div>
+                                <ul>
+                                    <li><a href="#">Альтернативная медицина  <span>1732</span></a></li>
+                                    <li><a href="#">Астрономия и Космос  <span>1732</span></a></li>
+                                    <li><a href="#">Биология  <span>1732</span></a></li>
+                                    <li><a href="#">Биофизика  <span>1732</span></a></li>
+                                    <li><a href="#">Ботаника  <span>1732</span></a></li>
+                                    <li><a href="#">Геология и география  <span>1732</span></a></li>
+                                    <li><a href="#">Деловая литература  <span>1732</span></a></li>
+                                    <li><a href="#">Детская психология  <span>1732</span></a></li>
+                                    <li><a href="#">Зоология  <span>1732</span></a></li>
+                                    <li><a href="#">Иностранные языки  <span>1732</span></a></li>
+                                    <li><a href="#">История  <span>1732</span></a></li>
+                                    <li><a href="#">Культурология  <span>1732</span></a></li>
+                                    <li><a href="#">Литературоведение  <span>1732</span></a></li>
+                                    <li><a href="#">Математика  <span>1732</span></a></li>
+                                    <li><a href="#">Медицина  <span>1732</span></a></li>
+                                    <li><a href="#">Научная литература: прочее</a></li>
+                                    <li><a href="#">Обществознание</a></li>
+                                    <li><a href="#">Органическая химия</a></li>
+                                    <li><a href="#">Педагогика</a></li>
+                                    <li><a href="#">Политика</a></li>
+                                    <li><a href="#">Психология</a></li>
+                                    <li><a href="#">Психотерапия и консультирование</a></li>
+                                    <li><a href="#">Религиоведение</a></li>
+                                    <li><a href="#">Секс и семейная психология</a></li>
+                                    <li><a href="#">Учебники</a></li>
+                                    <li><a href="#">Физика</a></li>
+                                    <li><a href="#">Философия</a></li>
+                                    <li><a href="#">Химия</a></li>
+                                    <li><a href="#">Экология</a></li>
+                                    <li><a href="#">Экономика</a></li>
+                                    <li><a href="#">Юриспруденция</a></li>
+                                    <li><a href="#">Языкознание</a></li>
+                                </ul>
+                            </div>
+                            <div class="genres-block">
+                                <div class="genres-block-title exception">
+                                    <a href="index.html">Несортированное</a>
+                                </div>
+                            </div>
+                            <div class="genres-block">
+                                <div class="genres-block-title">
+                                    <a href="#">Поэзия</a>
+                                </div>
+                                <ul>
+                                    <li><a href="#">Верлибры</a></li>
+                                    <li><a href="#">Детские стихи</a></li>
+                                    <li><a href="#">Лирика</a></li>
+                                    <li><a href="#">Песенная поэзия</a></li>
+                                    <li><a href="#">Поэзия: прочее</a></li>
+                                    <li><a href="#">Эпическая поэзия</a></li>
+                                    <li><a href="#">Юмористические стихи</a></li>
+                                </ul>
+                            </div>
+                            <div class="genres-block">
+                                <div class="genres-block-title">
+                                    <a href="#">Приключения</a>
+                                </div>
+                                <ul>
+                                    <li><a href="#">Верлибры</a></li>
+                                    <li><a href="#">Детские стихи</a></li>
+                                    <li><a href="#">Лирика</a></li>
+                                    <li><a href="#">Песенная поэзия</a></li>
+                                    <li><a href="#">Поэзия: прочее</a></li>
+                                    <li><a href="#">Эпическая поэзия</a></li>
+                                    <li><a href="#">Юмористические стихи</a></li>
+                                </ul>
+                            </div>
+                            <div class="genres-block">
+                                <div class="genres-block-title">
+                                    <a href="#">Проза</a>
+                                </div>
+                                <ul>
+                                    <li><a href="#">Антисоветская литература</a></li>
+                                    <li><a href="#">Афоризмы</a></li>
+                                    <li><a href="#">Историческая проза</a></li>
+                                    <li><a href="#">Классическая проза</a></li>
+                                    <li><a href="#">Контркультура</a></li>
+                                    <li><a href="#">Магический реализм</a></li>
+                                    <li><a href="#">Новелла</a></li>
+                                    <li><a href="#">Повесть</a></li>
+                                    <li><a href="#">Проза</a></li>
+                                    <li><a href="#">Рассказ</a></li>
+                                    <li><a href="#">Роман</a></li>
+                                    <li><a href="#">Русская классическая проза</a></li>
+                                    <li><a href="#">Семейный роман/Семейная сага</a></li>
+                                    <li><a href="#">Сентиментальная проза</a></li>
+                                    <li><a href="#">Советская классическая проза</a></li>
+                                    <li><a href="#">Современная проза</a></li>
+                                    <li><a href="#">Феерия</a></li>
+                                    <li><a href="#">Эпистолярная проза</a></li>
+                                    <li><a href="#">Эссе, очерк, этюд, набросок</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="genres-colum">
+                            <div class="genres-block">
+                                <div class="genres-block-title">
+                                    <a href="#">Религия и духовность</a>
+                                </div>
+                                <ul>
+                                    <li><a href="#">Астрология <span>1732</span></a></li>
+                                    <li><a href="#">Буддизм <span>1732</span></a></li>
+                                    <li><a href="#">Индуизм <span>1732</span></a></li>
+                                    <li><a href="#">Ислам <span>1732</span></a></li>
+                                    <li><a href="#">Иудаизм <span>1732</span></a></li>
+                                    <li><a href="#">Католицизм <span>1732</span></a></li>
+                                    <li><a href="#">Православие <span>1732</span></a></li>
+                                    <li><a href="#">Протестантизм <span>1732</span></a></li>
+                                    <li><a href="#">Религиозная литература: прочее <span>1732</span></a></li>
+                                    <li><a href="#">Религия <span>1732</span></a></li>
+                                    <li><a href="#">Самосовершенствование <span>1732</span></a></li>
+                                    <li><a href="#">Христианство <span>1732</span></a></li>
+                                    <li><a href="#">Эзотерика <span>1732</span></a></li>
+                                    <li><a href="#">Язычество <span>1732</span></a></li>
+                                </ul>
+                            </div>
+                            <div class="genres-block">
+                                <div class="genres-block-title">
+                                    <a href="#">Справочная литература</a>
+                                </div>
+                                <ul>
+                                    <li><a href="#">Искусство и Дизайн <span>1732</span></a></li>
+                                    <li><a href="#">Путеводители <span>1732</span></a></li>
+                                    <li><a href="#">Руководства <span>1732</span></a></li>
+                                    <li><a href="#">Словари <span>1732</span></a></li>
+                                    <li><a href="#">Справочная литература <span>1732</span></a></li>
+                                    <li><a href="#">Справочники <span>1732</span></a></li>
+                                    <li><a href="#">Энциклопедии <span>1732</span></a></li>
+                                </ul>
+                            </div>
+                            <div class="genres-block">
+                                <div class="genres-block-title">
+                                    <a href="#">Старинное</a>
+                                </div>
+                                <ul>
+                                    <li><a href="#">Античная литература</a></li>
+                                    <li><a href="#">Древневосточная литература</a></li>
+                                    <li><a href="#">Древнеевропейская литература</a></li>
+                                    <li><a href="#">Древнерусская литература</a></li>
+                                    <li><a href="#">Мифы. Легенды. Эпос</a></li>
+                                    <li><a href="#">Старинная литература: прочее</a></li>
+                                </ul>
+                            </div>
+                            <div class="genres-block">
+                                <div class="genres-block-title">
+                                    <a href="#">Техника</a>
+                                </div>
+                                <ul>
+                                    <li><a href="#">Автомобили и ПДД</a></li>
+                                    <li><a href="#">Архитектура</a></li>
+                                    <li><a href="#">Строительство и сопромат</a></li>
+                                    <li><a href="#">Технические науки</a></li>
+                                    <li><a href="#">Транспорт и авиация</a></li>
+                                </ul>
+                            </div>
+                            <div class="genres-block">
+                                <div class="genres-block-title">
+                                    <a href="#">Фантастика</a>
+                                </div>
+                                <ul>
+                                    <li><a href="#">Альтернативная история</a></li>
+                                    <li><a href="#">Боевая фантастика</a></li>
+                                    <li><a href="#">Героическая фантастика</a></li>
+                                    <li><a href="#">Городское фэнтези</a></li>
+                                    <li><a href="#">Готический роман</a></li>
+                                    <li><a href="#">Ироническая фантастика</a></li>
+                                    <li><a href="#">Ироническое фэнтези</a></li>
+                                    <li><a href="#">Историческое фэнтези</a></li>
+                                    <li><a href="#">Киберпанк</a></li>
+                                    <li><a href="#">Космическая фантастика</a></li>
+                                    <li><a href="#">Космоопера</a></li>
+                                    <li><a href="#">Мистика</a></li>
+                                    <li><a href="#">Научная фантастика</a></li>
+                                    <li><a href="#">Ненаучная фантастика</a></li>
+                                    <li><a href="#">Попаданцы</a></li>
+                                    <li><a href="#">Постапокалипсис</a></li>
+                                    <li><a href="#">Сказочная фантастика</a></li>
+                                    <li><a href="#">Социальная фантастика</a></li>
+                                    <li><a href="#">Стимпанк</a></li>
+                                    <li><a href="#">Технофэнтези</a></li>
+                                    <li><a href="#">Ужасы</a></li>
+                                    <li><a href="#">Фантастика: прочее</a></li>
+                                    <li><a href="#">Фэнтези</a></li>
+                                    <li><a href="#">Эпическая фантастика</a></li>
+                                    <li><a href="#">Юмористическое фэнтези</a></li>
+                                </ul>
+                            </div>
+                            <div class="genres-block">
+                                <div class="genres-block-title">
+                                    <a href="#">Фольклор</a>
+                                </div>
+                                <ul>
+                                    <li><a href="#">Анекдоты</a></li>
+                                    <li><a href="#">Былины</a></li>
+                                    <li><a href="#">Детский фольклор</a></li>
+                                    <li><a href="#">Народные песни</a></li>
+                                    <li><a href="#">Народные сказки</a></li>
+                                    <li><a href="#">Фольклор: прочее</a></li>
+                                </ul>
+                            </div>
+                            <div class="genres-block">
+                                <div class="genres-block-title">
+                                    <a href="#">Юмор</a>
+                                </div>
+                                <ul>
+                                    <li><a href="#">Сатира</a></li>
+                                    <li><a href="#">Юмор: прочее</a></li>
+                                    <li><a href="#">Юмористическая проза</a></li>
+                                    <li><a href="#">Юмористическая фантастика</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-side">
+                    <div class="advertising-block">
+                        <a href="#">
+                            <img src="images/advertising-block.png" alt="">
+                        </a>
+                    </div>
+                    <div class="advertising-block">
+                        <a href="#">
+                            <img src="images/advertising-block.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="advertising">
+            <a href="#">
+                <img src="images/reklama.jpg" alt="">
+            </a>
+        </div>
+        <footer>
+            <div class="container clearfix">
+                <div class="footer-right">
+                    <div class="footer-colum colum1">
+                        <div>Санктуариум</div>
+                        <ul>
+                            <li><a href="#">О сайте</a></li>
+                            <li><a href="#">Политика обработки персональных данных</a></li>
+                            <li><a href="#">Соглашение и правила</a></li>
+                            <li><a href="#">Карта сайта</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-colum colum2">
+                        <div>Поддержка</div>
+                        <ul>
+                            <li><a href="#">Часто задаваемые вопросы</a></li>
+                            <li><a href="#">Предложить улучшение</a></li>
+                            <li><a href="#">Обратная связь</a></li>
+                            <li><a href="#">Сообщить об ошибке</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-colum colum3">
+                        <div>Библиотека</div>
+                        <ul>
+                            <li><a href="#">Добавить книгу</a></li>
+                            <li><a href="#">Программы для чтения</a></li>
+                            <li><a href="#">Стол заказов</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-left">
+                    <div class="footer-logo">
+                        <a href="index.html">
+                            <img src="images/footer-logo.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="copyright">
+                        © 2018 Все права защищены
+                    </div>
+                    <div class="social">
+                        <a href="#">
+                            <img src="images/icon/vk.svg" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="images/icon/ok.svg" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="images/icon/fb.svg" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="images/icon/insta.svg" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="images/icon/twitter.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="mobil-overflow"></div>
+        <div class="overflow"></div>
+        <div class="popup popup1">
+            <div class="popup-title">
+                Зарегистрируйтесь
+                <p>или <a href="#">войдите в аккаунт</a></p>
+            </div>
+            <div class="close">
+                <img src="images/icon/close.svg" alt="">
+            </div>
+            <form>
+                <input type="text" placeholder="Email">
+                <input type="text" placeholder="Пароль">
+                <button>Зарегистрироваться</button>
+            </form>
+            <div class="popup-social">
+                <p>Регистрация через соц. сеть</p>
+                <a href="#">
+                    <img src="images/icon/vk.svg" alt="">
+                </a>
+                <a href="#" class="ok">
+                    <img src="images/icon/ok.svg" alt="">
+                </a>
+                <a href="#" class="fb">
+                    <img src="images/icon/fb.svg" alt="">
+                </a>
+                <a href="#" class="tw">
+                    <img src="images/icon/twitter.svg" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="popup popup2">
+            <div class="forgot-hidden">
+                <div class="popup-title">
+                    Войдите
+                    <p>или <a href="#">или зарегистрируйтесь</a></p>
+                </div>
+                <form>
+                    <input type="text" placeholder="Email">
+                    <input type="text" placeholder="Пароль">
+                    <div class="forgot">
+                        <a href="#" class="forgot-btn">Забыли пароль?</a>
+                        <button>Вход</button>
+                    </div>
+                </form>
+                <div class="popup-social">
+                    <p>Регистрация через соц. сеть</p>
+                    <a href="#">
+                        <img src="images/icon/vk.svg" alt="">
+                    </a>
+                    <a href="#" class="ok">
+                        <img src="images/icon/ok.svg" alt="">
+                    </a>
+                    <a href="#" class="fb">
+                        <img src="images/icon/fb.svg" alt="">
+                    </a>
+                    <a href="#" class="tw">
+                        <img src="images/icon/twitter.svg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="forgot-content">
+                <div class="popup-title">
+                    Восстановить доступ
+                    <p><a href="#">Зарегистрируйтесь</a> или <a href="#">войдите в аккаунт</a></p>
+                </div>
+                <form>
+                    <input type="text" placeholder="Ваш  Email">
+                    <button>Восстановить пароль</button>
+                </form>
+            </div>
+            <div class="close">
+                <img src="images/icon/close.svg" alt="">
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/framework.js"></script>
+    <script src="js/common.js"></script>
+</body>
+</html>

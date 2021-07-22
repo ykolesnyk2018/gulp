@@ -1,0 +1,35 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'HelveticaNeueCyr-Bold';
+  src: url("fonts/helveticaneuecyr-bold/helveticaneuecyr-bold.eot");
+  /* IE 9 Compatibility Mode */
+  src: url("fonts/helveticaneuecyr-bold/helveticaneuecyr-bold.eot?#iefix") format("embedded-opentype"), url("fonts/helveticaneuecyr-bold/helveticaneuecyr-bold.woff2") format("woff2"), url("fonts/helveticaneuecyr-bold/helveticaneuecyr-bold.woff") format("woff"), url("fonts/helveticaneuecyr-bold/helveticaneuecyr-bold.ttf") format("truetype"), url("fonts/helveticaneuecyr-bold/helveticaneuecyr-bold.svg#helveticaneuecyr-bold") format("svg");
+  /* Chrome < 4, Legacy iOS */ }
+
+@font-face {
+  font-family: 'HelveticaNeueCyr-Light';
+  src: url("fonts/helveticaneuecyr-ultralight/helveticaneuecyr-ultralight.eot");
+  /* IE 9 Compatibility Mode */
+  src: url("fonts/helveticaneuecyr-ultralight/helveticaneuecyr-ultralight.eot?#iefix") format("embedded-opentype"), url("fonts/helveticaneuecyr-ultralight/helveticaneuecyr-ultralight.woff2") format("woff2"), url("fonts/helveticaneuecyr-ultralight/helveticaneuecyr-ultralight.woff") format("woff"), url("fonts/helveticaneuecyr-ultralight/helveticaneuecyr-ultralight.ttf") format("truetype"), url("fonts/helveticaneuecyr-ultralight/helveticaneuecyr-ultralight.svg#helveticaneuecyr-ultralight") format("svg");
+  /* Chrome < 4, Legacy iOS */ }
+
+@font-face {
+  font-family: 'HelveticaNeueCyr-Roman';
+  src: url("fonts/helveticaneuecyr-roman/helveticaneuecyr-roman.eot");
+  /* IE 9 Compatibility Mode */
+  src: url("fonts/helveticaneuecyr-roman/helveticaneuecyr-roman.eot?#iefix") format("embedded-opentype"), url("fonts/helveticaneuecyr-roman/helveticaneuecyr-roman.woff2") format("woff2"), url("fonts/helveticaneuecyr-roman/helveticaneuecyr-roman.woff") format("woff"), url("fonts/helveticaneuecyr-roman/helveticaneuecyr-roman.ttf") format("truetype"), url("fonts/helveticaneuecyr-roman/helveticaneuecyr-roman.svg#helveticaneuecyr-roman") format("svg");
+  /* Chrome < 4, Legacy iOS */ }
+
+@font-face {
+  font-family: 'HelveticaNeueCyr-Light';
+  src: url("fonts/helveticaneuecyr-light/helveticaneuecyr-light.eot");
+  /* IE 9 Compatibility Mode */
+  src: url("fonts/helveticaneuecyr-light/helveticaneuecyr-light.eot?#iefix") format("embedded-opentype"), url("fonts/helveticaneuecyr-light/helveticaneuecyr-light.woff2") format("woff2"), url("fonts/helveticaneuecyr-light/helveticaneuecyr-light.woff") format("woff"), url("fonts/helveticaneuecyr-light/helveticaneuecyr-light.ttf") format("truetype"), url("fonts/helveticaneuecyr-light/helveticaneuecyr-light.svg#helveticaneuecyr-light") format("svg");
+  /* Chrome < 4, Legacy iOS */ }
+
+@font-face {
+  font-family: 'FontAwesome';
+  src: url("fonts/FontAwesome/FontAwesome.eot");
+  src: local("☺"), url("fonts/FontAwesome/FontAwesome.woff") format("woff"), url("fonts/FontAwesome/FontAwesome.ttf") format("truetype"), url("fonts/FontAwesome/FontAwesome.svg") format("svg");
+  font-weight: normal;
+  font-style: normal; }
