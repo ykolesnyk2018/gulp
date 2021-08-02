@@ -2566,4 +2566,7 @@ form button{
   .btn{
     min-width: 240px;
   }
+  .tarifs .slick-list{
+    height: auto !important;
+  }
 }
