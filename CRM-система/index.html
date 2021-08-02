@@ -35,18 +35,32 @@
 						<span>09:00 до 18:00 по МСК</span>
 					</div>
 				</div>
-				<nav class="main-menu">
-					<ul>
-						<li><a href="#">О проекте</a></li>
-						<li><a href="#">Возможности</a></li>
-						<li><a href="#">Тарифы</a></li>
-					</ul>
-				</nav>
-				<div class="header__right">
-					<a href="#" class="btn white">Попробывать бесплатно</a>
-					<a href="#" class="user">
-						<img src="images/icons/user.svg" alt="">
-					</a>
+				<div class="main-menu-btn toggle" data-target="dropdown-menu-mob">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				<div class="dropdown-menu-mob" id="dropdown-menu-mob">
+					<nav class="main-menu">
+						<ul>
+							<li><a href="#">О проекте</a></li>
+							<li><a data-scrollTo="#opportunity">Возможности</a></li>
+							<li><a data-scrollTo="#tarifs">Тарифы</a></li>
+						</ul>
+					</nav>
+					<div class="dropdown-menu-mob__contact">
+						<div class="contact">
+							<a href="tel:8(800)551-50-70">8 (800) 551-50-70</a>
+							<span>09:00 до 18:00 по МСК</span>
+						</div>
+						<a class="btn blue showPopup" rel="popup1">Свяжитесь с нами</a>
+					</div>
+					<div class="header__right">
+						<a class="btn white showPopup" rel="popup1">Попробывать бесплатно</a>
+						<a href="https://my.livesklad.com/" class="user">
+							<img src="images/icons/user.svg" alt="">
+						</a>
+					</div>
 				</div>
 			</div>
 		</header>
@@ -54,7 +68,7 @@
 			<h1 class="main-title">CRM-система для автоматизации сервисных 
 	центров и мастерских</h1>
 			<div class="sub-main-title">Единая база заказов и клиентов, онлайн-касса, расчёт зарплаты, контроль рекламы, складской учёт, статистика, менеджер задач, продажи, SMS уведомления клиентам.</div>
-			<a href="#" class="btn main-banner__btn">Попробывать бесплатно</a>
+			<a class="btn main-banner__btn showPopup" rel="popup1">Попробывать бесплатно</a>
 			<div class="main-banner__img">
 				<img src="images/banner.png" alt="">
 				<div class="main-banner__img__icon1">
@@ -86,27 +100,39 @@
 				Умная автоматизация сервисных центров и мастерских
 				<span>LiveSklad - подойдет для каждого!</span>
 			</h2>
+
 		<div class="services">
 			<div class="service">
 				<a href="#">
-					<img src="images/slide1.png" alt="">
+					<img src="images/slide2.jpg" alt="">
 				</a>
 				<div class="service__title">
-					<a href="#">Ремонт электроники</a>
+					<a href="#">Ремонт <br> бытовой техники</a>
 				</div>
 				<div class="service__btn">
-					<a href="#" class="btn">Попробывать бесплатно</a>
+					<a class="btn showPopup" rel="popup1">Попробывать бесплатно</a>
 				</div>
 			</div>
-			<div class="service slick-current">
+			<div class="service">
 				<a href="#">
-					<img src="images/slide1.png" alt="">
+					<img src="images/slide3.jpg" alt="">
 				</a>
 				<div class="service__title">
-					<a href="#">Ремонт электроники</a>
+					<a href="#">Ателье <br> швейная мастерская</a>
 				</div>
 				<div class="service__btn">
-					<a href="#" class="btn">Попробывать бесплатно</a>
+					<a class="btn showPopup" rel="popup1">Попробывать бесплатно</a>
+				</div>
+			</div>
+			<div class="service">
+				<a href="#">
+					<img src="images/slide4.jpg" alt="">
+				</a>
+				<div class="service__title">
+					<a href="#">Часовая мастерская</a>
+				</div>
+				<div class="service__btn">
+					<a class="btn showPopup" rel="popup1">Попробывать бесплатно</a>
 				</div>
 			</div>
 			<div class="service">
@@ -117,84 +143,51 @@
 					<a href="#">Ремонт электроники</a>
 				</div>
 				<div class="service__btn">
-					<a href="#" class="btn">Попробывать бесплатно</a>
+					<a class="btn showPopup" rel="popup1">Попробывать бесплатно</a>
 				</div>
 			</div>
 			<div class="service">
 				<a href="#">
-					<img src="images/slide1.png" alt="">
+					<img src="images/slide5.jpg" alt="">
 				</a>
 				<div class="service__title">
-					<a href="#">Ремонт электроники</a>
+					<a href="#">Сборка мебели</a>
 				</div>
 				<div class="service__btn">
-					<a href="#" class="btn">Попробывать бесплатно</a>
+					<a class="btn showPopup" rel="popup1">Попробывать бесплатно</a>
 				</div>
 			</div>
 			<div class="service">
 				<a href="#">
-					<img src="images/slide1.png" alt="">
+					<img src="images/slide6.jpg" alt="">
 				</a>
 				<div class="service__title">
-					<a href="#">Ремонт электроники</a>
+					<a href="#">СТО</a>
 				</div>
 				<div class="service__btn">
-					<a href="#" class="btn">Попробывать бесплатно</a>
+					<a class="btn showPopup" rel="popup1">Попробывать бесплатно</a>
 				</div>
 			</div>
 			<div class="service">
 				<a href="#">
-					<img src="images/slide1.png" alt="">
+					<img src="images/slide7.jpg" alt="">
 				</a>
 				<div class="service__title">
-					<a href="#">Ремонт электроники</a>
+					<a href="#">Салон красоты</a>
 				</div>
 				<div class="service__btn">
-					<a href="#" class="btn">Попробывать бесплатно</a>
+					<a class="btn showPopup" rel="popup1">Попробывать бесплатно</a>
 				</div>
 			</div>
 			<div class="service">
 				<a href="#">
-					<img src="images/slide1.png" alt="">
+					<img src="images/slide8.jpg" alt="">
 				</a>
 				<div class="service__title">
-					<a href="#">Ремонт электроники</a>
+					<a href="#">Ремонт обуви</a>
 				</div>
 				<div class="service__btn">
-					<a href="#" class="btn">Попробывать бесплатно</a>
-				</div>
-			</div>
-			<div class="service">
-				<a href="#">
-					<img src="images/slide1.png" alt="">
-				</a>
-				<div class="service__title">
-					<a href="#">Ремонт электроники</a>
-				</div>
-				<div class="service__btn">
-					<a href="#" class="btn">Попробывать бесплатно</a>
-				</div>
-			</div>
-			<div class="service">
-				<a href="#">
-					<img src="images/slide1.png" alt="">
-				</a>
-				<div class="service__title">
-					<a href="#">Ремонт электроники</a>
-				</div>
-				<div class="service__btn">
-					<a href="#" class="btn">Попробывать бесплатно</a>
-				</div>
-			</div>
-			<div class="service">
-				<a href="#">
-					<img src="images/slide1.png" alt="">
-				</a>
-				<div class="service__title">
-					<a href="#">Ремонт электроники</a>
-				</div>
-				<div class="service__btn">
-					<a href="#" class="btn">Попробывать бесплатно</a>
+					<a class="btn showPopup" rel="popup1">Попробывать бесплатно</a>
 				</div>
 			</div>
 		</div>
@@ -209,72 +202,144 @@
 						<img src="images/icons/function1.svg" alt="">
 					</div>
 					<span>Учет заказов</span>
+					<svg height="140" width="140">
+					   <circle cx="70" cy="70" r="66" stroke="rgb(0, 132, 244)" stroke-width="4"/>
+					</svg>
+					<svg height="80" width="80">
+					   <circle cx="40" cy="40" r="38" stroke="rgb(0, 132, 244)" stroke-width="2"/>
+					</svg>
 				</div>
 				<div class="function-nav__iteam">
 					<div class="function-nav__iteam__img">
 						<img src="images/icons/function2.svg" alt="">
 					</div>
 					<span>Расчет зарплаты</span>
+					<svg height="140" width="140">
+					   <circle cx="70" cy="70" r="66" stroke="rgb(0, 132, 244)" stroke-width="4"/>
+					</svg>
+					<svg height="80" width="80">
+					   <circle cx="40" cy="40" r="38" stroke="rgb(0, 132, 244)" stroke-width="2"/>
+					</svg>
 				</div>
 				<div class="function-nav__iteam">
 					<div class="function-nav__iteam__img">
 						<img src="images/icons/function3.svg" alt="">
 					</div>
 					<span>Онлайн касса</span>
+					<svg height="140" width="140">
+					   <circle cx="70" cy="70" r="66" stroke="rgb(0, 132, 244)" stroke-width="4"/>
+					</svg>
+					<svg height="80" width="80">
+					   <circle cx="40" cy="40" r="38" stroke="rgb(0, 132, 244)" stroke-width="2"/>
+					</svg>
 				</div>
 				<div class="function-nav__iteam">
 					<div class="function-nav__iteam__img">
 						<img src="images/icons/function4.svg" alt="">
 					</div>
 					<span>Контроль рекламы</span>
+					<svg height="140" width="140">
+					   <circle cx="70" cy="70" r="66" stroke="rgb(0, 132, 244)" stroke-width="4"/>
+					</svg>
+					<svg height="80" width="80">
+					   <circle cx="40" cy="40" r="38" stroke="rgb(0, 132, 244)" stroke-width="2"/>
+					</svg>
 				</div>
 				<div class="function-nav__iteam">
 					<div class="function-nav__iteam__img">
 						<img src="images/icons/function5.svg" alt="">
 					</div>
 					<span>Работа с поставщиками</span>
+					<svg height="140" width="140">
+					   <circle cx="70" cy="70" r="66" stroke="rgb(0, 132, 244)" stroke-width="4"/>
+					</svg>
+					<svg height="80" width="80">
+					   <circle cx="40" cy="40" r="38" stroke="rgb(0, 132, 244)" stroke-width="2"/>
+					</svg>
 				</div>
 				<div class="function-nav__iteam">
 					<div class="function-nav__iteam__img">
 						<img src="images/icons/function6.svg" alt="">
 					</div>
 					<span>Ведение продаж</span>
+					<svg height="140" width="140">
+					   <circle cx="70" cy="70" r="66" stroke="rgb(0, 132, 244)" stroke-width="4"/>
+					</svg>
+					<svg height="80" width="80">
+					   <circle cx="40" cy="40" r="38" stroke="rgb(0, 132, 244)" stroke-width="2"/>
+					</svg>
 				</div>
 				<div class="function-nav__iteam">
 					<div class="function-nav__iteam__img">
 						<img src="images/icons/function7.svg" alt="">
 					</div>
 					<span>Бухгалтерия и финансы</span>
+					<svg height="140" width="140">
+					   <circle cx="70" cy="70" r="66" stroke="rgb(0, 132, 244)" stroke-width="4"/>
+					</svg>
+					<svg height="80" width="80">
+					   <circle cx="40" cy="40" r="38" stroke="rgb(0, 132, 244)" stroke-width="2"/>
+					</svg>
 				</div>
 				<div class="function-nav__iteam">
 					<div class="function-nav__iteam__img">
 						<img src="images/icons/function8.svg" alt="">
 					</div>
 					<span>Статистика</span>
+					<svg height="140" width="140">
+					   <circle cx="70" cy="70" r="66" stroke="rgb(0, 132, 244)" stroke-width="4"/>
+					</svg>
+					<svg height="80" width="80">
+					   <circle cx="40" cy="40" r="38" stroke="rgb(0, 132, 244)" stroke-width="2"/>
+					</svg>
 				</div>
 				<div class="function-nav__iteam">
 					<div class="function-nav__iteam__img">
 						<img src="images/icons/function9.svg" alt="">
 					</div>
 					<span>Складской учет</span>
+					<svg height="140" width="140">
+					   <circle cx="70" cy="70" r="66" stroke="rgb(0, 132, 244)" stroke-width="4"/>
+					</svg>
+					<svg height="80" width="80">
+					   <circle cx="40" cy="40" r="38" stroke="rgb(0, 132, 244)" stroke-width="2"/>
+					</svg>
 				</div>
 				<div class="function-nav__iteam">
 					<div class="function-nav__iteam__img">
 						<img src="images/icons/function10.svg" alt="">
 					</div>
 					<span>Рассылка уведомлений</span>
+					<svg height="140" width="140">
+					   <circle cx="70" cy="70" r="66" stroke="rgb(0, 132, 244)" stroke-width="4"/>
+					</svg>
+					<svg height="80" width="80">
+					   <circle cx="40" cy="40" r="38" stroke="rgb(0, 132, 244)" stroke-width="2"/>
+					</svg>
 				</div>
 				<div class="function-nav__iteam">
 					<div class="function-nav__iteam__img">
 						<img src="images/icons/function11.svg" alt="">
 					</div>
 					<span>Печать документов</span>
+					<svg height="140" width="140">
+					   <circle cx="70" cy="70" r="66" stroke="rgb(0, 132, 244)" stroke-width="4"/>
+					</svg>
+					<svg height="80" width="80">
+					   <circle cx="40" cy="40" r="38" stroke="rgb(0, 132, 244)" stroke-width="2"/>
+					</svg>
 				</div>
 				<div class="function-nav__iteam">
 					<div class="function-nav__iteam__img">
 						<img src="images/icons/function12.svg" alt="">
 					</div>
 					<span>Менеджер задач</span>
+					<svg height="140" width="140">
+					   <circle cx="70" cy="70" r="66" stroke="rgb(0, 132, 244)" stroke-width="4"/>
+					</svg>
+					<svg height="80" width="80">
+					   <circle cx="40" cy="40" r="38" stroke="rgb(0, 132, 244)" stroke-width="2"/>
+					</svg>
 				</div>
 			</div>
 			<div class="slider-for function-content">
@@ -285,7 +350,7 @@
 						</div>
 						<div class="function-content__iteam__text">Ускоряет оформление, позволяет не потерять ни один заказ и контролировать сроки исполнения, гибко взаимодействовать с клиентами, сохраняет историю работы с заказом.</div>
 						<div class="function-content__iteam__btn">
-							<a href="#">Попробывать бесплатно</a>
+							<a class="showPopup" rel="popup1">Попробывать бесплатно</a>
 						</div>
 					</div>
 					<div class="function-content__iteam__right">
@@ -297,7 +362,7 @@
 						<div class="function-content__iteam__title">Расчет зарплаты</div>
 						<div class="function-content__iteam__text">Cчитает зарплату для каждого сотрудника по индивидуальным правилам. Фиксирует все выплаты и отражает начисления в зарплатной ведомости.</div>
 						<div class="function-content__iteam__btn">
-							<a href="#">Попробывать бесплатно</a>
+							<a class="showPopup" rel="popup1">Попробывать бесплатно</a>
 						</div>
 					</div>
 					<div class="function-content__iteam__right">
@@ -309,7 +374,7 @@
 						<div class="function-content__iteam__title">Онлайн касса</div>
 						<div class="function-content__iteam__text">Соответствует требованиям ФЗ № 54-ФЗ «О применении контрольно-кассовой техники». Поддерживает большинство моделей онлайн-касс на рынке.</div>
 						<div class="function-content__iteam__btn">
-							<a href="#">Попробывать бесплатно</a>
+							<a class="showPopup" rel="popup1">Попробывать бесплатно</a>
 						</div>
 					</div>
 					<div class="function-content__iteam__right">
@@ -321,7 +386,7 @@
 						<div class="function-content__iteam__title">Контроль рекламы</div>
 						<div class="function-content__iteam__text">Предоставляет данные о расходах на рекламу, позволяет оценить её эффективность и принимать правильные решения.</div>
 						<div class="function-content__iteam__btn">
-							<a href="#">Попробывать бесплатно</a>
+							<a class="showPopup" rel="popup1">Попробывать бесплатно</a>
 						</div>
 					</div>
 					<div class="function-content__iteam__right">
@@ -333,7 +398,7 @@
 						<div class="function-content__iteam__title">Работа с поставщиками</div>
 						<div class="function-content__iteam__text">Предоставляет актуальные данные о наличии, ценах, сроках отгрузки товара более чем у 200 крупных поставщиков со всей России и стран СНГ в режиме online.</div>
 						<div class="function-content__iteam__btn">
-							<a href="#">Попробывать бесплатно</a>
+							<a class="showPopup" rel="popup1">Попробывать бесплатно</a>
 						</div>
 					</div>
 					<div class="function-content__iteam__right">
@@ -345,7 +410,7 @@
 						<div class="function-content__iteam__title">Ведение продаж</div>
 						<div class="function-content__iteam__text">Делает продажи прозрачными, исключает человеческий фактор при получении прибыли, позволяет быстро обрабатывать заказы  с помощью сканера штрих-кодов.</div>
 						<div class="function-content__iteam__btn">
-							<a href="#">Попробывать бесплатно</a>
+							<a class="showPopup" rel="popup1">Попробывать бесплатно</a>
 						</div>
 					</div>
 					<div class="function-content__iteam__right">
@@ -357,7 +422,7 @@
 						<div class="function-content__iteam__title">Бухгалтерия и финансы</div>
 						<div class="function-content__iteam__text">Заменяет собой 1С: систематизирует расчеты с поставщиками, ведет учёт товарно-материальных ценностей, осуществляет кассовые операции, контролирует задолженность и денежный поток  в разрезе доходов и расходов.</div>
 						<div class="function-content__iteam__btn">
-							<a href="#">Попробывать бесплатно</a>
+							<a class="showPopup" rel="popup1">Попробывать бесплатно</a>
 						</div>
 					</div>
 					<div class="function-content__iteam__right">
@@ -369,7 +434,7 @@
 						<div class="function-content__iteam__title">Статистика</div>
 						<div class="function-content__iteam__text">Позволяет руководителю отслеживать статистику по всем бизнес-процессам сервисного центра и контролировать финансовый результат.</div>
 						<div class="function-content__iteam__btn">
-							<a href="#">Попробывать бесплатно</a>
+							<a class="showPopup" rel="popup1">Попробывать бесплатно</a>
 						</div>
 					</div>
 					<div class="function-content__iteam__right">
@@ -381,7 +446,7 @@
 						<div class="function-content__iteam__title">Складской учет</div>
 						<div class="function-content__iteam__text">Позволяет руководителю отслеживать статистику по всем бизнес-процессам сервисного центра и контролировать финансовый результат.</div>
 						<div class="function-content__iteam__btn">
-							<a href="#">Попробывать бесплатно</a>
+							<a class="showPopup" rel="popup1">Попробывать бесплатно</a>
 						</div>
 					</div>
 					<div class="function-content__iteam__right">
@@ -393,7 +458,7 @@
 						<div class="function-content__iteam__title">Рассылка уведомлений</div>
 						<div class="function-content__iteam__text">SMS-уведомления для клиентов, Telegram-уведомления  для сотрудников.</div>
 						<div class="function-content__iteam__btn">
-							<a href="#">Попробывать бесплатно</a>
+							<a class="showPopup" rel="popup1">Попробывать бесплатно</a>
 						</div>
 					</div>
 					<div class="function-content__iteam__right">
@@ -405,7 +470,7 @@
 						<div class="function-content__iteam__title">Печать документов</div>
 						<div class="function-content__iteam__text">Предоставляет возможность распечатать все необходимые документы, в т.ч. квитанцию о приёме, товарные чеки, ценники и др. Содержит удобные шаблоны документов.</div>
 						<div class="function-content__iteam__btn">
-							<a href="#">Попробывать бесплатно</a>
+							<a class="showPopup" rel="popup1">Попробывать бесплатно</a>
 						</div>
 					</div>
 					<div class="function-content__iteam__right">
@@ -417,7 +482,7 @@
 						<div class="function-content__iteam__title">Менеджер задач</div>
 						<div class="function-content__iteam__text">Организует работу персонала по задачам, контролирует соблюдение сроков исполнения.</div>
 						<div class="function-content__iteam__btn">
-							<a href="#">Попробывать бесплатно</a>
+							<a class="showPopup" rel="popup1">Попробывать бесплатно</a>
 						</div>
 					</div>
 					<div class="function-content__iteam__right">
@@ -427,7 +492,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="fourth-section">
+	<section class="fourth-section" id="opportunity">
 		<div class="container">
 			<h3 class="title">Возможности</h3>
 			<div class="opportunity tabs">
@@ -441,7 +506,31 @@
 						<li><a data-target="tab6">Современные технологии</a></li>
 					</ul>
 				</div>
+				<div class="tab-nav-mob toggle active">Интеграция с прайсами поставщиков со всей России</div>
 				<div class="tabs-con active" id="tab1">
+					<div class="opportunity__title">Интеграция с прайсами поставщиков со всей России</div>
+					<div class="opportunity__text">
+						<ul>
+							<li>Вам больше не придётся тратить время на анализ прайсов поставщиков - crm система автоматизации малого бизнеса автоматически сделает это за вас. Данные всегда останутся актуальными. Если вашего поставщика нет в списке, то его можно легко добавить.</li>
+							<li>Сервис самостоятельно следит за складскими остатками и формирует заявку на отсутствующие товары в формате Ехсеl.</li>
+							<li>Храните все данные о закупках в единой корзине - это удобно. Корзина для закупок интегрирована с Telegram. Теперь вы не забудете, у кого и на каких условиях покупали комплектующие.</li>
+						</ul>
+					</div>
+				</div>
+				<div class="tab-nav-mob toggle">Замена бухгалтерской программы (1С)</div>
+				<div class="tabs-con" id="tab2">
+					<div class="opportunity__title">Замена бухгалтерской программы (1С)</div>
+					<div class="opportunity__text">
+						<ul>
+							<li>LiveSklad может полноценно заменить бухгалтерскую программу (1С)</li>
+							<li>Сервис позволяет упорядочить все расчёты с контрагентами, контролировать задолженность, вести учёт товарно-материальных ценностей от прихода до списания, учитывать возвраты покупателям и поставщикам, вовремя формировать заявки по закупкам и следить за остатками на складе.</li>
+							<li>Проводите кассовые операции с оформлением первичных документов и организовывайте рабочие места кассиров во всех мастерских. Теперь вы сможете автоматически учитывать рабочее время сотрудников и начислять заработную плату с учётом KPI.</li>
+							<li>В программе удобно вести весь финансовый учёт, формировать любую отчетность, контролировать денежный поток в разрезе доходов и расходов, а также определять общий финансовый результат.</li>
+						</ul>
+					</div>
+				</div>
+				<div class="tab-nav-mob toggle">Продвинутая CRM-система</div>
+				<div class="tabs-con" id="tab3">
 					<div class="opportunity__title">Продвинутая CRM-система</div>
 					<div class="opportunity__text">
 						<ul>
@@ -452,22 +541,43 @@
 						</ul>
 					</div>
 				</div>
-				<div class="tabs-con" id="tab2">
-					2
-				</div>
-				<div class="tabs-con" id="tab3">
-					3
-				</div>
+				<div class="tab-nav-mob toggle">Интеграция с контрольно-кассовыми терминалами, мессенджерами, сервисами</div>
 				<div class="tabs-con" id="tab4">
-					4
+					<div class="opportunity__title">Интеграция с контрольно-кассовыми терминалами, мессенджерами, сервисами</div>
+					<div class="opportunity__text">
+						<ul>
+							<li>LiveSklad интегрирован со смежными программами:</li>
+							<li>конрольно-кассовые терминалы: АТОЛ; ШТРИХ-М; СтарРус; PR-Electro; Paykiosk.ru; Dreamkas; Crystals (Print)</li>
+							<li>принтеры чеков: принтеры этикеток, принтеры чеков (без фискального регистратора) эквайринговые терминалы: все эквайринговые терминалы которые поддерживает Сбербанк- РФ</li>
+							<li>Месенджеры:Telegram</li>
+							<li>Сервисы: DaData</li>
+						</ul>
+					</div>
 				</div>
+				<div class="tab-nav-mob toggle">Простой и удобный интерфейс</div>
 				<div class="tabs-con" id="tab5">
-					5
+					<div class="opportunity__title">Простой и удобный интерфейс</div>
+					<div class="opportunity__text">
+						<ul>
+							<li>Интерфейс LiveSklad прост и интуитивно понятен. Его освоение не займет много времени и не требует высокой квалификации пользователя.</li>
+							<li>Техническая поддержка доступна по почте, в чате, по телефону</li>
+							<li>Программа имеет подробное руководства и видеоуроки</li>
+						</ul>
+					</div>
 				</div>
+				<div class="tab-nav-mob toggle">Современные технологии</div>
 				<div class="tabs-con" id="tab6">
-					6
+					<div class="opportunity__title">Современные технологии</div>
+					<div class="opportunity__text">
+						<ul>
+							<li>Позволяет работать удалённо</li>
+							<li>не требует инсталляции на компьютер, данные хранятся в облачном сервисе и поэтому защищены от потерь, краж и форс-мажорных ситуаций.</li>
+							<li>подходит как для сети, так и для единичного сервиса</li>
+							<li>многопользовательский доступ с тонкой настройкой прав</li>
+							<li>быстрый ввод данных, конструктор шаблонов документов</li>
+						</ul>
+					</div>
 				</div>
-				
 			</div>
 		</div>
 	</section>
@@ -595,7 +705,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="sixth-section">
+	<section class="sixth-section" id="tarifs">
 		<div class="container">
 			<div class="tabs">
 				<div class="sixth-section__top">
@@ -625,10 +735,10 @@
 					</div>
 				</div>
 				<div class="tabs-con active" id="tarifs1">
-					<div class="tarifs">
-						<div class="tarifs__iteam">
+					<div class="tarifs spec-arrows">
+						<div class="tarifs__iteam showPopup" rel="popup1">
 							<div class="tarifs__iteam--title">Стартовый</div>
-							<a class="tarifs__iteam--btn" href="#"></a>
+							<a class="tarifs__iteam--btn"></a>
 							<div class="tarifs__iteam--price">
 								<span>500</span>
 								руб. / месяц
@@ -638,9 +748,9 @@
 								<p>1 мастерская</p>
 							</div>
 						</div>
-						<div class="tarifs__iteam">
+						<div class="tarifs__iteam showPopup" rel="popup1">
 							<div class="tarifs__iteam--title">Базовый</div>
-							<a class="tarifs__iteam--btn" href="#"></a>
+							<a class="tarifs__iteam--btn"></a>
 							<div class="tarifs__iteam--price">
 								<span>1000</span>
 								руб. / месяц
@@ -650,9 +760,9 @@
 								<p>1 мастерская</p>
 							</div>
 						</div>
-						<div class="tarifs__iteam">
+						<div class="tarifs__iteam showPopup" rel="popup1">
 							<div class="tarifs__iteam--title">Профи</div>
-							<a class="tarifs__iteam--btn" href="#"></a>
+							<a class="tarifs__iteam--btn"></a>
 							<div class="tarifs__iteam--price">
 								<span>1900</span>
 								руб. / месяц
@@ -662,9 +772,9 @@
 								<p>2 мастерская</p>
 							</div>
 						</div>
-						<div class="tarifs__iteam">
+						<div class="tarifs__iteam showPopup" rel="popup1">
 							<div class="tarifs__iteam--title">Малый бизнес</div>
-							<a class="tarifs__iteam--btn" href="#"></a>
+							<a class="tarifs__iteam--btn"></a>
 							<div class="tarifs__iteam--price">
 								<span>2900</span>
 								руб. / месяц
@@ -674,9 +784,9 @@
 								<p>3 мастерская</p>
 							</div>
 						</div>
-						<div class="tarifs__iteam">
+						<div class="tarifs__iteam showPopup" rel="popup1">
 							<div class="tarifs__iteam--title">Бизнес</div>
-							<a class="tarifs__iteam--btn" href="#"></a>
+							<a class="tarifs__iteam--btn"></a>
 							<div class="tarifs__iteam--price">
 								<span>3900</span>
 								руб. / месяц
@@ -686,9 +796,9 @@
 								<p>5 мастерская</p>
 							</div>
 						</div>
-						<div class="tarifs__iteam">
+						<div class="tarifs__iteam showPopup" rel="popup1">
 							<div class="tarifs__iteam--title">Сеть</div>
-							<a class="tarifs__iteam--btn" href="#"></a>
+							<a class="tarifs__iteam--btn"></a>
 							<div class="tarifs__iteam--price">
 								<span>6500</span>
 								руб. / месяц
@@ -698,9 +808,9 @@
 								<p>10 мастерская</p>
 							</div>
 						</div>
-						<div class="tarifs__iteam">
+						<div class="tarifs__iteam showPopup" rel="popup1">
 							<div class="tarifs__iteam--title">Ультра</div>
-							<a class="tarifs__iteam--btn" href="#"></a>
+							<a class="tarifs__iteam--btn"></a>
 							<div class="tarifs__iteam--price">
 								<span>7800</span>
 								руб. / месяц
@@ -710,9 +820,9 @@
 								<p>20 мастерская</p>
 							</div>
 						</div>
-						<div class="tarifs__iteam">
+						<div class="tarifs__iteam showPopup" rel="popup1">
 							<div class="tarifs__iteam--title">Ультра</div>
-							<a class="tarifs__iteam--btn" href="#"></a>
+							<a class="tarifs__iteam--btn"></a>
 							<div class="tarifs__iteam--price">
 								<span>Свой</span>
 							</div>
@@ -724,7 +834,112 @@
 					</div>
 				</div>
 				<div class="tabs-con" id="tarifs2">З мес</div>
-				<div class="tabs-con" id="tarifs3">6 мес</div>
+				<div class="tabs-con" id="tarifs3">
+					<div class="tarifs spec-arrows">
+						<div class="tarifs__iteam showPopup" rel="popup1">
+							<div class="tarifs__iteam--title">Стартовый</div>
+							<a class="tarifs__iteam--btn"></a>
+							<div class="tarifs__iteam--price">
+								<span class="discount">500</span>
+								<span>500</span>
+								руб. / месяц
+							</div>
+							<div class="tarifs__iteam--description">
+								<p>2 сотрудника</p>
+								<p>1 мастерская</p>
+							</div>
+						</div>
+						<div class="tarifs__iteam showPopup" rel="popup1">
+							<div class="tarifs__iteam--title">Базовый</div>
+							<a class="tarifs__iteam--btn"></a>
+							<div class="tarifs__iteam--price">
+								<span class="discount">1000</span>
+								<span>1000</span>
+								руб. / месяц
+							</div>
+							<div class="tarifs__iteam--description">
+								<p>5 сотрудника</p>
+								<p>1 мастерская</p>
+							</div>
+						</div>
+						<div class="tarifs__iteam showPopup" rel="popup1">
+							<div class="tarifs__iteam--title">Профи</div>
+							<a class="tarifs__iteam--btn"></a>
+							<div class="tarifs__iteam--price">
+								<span class="discount">1900</span>
+								<span>1900</span>
+								руб. / месяц
+							</div>
+							<div class="tarifs__iteam--description">
+								<p>8 сотрудника</p>
+								<p>2 мастерская</p>
+							</div>
+						</div>
+						<div class="tarifs__iteam showPopup" rel="popup1">
+							<div class="tarifs__iteam--title">Малый бизнес</div>
+							<a class="tarifs__iteam--btn"></a>
+							<div class="tarifs__iteam--price">
+								<span class="discount">2900</span>
+								<span>2900</span>
+								руб. / месяц
+							</div>
+							<div class="tarifs__iteam--description">
+								<p>12 сотрудника</p>
+								<p>3 мастерская</p>
+							</div>
+						</div>
+						<div class="tarifs__iteam showPopup" rel="popup1">
+							<div class="tarifs__iteam--title">Бизнес</div>
+							<a class="tarifs__iteam--btn"></a>
+							<div class="tarifs__iteam--price">
+								<span class="discount">3900</span>
+								<span>3900</span>
+								руб. / месяц
+							</div>
+							<div class="tarifs__iteam--description">
+								<p>20 сотрудника</p>
+								<p>5 мастерская</p>
+							</div>
+						</div>
+						<div class="tarifs__iteam showPopup" rel="popup1">
+							<div class="tarifs__iteam--title">Сеть</div>
+							<a class="tarifs__iteam--btn"></a>
+							<div class="tarifs__iteam--price">
+								<span class="discount">6500</span>
+								<span>6500</span>
+								руб. / месяц
+							</div>
+							<div class="tarifs__iteam--description">
+								<p>40 сотрудника</p>
+								<p>10 мастерская</p>
+							</div>
+						</div>
+						<div class="tarifs__iteam showPopup" rel="popup1">
+							<div class="tarifs__iteam--title">Ультра</div>
+							<a class="tarifs__iteam--btn"></a>
+							<div class="tarifs__iteam--price">
+								<span class="discount">7800</span>
+								<span>7800</span>
+								руб. / месяц
+							</div>
+							<div class="tarifs__iteam--description">
+								<p>80 сотрудника</p>
+								<p>20 мастерская</p>
+							</div>
+						</div>
+						<div class="tarifs__iteam showPopup" rel="popup1">
+							<div class="tarifs__iteam--title">Ультра</div>
+							<a class="tarifs__iteam--btn"></a>
+							<div class="tarifs__iteam--price">
+								<span>Свой</span>
+							</div>
+							<div class="tarifs__iteam--description">
+								<p>∞ сотрудника</p>
+								<p>∞ мастерская</p>
+							</div>
+						</div>
+					</div>
+				</div>
 				<div class="tabs-con" id="tarifs4">12 мес</div>
 			</div>
 		</div>
@@ -829,7 +1044,7 @@
 						Попробуйте весь функционал LiveSklad. Бесплатный доступ на 7 дней
 					</div>
 					<div class="feedbacks-block__bottom--right">
-						<a href="#" class="btn blue">Попробывать бесплатно</a>
+						<a class="btn blue showPopup" rel="popup1">Попробывать бесплатно</a>
 					</div>
 				</div>
 			</div>
@@ -855,7 +1070,7 @@
 					</p>
 				</div>
 				<div class="replace-data__btn">
-					<a href="#" class="btn white">Перенести данные</a>
+					<a class="btn white showPopup" rel="popup1">Перенести данные</a>
 				</div>
 			</div>
 		</div>
@@ -871,10 +1086,9 @@
 					</div>
 					<div class="faq__iteam--content">
 						<ul>
-							<li>LiveSklad имеет возможности продвинутой СРМ-системы</li>
-							<li>Для тех, кто хочет работать с клиентами эффективно, программа предоставляет множество инструментов учёта заказов, выбора по параметрам, аналитики продаж.</li>
-							<li>Вы сможете настроить и сделать отправку смс-сообщений вашим клиентам.</li>
-							<li>Автоматизация управления клиентской базой позволит улучшить качество обслуживания Ваших клиентов, увеличит рост повторных продаж и прибыльности бизнеса в целом.</li>
+							<li>Вам больше не придётся тратить время на анализ прайсов поставщиков - crm система автоматизации малого бизнеса автоматически сделает это за вас. Данные всегда останутся актуальными. Если вашего поставщика нет в списке, то его можно легко добавить.</li>
+							<li>Сервис самостоятельно следит за складскими остатками и формирует заявку на отсутствующие товары в формате Ехсеl.</li>
+							<li>Храните все данные о закупках в единой корзине - это удобно. Корзина для закупок интегрирована с Telegram. Теперь вы не забудете, у кого и на каких условиях покупали комплектующие.</li>
 						</ul>
 					</div>
 				</div>
@@ -885,10 +1099,10 @@
 					</div>
 					<div class="faq__iteam--content">
 						<ul>
-							<li>LiveSklad имеет возможности продвинутой СРМ-системы</li>
-							<li>Для тех, кто хочет работать с клиентами эффективно, программа предоставляет множество инструментов учёта заказов, выбора по параметрам, аналитики продаж.</li>
-							<li>Вы сможете настроить и сделать отправку смс-сообщений вашим клиентам.</li>
-							<li>Автоматизация управления клиентской базой позволит улучшить качество обслуживания Ваших клиентов, увеличит рост повторных продаж и прибыльности бизнеса в целом.</li>
+							<li>LiveSklad может полноценно заменить бухгалтерскую программу (1С)</li>
+							<li>Сервис позволяет упорядочить все расчёты с контрагентами, контролировать задолженность, вести учёт товарно-материальных ценностей от прихода до списания, учитывать возвраты покупателям и поставщикам, вовремя формировать заявки по закупкам и следить за остатками на складе.</li>
+							<li>Проводите кассовые операции с оформлением первичных документов и организовывайте рабочие места кассиров во всех мастерских. Теперь вы сможете автоматически учитывать рабочее время сотрудников и начислять заработную плату с учётом KPI.</li>
+							<li>В программе удобно вести весь финансовый учёт, формировать любую отчетность, контролировать денежный поток в разрезе доходов и расходов, а также определять общий финансовый результат.</li>
 						</ul>
 					</div>
 				</div>
@@ -913,10 +1127,11 @@
 					</div>
 					<div class="faq__iteam--content">
 						<ul>
-							<li>LiveSklad имеет возможности продвинутой СРМ-системы</li>
-							<li>Для тех, кто хочет работать с клиентами эффективно, программа предоставляет множество инструментов учёта заказов, выбора по параметрам, аналитики продаж.</li>
-							<li>Вы сможете настроить и сделать отправку смс-сообщений вашим клиентам.</li>
-							<li>Автоматизация управления клиентской базой позволит улучшить качество обслуживания Ваших клиентов, увеличит рост повторных продаж и прибыльности бизнеса в целом.</li>
+							<li>LiveSklad интегрирован со смежными программами:</li>
+							<li>конрольно-кассовые терминалы: АТОЛ; ШТРИХ-М; СтарРус; PR-Electro; Paykiosk.ru; Dreamkas; Crystals (Print)</li>
+							<li>принтеры чеков: принтеры этикеток, принтеры чеков (без фискального регистратора) эквайринговые терминалы: все эквайринговые терминалы которые поддерживает Сбербанк- РФ</li>
+							<li>Месенджеры:Telegram</li>
+							<li>Сервисы: DaData</li>
 						</ul>
 					</div>
 				</div>
@@ -927,10 +1142,9 @@
 					</div>
 					<div class="faq__iteam--content">
 						<ul>
-							<li>LiveSklad имеет возможности продвинутой СРМ-системы</li>
-							<li>Для тех, кто хочет работать с клиентами эффективно, программа предоставляет множество инструментов учёта заказов, выбора по параметрам, аналитики продаж.</li>
-							<li>Вы сможете настроить и сделать отправку смс-сообщений вашим клиентам.</li>
-							<li>Автоматизация управления клиентской базой позволит улучшить качество обслуживания Ваших клиентов, увеличит рост повторных продаж и прибыльности бизнеса в целом.</li>
+							<li>Интерфейс LiveSklad прост и интуитивно понятен. Его освоение не займет много времени и не требует высокой квалификации пользователя.</li>
+							<li>Техническая поддержка доступна по почте, в чате, по телефону</li>
+							<li>Программа имеет подробное руководства и видеоуроки</li>
 						</ul>
 					</div>
 				</div>
@@ -941,16 +1155,581 @@
 					</div>
 					<div class="faq__iteam--content">
 						<ul>
-							<li>LiveSklad имеет возможности продвинутой СРМ-системы</li>
-							<li>Для тех, кто хочет работать с клиентами эффективно, программа предоставляет множество инструментов учёта заказов, выбора по параметрам, аналитики продаж.</li>
-							<li>Вы сможете настроить и сделать отправку смс-сообщений вашим клиентам.</li>
-							<li>Автоматизация управления клиентской базой позволит улучшить качество обслуживания Ваших клиентов, увеличит рост повторных продаж и прибыльности бизнеса в целом.</li>
+							<li>Позволяет работать удалённо</li>
+							<li>не требует инсталляции на компьютер, данные хранятся в облачном сервисе и поэтому защищены от потерь, краж и форс-мажорных ситуаций.</li>
+							<li>подходит как для сети, так и для единичного сервиса</li>
+							<li>многопользовательский доступ с тонкой настройкой прав</li>
+							<li>быстрый ввод данных, конструктор шаблонов документов</li>
 						</ul>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
+	<section class="nineth-section">
+		<div class="container">
+			<h4 class="title">Обновления</h4>
+			<div class="update spec-arrows">
+				<div class="update__iteam pink">
+					<div class="update__iteam--icon">
+						<img src="images/icons/update1.svg" alt="">
+					</div>
+					<div class="update__iteam--title">Мы добавили новые фильтры в разделе транзакций</div>
+					<div class="update__iteam--date">20.08.2021</div>
+				</div>
+				<div class="update__iteam blue">
+					<div class="update__iteam--icon">
+						<img src="images/icons/update2.svg" alt="">
+					</div>
+					<div class="update__iteam--title">Немного доработали журнал звонков</div>
+					<div class="update__iteam--date">20.08.2021</div>
+				</div>
+				<div class="update__iteam violet">
+					<div class="update__iteam--icon">
+						<img src="images/icons/update3.svg" alt="">
+					</div>
+					<div class="update__iteam--title">Новый виджет входящего звонка, валовая прибыль в истории чека, УПД и ТОРГ-12</div>
+					<div class="update__iteam--date">20.08.2021</div>
+				</div>
+				<div class="update__iteam green">
+					<div class="update__iteam--icon">
+						<img src="images/icons/update4.svg" alt="">
+					</div>
+					<div class="update__iteam--title">Перенос текста в полях и сокращенное отображение системы налогообложения</div>
+					<div class="update__iteam--date">20.08.2021</div>
+				</div>
+				<div class="update__iteam blue">
+					<div class="update__iteam--icon">
+						<img src="images/icons/update2.svg" alt="">
+					</div>
+					<div class="update__iteam--title">Немного доработали журнал звонков</div>
+					<div class="update__iteam--date">20.08.2021</div>
+				</div>
+				<div class="update__iteam violet">
+					<div class="update__iteam--icon">
+						<img src="images/icons/update3.svg" alt="">
+					</div>
+					<div class="update__iteam--title">Новый виджет входящего звонка, валовая прибыль в истории чека, УПД и ТОРГ-12</div>
+					<div class="update__iteam--date">20.08.2021</div>
+				</div>
+				<div class="update__iteam pink">
+					<div class="update__iteam--icon">
+						<img src="images/icons/update1.svg" alt="">
+					</div>
+					<div class="update__iteam--title">Мы добавили новые фильтры в разделе транзакций</div>
+					<div class="update__iteam--date">20.08.2021</div>
+				</div>
+				<div class="update__iteam blue">
+					<div class="update__iteam--icon">
+						<img src="images/icons/update2.svg" alt="">
+					</div>
+					<div class="update__iteam--title">Немного доработали журнал звонков</div>
+					<div class="update__iteam--date">20.08.2021</div>
+				</div>
+				<div class="update__iteam violet">
+					<div class="update__iteam--icon">
+						<img src="images/icons/update3.svg" alt="">
+					</div>
+					<div class="update__iteam--title">Новый виджет входящего звонка, валовая прибыль в истории чека, УПД и ТОРГ-12</div>
+					<div class="update__iteam--date">20.08.2021</div>
+				</div>
+				<div class="update__iteam green">
+					<div class="update__iteam--icon">
+						<img src="images/icons/update4.svg" alt="">
+					</div>
+					<div class="update__iteam--title">Перенос текста в полях и сокращенное отображение системы налогообложения</div>
+					<div class="update__iteam--date">20.08.2021</div>
+				</div>
+				<div class="update__iteam blue">
+					<div class="update__iteam--icon">
+						<img src="images/icons/update2.svg" alt="">
+					</div>
+					<div class="update__iteam--title">Немного доработали журнал звонков</div>
+					<div class="update__iteam--date">20.08.2021</div>
+				</div>
+				<div class="update__iteam violet">
+					<div class="update__iteam--icon">
+						<img src="images/icons/update3.svg" alt="">
+					</div>
+					<div class="update__iteam--title">Новый виджет входящего звонка, валовая прибыль в истории чека, УПД и ТОРГ-12</div>
+					<div class="update__iteam--date">20.08.2021</div>
+				</div>
+				<div class="update__iteam pink">
+					<div class="update__iteam--icon">
+						<img src="images/icons/update1.svg" alt="">
+					</div>
+					<div class="update__iteam--title">Мы добавили новые фильтры в разделе транзакций</div>
+					<div class="update__iteam--date">20.08.2021</div>
+				</div>
+				<div class="update__iteam blue">
+					<div class="update__iteam--icon">
+						<img src="images/icons/update2.svg" alt="">
+					</div>
+					<div class="update__iteam--title">Немного доработали журнал звонков</div>
+					<div class="update__iteam--date">20.08.2021</div>
+				</div>
+				<div class="update__iteam violet">
+					<div class="update__iteam--icon">
+						<img src="images/icons/update3.svg" alt="">
+					</div>
+					<div class="update__iteam--title">Новый виджет входящего звонка, валовая прибыль в истории чека, УПД и ТОРГ-12</div>
+					<div class="update__iteam--date">20.08.2021</div>
+				</div>
+				<div class="update__iteam green">
+					<div class="update__iteam--icon">
+						<img src="images/icons/update4.svg" alt="">
+					</div>
+					<div class="update__iteam--title">Перенос текста в полях и сокращенное отображение системы налогообложения</div>
+					<div class="update__iteam--date">20.08.2021</div>
+				</div>
+				<div class="update__iteam blue">
+					<div class="update__iteam--icon">
+						<img src="images/icons/update2.svg" alt="">
+					</div>
+					<div class="update__iteam--title">Немного доработали журнал звонков</div>
+					<div class="update__iteam--date">20.08.2021</div>
+				</div>
+				<div class="update__iteam violet">
+					<div class="update__iteam--icon">
+						<img src="images/icons/update3.svg" alt="">
+					</div>
+					<div class="update__iteam--title">Новый виджет входящего звонка, валовая прибыль в истории чека, УПД и ТОРГ-12</div>
+					<div class="update__iteam--date">20.08.2021</div>
+				</div>
+				<div class="update__iteam pink">
+					<div class="update__iteam--icon">
+						<img src="images/icons/update1.svg" alt="">
+					</div>
+					<div class="update__iteam--title">Мы добавили новые фильтры в разделе транзакций</div>
+					<div class="update__iteam--date">20.08.2021</div>
+				</div>
+				<div class="update__iteam blue">
+					<div class="update__iteam--icon">
+						<img src="images/icons/update2.svg" alt="">
+					</div>
+					<div class="update__iteam--title">Немного доработали журнал звонков</div>
+					<div class="update__iteam--date">20.08.2021</div>
+				</div>
+				<div class="update__iteam violet">
+					<div class="update__iteam--icon">
+						<img src="images/icons/update3.svg" alt="">
+					</div>
+					<div class="update__iteam--title">Новый виджет входящего звонка, валовая прибыль в истории чека, УПД и ТОРГ-12</div>
+					<div class="update__iteam--date">20.08.2021</div>
+				</div>
+				<div class="update__iteam green">
+					<div class="update__iteam--icon">
+						<img src="images/icons/update4.svg" alt="">
+					</div>
+					<div class="update__iteam--title">Перенос текста в полях и сокращенное отображение системы налогообложения</div>
+					<div class="update__iteam--date">20.08.2021</div>
+				</div>
+				<div class="update__iteam blue">
+					<div class="update__iteam--icon">
+						<img src="images/icons/update2.svg" alt="">
+					</div>
+					<div class="update__iteam--title">Немного доработали журнал звонков</div>
+					<div class="update__iteam--date">20.08.2021</div>
+				</div>
+				<div class="update__iteam violet">
+					<div class="update__iteam--icon">
+						<img src="images/icons/update3.svg" alt="">
+					</div>
+					<div class="update__iteam--title">Новый виджет входящего звонка, валовая прибыль в истории чека, УПД и ТОРГ-12</div>
+					<div class="update__iteam--date">20.08.2021</div>
+				</div>
+				<div class="update__iteam pink">
+					<div class="update__iteam--icon">
+						<img src="images/icons/update1.svg" alt="">
+					</div>
+					<div class="update__iteam--title">Мы добавили новые фильтры в разделе транзакций</div>
+					<div class="update__iteam--date">20.08.2021</div>
+				</div>
+				<div class="update__iteam blue">
+					<div class="update__iteam--icon">
+						<img src="images/icons/update2.svg" alt="">
+					</div>
+					<div class="update__iteam--title">Немного доработали журнал звонков</div>
+					<div class="update__iteam--date">20.08.2021</div>
+				</div>
+				<div class="update__iteam violet">
+					<div class="update__iteam--icon">
+						<img src="images/icons/update3.svg" alt="">
+					</div>
+					<div class="update__iteam--title">Новый виджет входящего звонка, валовая прибыль в истории чека, УПД и ТОРГ-12</div>
+					<div class="update__iteam--date">20.08.2021</div>
+				</div>
+				<div class="update__iteam green">
+					<div class="update__iteam--icon">
+						<img src="images/icons/update4.svg" alt="">
+					</div>
+					<div class="update__iteam--title">Перенос текста в полях и сокращенное отображение системы налогообложения</div>
+					<div class="update__iteam--date">20.08.2021</div>
+				</div>
+				<div class="update__iteam blue">
+					<div class="update__iteam--icon">
+						<img src="images/icons/update2.svg" alt="">
+					</div>
+					<div class="update__iteam--title">Немного доработали журнал звонков</div>
+					<div class="update__iteam--date">20.08.2021</div>
+				</div>
+				<div class="update__iteam violet">
+					<div class="update__iteam--icon">
+						<img src="images/icons/update3.svg" alt="">
+					</div>
+					<div class="update__iteam--title">Новый виджет входящего звонка, валовая прибыль в истории чека, УПД и ТОРГ-12</div>
+					<div class="update__iteam--date">20.08.2021</div>
+				</div>
+				<div class="update__iteam pink">
+					<div class="update__iteam--icon">
+						<img src="images/icons/update1.svg" alt="">
+					</div>
+					<div class="update__iteam--title">Мы добавили новые фильтры в разделе транзакций</div>
+					<div class="update__iteam--date">20.08.2021</div>
+				</div>
+				<div class="update__iteam blue">
+					<div class="update__iteam--icon">
+						<img src="images/icons/update2.svg" alt="">
+					</div>
+					<div class="update__iteam--title">Немного доработали журнал звонков</div>
+					<div class="update__iteam--date">20.08.2021</div>
+				</div>
+				<div class="update__iteam violet">
+					<div class="update__iteam--icon">
+						<img src="images/icons/update3.svg" alt="">
+					</div>
+					<div class="update__iteam--title">Новый виджет входящего звонка, валовая прибыль в истории чека, УПД и ТОРГ-12</div>
+					<div class="update__iteam--date">20.08.2021</div>
+				</div>
+				<div class="update__iteam green">
+					<div class="update__iteam--icon">
+						<img src="images/icons/update4.svg" alt="">
+					</div>
+					<div class="update__iteam--title">Перенос текста в полях и сокращенное отображение системы налогообложения</div>
+					<div class="update__iteam--date">20.08.2021</div>
+				</div>
+				<div class="update__iteam blue">
+					<div class="update__iteam--icon">
+						<img src="images/icons/update2.svg" alt="">
+					</div>
+					<div class="update__iteam--title">Немного доработали журнал звонков</div>
+					<div class="update__iteam--date">20.08.2021</div>
+				</div>
+				<div class="update__iteam violet">
+					<div class="update__iteam--icon">
+						<img src="images/icons/update3.svg" alt="">
+					</div>
+					<div class="update__iteam--title">Новый виджет входящего звонка, валовая прибыль в истории чека, УПД и ТОРГ-12</div>
+					<div class="update__iteam--date">20.08.2021</div>
+				</div>
+				<div class="update__iteam pink">
+					<div class="update__iteam--icon">
+						<img src="images/icons/update1.svg" alt="">
+					</div>
+					<div class="update__iteam--title">Мы добавили новые фильтры в разделе транзакций</div>
+					<div class="update__iteam--date">20.08.2021</div>
+				</div>
+				<div class="update__iteam blue">
+					<div class="update__iteam--icon">
+						<img src="images/icons/update2.svg" alt="">
+					</div>
+					<div class="update__iteam--title">Немного доработали журнал звонков</div>
+					<div class="update__iteam--date">20.08.2021</div>
+				</div>
+				<div class="update__iteam violet">
+					<div class="update__iteam--icon">
+						<img src="images/icons/update3.svg" alt="">
+					</div>
+					<div class="update__iteam--title">Новый виджет входящего звонка, валовая прибыль в истории чека, УПД и ТОРГ-12</div>
+					<div class="update__iteam--date">20.08.2021</div>
+				</div>
+				<div class="update__iteam green">
+					<div class="update__iteam--icon">
+						<img src="images/icons/update4.svg" alt="">
+					</div>
+					<div class="update__iteam--title">Перенос текста в полях и сокращенное отображение системы налогообложения</div>
+					<div class="update__iteam--date">20.08.2021</div>
+				</div>
+				<div class="update__iteam blue">
+					<div class="update__iteam--icon">
+						<img src="images/icons/update2.svg" alt="">
+					</div>
+					<div class="update__iteam--title">Немного доработали журнал звонков</div>
+					<div class="update__iteam--date">20.08.2021</div>
+				</div>
+				<div class="update__iteam violet">
+					<div class="update__iteam--icon">
+						<img src="images/icons/update3.svg" alt="">
+					</div>
+					<div class="update__iteam--title">Новый виджет входящего звонка, валовая прибыль в истории чека, УПД и ТОРГ-12</div>
+					<div class="update__iteam--date">20.08.2021</div>
+				</div>
+				<div class="update__iteam pink">
+					<div class="update__iteam--icon">
+						<img src="images/icons/update1.svg" alt="">
+					</div>
+					<div class="update__iteam--title">Мы добавили новые фильтры в разделе транзакций</div>
+					<div class="update__iteam--date">20.08.2021</div>
+				</div>
+				<div class="update__iteam blue">
+					<div class="update__iteam--icon">
+						<img src="images/icons/update2.svg" alt="">
+					</div>
+					<div class="update__iteam--title">Немного доработали журнал звонков</div>
+					<div class="update__iteam--date">20.08.2021</div>
+				</div>
+				<div class="update__iteam violet">
+					<div class="update__iteam--icon">
+						<img src="images/icons/update3.svg" alt="">
+					</div>
+					<div class="update__iteam--title">Новый виджет входящего звонка, валовая прибыль в истории чека, УПД и ТОРГ-12</div>
+					<div class="update__iteam--date">20.08.2021</div>
+				</div>
+				<div class="update__iteam green">
+					<div class="update__iteam--icon">
+						<img src="images/icons/update4.svg" alt="">
+					</div>
+					<div class="update__iteam--title">Перенос текста в полях и сокращенное отображение системы налогообложения</div>
+					<div class="update__iteam--date">20.08.2021</div>
+				</div>
+				<div class="update__iteam blue">
+					<div class="update__iteam--icon">
+						<img src="images/icons/update2.svg" alt="">
+					</div>
+					<div class="update__iteam--title">Немного доработали журнал звонков</div>
+					<div class="update__iteam--date">20.08.2021</div>
+				</div>
+				<div class="update__iteam violet">
+					<div class="update__iteam--icon">
+						<img src="images/icons/update3.svg" alt="">
+					</div>
+					<div class="update__iteam--title">Новый виджет входящего звонка, валовая прибыль в истории чека, УПД и ТОРГ-12</div>
+					<div class="update__iteam--date">20.08.2021</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="tenth-section">
+		<div class="container">
+			<h3 class="title">Наши клиенты</h3>
+			<div class="clients spec-arrows">
+				<div class="clients-left">
+					<div class="clients-left__title">Более</div>
+					<div class="clients-left__numbers" id="clients-left__numbers">
+						<div>
+							<span>7</span>
+						</div>
+						<div>
+							<span>4</span>
+						</div>
+						<div>
+							<span>8</span>
+						</div>
+						<div>
+							<span>8</span>
+						</div>
+					</div>
+					<div class="clients-left__bottom">компаний уже автоматизировали свой бизнес с помощью LiveSklad</div>
+				</div>
+				<div class="clients-slider">
+					<div class="partners__iteam">
+						<a href="#">
+							<img src="images/p1.png" alt="">
+							<span>Дом.ru бизнес</span>
+						</a>
+					</div>
+					<div class="partners__iteam">
+						<a href="#">
+							<img src="images/p2.png" alt="">
+							<span>binotel</span>
+						</a>
+					</div>
+					<div class="partners__iteam">
+						<a href="#">
+							<img src="images/p3.png" alt="">
+							<span>МГТС</span>
+						</a>
+					</div>
+					<div class="partners__iteam">
+						<a href="#">
+							<img src="images/p4.png" alt="">
+							<span>Virgin connect</span>
+						</a>
+					</div>
+					<div class="partners__iteam">
+						<a href="#">
+							<img src="images/p5.png" alt="">
+							<span>Kcell</span>
+						</a>
+					</div>
+					<div class="partners__iteam">
+						<a href="#">
+							<img src="images/p6.png" alt="">
+							<span>Moldcell</span>
+						</a>
+					</div>
+					<div class="partners__iteam">
+						<a href="#">
+							<img src="images/p7.png" alt="">
+							<span>Эвотор</span>
+						</a>
+					</div>
+					<div class="partners__iteam">
+						<a href="#">
+							<img src="images/p8.png" alt="">
+							<span>1C</span>
+						</a>
+					</div>
+					<div class="partners__iteam">
+						<a href="#">
+							<img src="images/p9.png" alt="">
+							<span>Roistat</span>
+						</a>
+					</div>
+					<div class="partners__iteam">
+						<a href="#">
+							<img src="images/p10.png" alt="">
+							<span>albato</span>
+						</a>
+					</div>
+				</div>
+				<div class="clients__bottom">
+					<div class="clients__bottom--title">Облачная CRM система для малого бизнеса</div>
+					<p>Как проще всего управлять бизнес-процессами? Конечно, с помощью специального программного обеспечения - CRM.</p>
+					<p>CRM расшифровывается как система управления взаимоотношений с клиентами. А проще говоря – программа, выполняющая функции менеджера.</p>
+					<p>Современные CRM обладают настолько широким функционалом, что могут свободно заменить нескольких человек в штате компании. Для малого и среднего бизнеса это особенно важно. Поэтому установка таких программ выгодна со всех сторон...</p>
+					<div class="toggle read-more">
+						<svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M1 1L7 7L13 1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+						</svg>
+
+					</div>
+					<p>Как проще всего управлять бизнес-процессами? Конечно, с помощью специального программного обеспечения - CRM.</p>
+					<p>CRM расшифровывается как система управления взаимоотношений с клиентами. А проще говоря – программа, выполняющая функции менеджера.</p>
+					<p>Современные CRM обладают настолько широким функционалом, что могут свободно заменить нескольких человек в штате компании. Для малого и среднего бизнеса это особенно важно. Поэтому установка таких программ выгодна со всех сторон...</p>
+					<p>Как проще всего управлять бизнес-процессами? Конечно, с помощью специального программного обеспечения - CRM.</p>
+					<p>CRM расшифровывается как система управления взаимоотношений с клиентами. А проще говоря – программа, выполняющая функции менеджера.</p>
+					<p>Современные CRM обладают настолько широким функционалом, что могут свободно заменить нескольких человек в штате компании. Для малого и среднего бизнеса это особенно важно. Поэтому установка таких программ выгодна со всех сторон...</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__logo">
+				<a href="index.html">
+					<img src="images/logo.svg" alt="">
+				</a>
+			</div>
+			<div class="footer__menu">
+				<div class="footer__menu--title">Информация</div>
+				<ul>
+					<li><a href="#">Реквизиты</a></li>
+					<li><a href="#">Пользовательское соглашение</a></li>
+					<li><a href="#">Политика конфидициальности</a></li>
+					<li><a href="#">Карта сайта</a></li>
+				</ul>
+			</div>
+			<div class="footer__menu">
+				<div class="footer__menu--title">Кабинет</div>
+				<ul>
+					<li><a href="#">Войти</a></li>
+					<li><a href="#">Создать учетную запись</a></li>
+				</ul>
+			</div>
+			<div class="footer__menu">
+				<div class="footer__menu--title">Техподдержка</div>
+				<ul>
+					<li><a href="#">База знаний</a></li>
+					<li><a href="#">Обучающие видео</a></li>
+				</ul>
+			</div>
+			<div class="footer__menu footer__menu--contacts">
+				<div class="footer__menu--title">
+					<a href="tel:8(800)551-50-70">8 (800) 551-50-70</a>
+				</div>
+				<ul>
+					<li><a href="#">пн-пт 09:00 до 18:00</a></li>
+					<li><a href="#">сб-вс 10:00 до 18:00</a></li>
+				</ul>
+				<div class="footer__social">
+					<a href="#">
+						<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M4.70968 6.99756C4.70968 5.73195 5.73537 4.70571 7.00098 4.70571C8.26658 4.70571 9.29283 5.73195 9.29283 6.99756C9.29283 8.26316 8.26658 9.28941 7.00098 9.28941C5.73537 9.28941 4.70968 8.26316 4.70968 6.99756ZM3.47075 6.99756C3.47075 8.94731 5.05123 10.5278 7.00098 10.5278C8.95073 10.5278 10.5312 8.94731 10.5312 6.99756C10.5312 5.04781 8.95073 3.46733 7.00098 3.46733C5.05123 3.46733 3.47075 5.04781 3.47075 6.99756ZM9.84596 3.32735C9.8459 3.49052 9.89422 3.65005 9.98481 3.78575C10.0754 3.92146 10.2042 4.02726 10.3549 4.08976C10.5057 4.15226 10.6715 4.16866 10.8316 4.1369C10.9916 4.10513 11.1387 4.02661 11.2541 3.91128C11.3695 3.79595 11.4481 3.64898 11.48 3.48896C11.5119 3.32894 11.4957 3.16305 11.4333 3.01227C11.3709 2.8615 11.2652 2.73261 11.1296 2.6419C10.9939 2.5512 10.8345 2.50275 10.6713 2.50268H10.671C10.4522 2.50279 10.2425 2.58969 10.0878 2.74432C9.93314 2.89894 9.84615 3.10864 9.84596 3.32735ZM4.22348 12.5936C3.55319 12.5631 3.18887 12.4515 2.94676 12.3571C2.62578 12.2322 2.39676 12.0834 2.15597 11.8429C1.91518 11.6024 1.76613 11.3736 1.64172 11.0527C1.54734 10.8107 1.43569 10.4462 1.40522 9.77594C1.37189 9.05126 1.36524 8.83357 1.36524 6.99761C1.36524 5.16166 1.37244 4.94457 1.40522 4.21929C1.43575 3.549 1.54822 3.18529 1.64172 2.94257C1.76668 2.62159 1.91551 2.39257 2.15597 2.15178C2.39643 1.91099 2.62523 1.76194 2.94676 1.63753C3.18876 1.54315 3.55319 1.4315 4.22348 1.40103C4.94816 1.3677 5.16585 1.36105 7.00098 1.36105C8.83611 1.36105 9.05402 1.36825 9.7793 1.40103C10.4496 1.43156 10.8133 1.54403 11.056 1.63753C11.377 1.76194 11.606 1.91132 11.8468 2.15178C12.0876 2.39224 12.2361 2.62159 12.3611 2.94257C12.4554 3.18457 12.5671 3.549 12.5976 4.21929C12.6309 4.94457 12.6375 5.16166 12.6375 6.99761C12.6375 8.83357 12.6309 9.05065 12.5976 9.77594C12.567 10.4462 12.4548 10.8105 12.3611 11.0527C12.2361 11.3736 12.0873 11.6027 11.8468 11.8429C11.6063 12.0831 11.377 12.2322 11.056 12.3571C10.814 12.4515 10.4496 12.5632 9.7793 12.5936C9.05462 12.627 8.83693 12.6336 7.00098 12.6336C5.16502 12.6336 4.94794 12.627 4.22348 12.5936ZM4.16655 0.164194C3.43467 0.197524 2.93455 0.313574 2.4978 0.483524C2.04548 0.659029 1.66257 0.894484 1.27993 1.27651C0.897296 1.65854 0.662446 2.04206 0.486942 2.49438C0.316992 2.93141 0.200942 3.43125 0.167612 4.16313C0.133732 4.89617 0.125977 5.13053 0.125977 6.99756C0.125977 8.86459 0.133732 9.09894 0.167612 9.83198C0.200942 10.5639 0.316992 11.0637 0.486942 11.5007C0.662446 11.9528 0.897352 12.3367 1.27993 12.7186C1.66251 13.1005 2.04548 13.3356 2.4978 13.5116C2.93538 13.6815 3.43467 13.7976 4.16655 13.8309C4.89998 13.8643 5.13395 13.8726 7.00098 13.8726C8.86801 13.8726 9.10236 13.8648 9.8354 13.8309C10.5673 13.7976 11.0671 13.6815 11.5042 13.5116C11.9562 13.3356 12.3394 13.1006 12.722 12.7186C13.1047 12.3366 13.339 11.9528 13.515 11.5007C13.685 11.0637 13.8016 10.5639 13.8343 9.83198C13.8677 9.09839 13.8754 8.86459 13.8754 6.99756C13.8754 5.13053 13.8677 4.89617 13.8343 4.16313C13.801 3.43119 13.685 2.93113 13.515 2.49438C13.339 2.04233 13.104 1.65915 12.722 1.27651C12.34 0.893879 11.9562 0.659029 11.5047 0.483524C11.0671 0.313574 10.5673 0.196974 9.83595 0.164194C9.10291 0.130864 8.86856 0.122559 7.00153 0.122559C5.1345 0.122559 4.89998 0.130314 4.16655 0.164194Z"/>
+						</svg>
+					</a>
+					<a href="#">
+						<svg width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M14.9971 1.57587C15.0991 1.23593 14.9971 0.986084 14.5119 0.986084H12.9073C12.4993 0.986084 12.3114 1.20189 12.2094 1.43994C12.2094 1.43994 11.3933 3.42877 10.2374 4.72065C9.86342 5.09462 9.69345 5.21348 9.48944 5.21348C9.38744 5.21348 9.23983 5.09463 9.23983 4.75469V1.57587C9.23983 1.16786 9.12143 0.986084 8.78138 0.986084H6.25996C6.00507 0.986084 5.85172 1.17542 5.85172 1.3549C5.85172 1.74171 6.42959 1.83087 6.48918 2.91875V5.28167C6.48918 5.79971 6.39566 5.89369 6.19166 5.89369C5.64772 5.89369 4.32466 3.8958 3.53981 1.60991C3.386 1.16556 3.23174 0.986084 2.82166 0.986084H1.21712C0.75868 0.986084 0.666992 1.20189 0.666992 1.43994C0.666992 1.86491 1.21105 3.97282 3.19987 6.7606C4.52591 8.66427 6.39383 9.69645 8.09372 9.69645C9.11375 9.69645 9.23983 9.46723 9.23983 9.0724V7.63347C9.23983 7.17503 9.33644 7.08357 9.6593 7.08357C9.89746 7.08357 10.3054 7.20253 11.2574 8.12044C12.3453 9.20821 12.5245 9.69645 13.1366 9.69645H14.7411C15.1995 9.69645 15.4288 9.46723 15.2965 9.01486C15.1519 8.56398 14.6325 7.91002 13.9432 7.13457C13.5692 6.69252 13.0082 6.21654 12.8384 5.97861C12.6003 5.6726 12.6683 5.53668 12.8384 5.26482C12.8384 5.26482 14.7931 2.51097 14.9971 1.57598V1.57587Z"/>
+						</svg>
+					</a>
+					<a href="#">
+						<svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M5.73484 15.3321V8.64195H7.98047L8.31668 6.03468H5.73484V4.37001C5.73484 3.61516 5.94448 3.10069 7.02704 3.10069L8.40769 3.10006V0.768152C8.1688 0.736494 7.34929 0.665527 6.39585 0.665527C4.40526 0.665527 3.04245 1.88053 3.04245 4.11193V6.03475H0.791016V8.64202H3.04238V15.3322L5.73484 15.3321Z"/>
+						</svg>
+					</a>
+					<a href="#">
+						<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M4.70968 6.99756C4.70968 5.73195 5.73537 4.70571 7.00098 4.70571C8.26658 4.70571 9.29283 5.73195 9.29283 6.99756C9.29283 8.26316 8.26658 9.28941 7.00098 9.28941C5.73537 9.28941 4.70968 8.26316 4.70968 6.99756ZM3.47075 6.99756C3.47075 8.94731 5.05123 10.5278 7.00098 10.5278C8.95073 10.5278 10.5312 8.94731 10.5312 6.99756C10.5312 5.04781 8.95073 3.46733 7.00098 3.46733C5.05123 3.46733 3.47075 5.04781 3.47075 6.99756ZM9.84596 3.32735C9.8459 3.49052 9.89422 3.65005 9.98481 3.78575C10.0754 3.92146 10.2042 4.02726 10.3549 4.08976C10.5057 4.15226 10.6715 4.16866 10.8316 4.1369C10.9916 4.10513 11.1387 4.02661 11.2541 3.91128C11.3695 3.79595 11.4481 3.64898 11.48 3.48896C11.5119 3.32894 11.4957 3.16305 11.4333 3.01227C11.3709 2.8615 11.2652 2.73261 11.1296 2.6419C10.9939 2.5512 10.8345 2.50275 10.6713 2.50268H10.671C10.4522 2.50279 10.2425 2.58969 10.0878 2.74432C9.93314 2.89894 9.84615 3.10864 9.84596 3.32735ZM4.22348 12.5936C3.55319 12.5631 3.18887 12.4515 2.94676 12.3571C2.62578 12.2322 2.39676 12.0834 2.15597 11.8429C1.91518 11.6024 1.76613 11.3736 1.64172 11.0527C1.54734 10.8107 1.43569 10.4462 1.40522 9.77594C1.37189 9.05126 1.36524 8.83357 1.36524 6.99761C1.36524 5.16166 1.37244 4.94457 1.40522 4.21929C1.43575 3.549 1.54822 3.18529 1.64172 2.94257C1.76668 2.62159 1.91551 2.39257 2.15597 2.15178C2.39643 1.91099 2.62523 1.76194 2.94676 1.63753C3.18876 1.54315 3.55319 1.4315 4.22348 1.40103C4.94816 1.3677 5.16585 1.36105 7.00098 1.36105C8.83611 1.36105 9.05402 1.36825 9.7793 1.40103C10.4496 1.43156 10.8133 1.54403 11.056 1.63753C11.377 1.76194 11.606 1.91132 11.8468 2.15178C12.0876 2.39224 12.2361 2.62159 12.3611 2.94257C12.4554 3.18457 12.5671 3.549 12.5976 4.21929C12.6309 4.94457 12.6375 5.16166 12.6375 6.99761C12.6375 8.83357 12.6309 9.05065 12.5976 9.77594C12.567 10.4462 12.4548 10.8105 12.3611 11.0527C12.2361 11.3736 12.0873 11.6027 11.8468 11.8429C11.6063 12.0831 11.377 12.2322 11.056 12.3571C10.814 12.4515 10.4496 12.5632 9.7793 12.5936C9.05462 12.627 8.83693 12.6336 7.00098 12.6336C5.16502 12.6336 4.94794 12.627 4.22348 12.5936ZM4.16655 0.164194C3.43467 0.197524 2.93455 0.313574 2.4978 0.483524C2.04548 0.659029 1.66257 0.894484 1.27993 1.27651C0.897296 1.65854 0.662446 2.04206 0.486942 2.49438C0.316992 2.93141 0.200942 3.43125 0.167612 4.16313C0.133732 4.89617 0.125977 5.13053 0.125977 6.99756C0.125977 8.86459 0.133732 9.09894 0.167612 9.83198C0.200942 10.5639 0.316992 11.0637 0.486942 11.5007C0.662446 11.9528 0.897352 12.3367 1.27993 12.7186C1.66251 13.1005 2.04548 13.3356 2.4978 13.5116C2.93538 13.6815 3.43467 13.7976 4.16655 13.8309C4.89998 13.8643 5.13395 13.8726 7.00098 13.8726C8.86801 13.8726 9.10236 13.8648 9.8354 13.8309C10.5673 13.7976 11.0671 13.6815 11.5042 13.5116C11.9562 13.3356 12.3394 13.1006 12.722 12.7186C13.1047 12.3366 13.339 11.9528 13.515 11.5007C13.685 11.0637 13.8016 10.5639 13.8343 9.83198C13.8677 9.09839 13.8754 8.86459 13.8754 6.99756C13.8754 5.13053 13.8677 4.89617 13.8343 4.16313C13.801 3.43119 13.685 2.93113 13.515 2.49438C13.339 2.04233 13.104 1.65915 12.722 1.27651C12.34 0.893879 11.9562 0.659029 11.5047 0.483524C11.0671 0.313574 10.5673 0.196974 9.83595 0.164194C9.10291 0.130864 8.86856 0.122559 7.00153 0.122559C5.1345 0.122559 4.89998 0.130314 4.16655 0.164194Z"/>
+						</svg>
+					</a>
+				</div>
+			</div>
+			<div class="footer__btn">
+				<a class="btn blue showPopup" rel="popup1">Свяжитесь с нами</a>
+			</div>
+		</div>
+		<div class="footer__bottom">
+			<div class="container">
+				<div class="footer__bottom--left">ИП Новиков В.Ф. Все права защищены</div>
+				<div class="footer__bottom--right">ОРГНИП: 319222500016973</div>
+			</div>
+		</div>
+	</footer>
+	<div class="overlayPopup"></div>
+	<div class="popup container" id="popup1">
+		<div class="close">
+			<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M20.5 1.5L1.5 20.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+				<path d="M1.5 1.5L20.5 20.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+			</svg>
+		</div>
+		<div class="popup__title">Регистрация</div>
+		<div class="popup_sub-title">Попробуйте весь функционал LiveSklad.<br> Бесплатный доступ на 7 дней</div>
+		<form>
+			<input type="text" placeholder="Имя" required>
+			<input type="email" placeholder="E-mail" required>
+			<select class="styler">
+				<option value="Ремонт телефона / компьютеров">Ремонт телефона / компьютеров</option>
+				<option value="Ремонт стиральной машины">Ремонт стиральной машины</option>
+				<option value="Ремонт телевизоров">Ремонт телевизоров</option>
+				<option value="Настройка компьютера">Настройка компьютера</option>
+				<option value="Установка драйвероы">Установка драйвероы</option>
+			</select>
+			<button class="btn">Получить доступ</button>
+		</form>
+		<div class="popup__bottom">Нажимаю кнопку “Получить доступ”, вы даете согласие на обработку персональных данных и соглошаетесь с Политикой конфидециальности.</div>
+	</div>
+	<!--
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	<div class="styler"></div>
 	<div class="tabs">
 		<div class="tabs-con" id="tab11">
@@ -979,16 +1758,32 @@
 	<p>dsdsds</p>
 	<p>dsdsds</p>
 	<p>dsdsds</p>
-	<p>dsdsds</p>
-	<div class="showPopup" rel="popup1">window1</div>
-	<div class="overlayPopup"></div>
-	<div class="popup container" id="popup1">
-		<div class="close">x</div>
-		<p>FSDKSNJD  DSNDJ SDNS DUS DNSJD SUNDNS DJUSND SENKW EWI  CWID W FSDKSNJD  DSNDJ SDNS DUS DNSJD SUNDNS DJUSND SENKW EWI  CWID W FSDKSNJD  DSNDJ SDNS DUS DNSJD SUNDNS DJUSND SENKW EWI  CWID WFSDKSNJD  DSNDJ SDNS DUS DNSJD SUNDNS DJUSND SENKW EWI  CWID WFSDKSNJD  DSNDJ SDNS DUS DNSJD SUNDNS DJUSND SENKW EWI  CWID WFSDKSNJD  DSNDJ SDNS DUS DNSJD SUNDNS DJUSND SENKW EWI  CWID WFSDKSNJD  DSNDJ SDNS DUS DNSJD SUNDNS DJUSND SENKW EWI  CWID WFSDKSNJD  DSNDJ SDNS DUS DNSJD SUNDNS DJUSND SENKW EWI  CWID WFSDKSNJD  DSNDJ SDNS DUS DNSJD SUNDNS DJUSND SENKW EWI  CWID WFSDKSNJD  DSNDJ SDNS DUS DNSJD SUNDNS DJUSND SENKW EWI  CWID WFSDKSNJD  DSNDJ SDNS DUS DNSJD SUNDNS DJUSND SENKW EWI  CWID WFSDKSNJD  DSNDJ SDNS DUS DNSJD SUNDNS DJUSND SENKW EWI  CWID WFSDKSNJD  DSNDJ SDNS DUS DNSJD SUNDNS DJUSND SENKW EWI  CWID WFSDKSNJD  DSNDJ SDNS DUS DNSJD SUNDNS DJUSND SENKW EWI  CWID WFSDKSNJD  DSNDJ SDNS DUS DNSJD SUNDNS DJUSND SENKW EWI  CWID WFSDKSNJD  DSNDJ SDNS DUS DNSJD SUNDNS DJUSND SENKW EWI  CWID WFSDKSNJD  DSNDJ SDNS DUS DNSJD SUNDNS DJUSND SENKW EWI  CWID WFSDKSNJD  DSNDJ SDNS DUS DNSJD SUNDNS DJUSND SENKW EWI  CWID WFSDKSNJD  DSNDJ SDNS DUS DNSJD SUNDNS DJUSND SENKW EWI  CWID WFSDKSNJD  DSNDJ SDNS DUS DNSJD SUNDNS DJUSND SENKW EWI  CWID W</p>
-	</div>
-	
-	
+	<p>dsdsds</p>-->
 	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/swiper-bundle.min.js"></script>
 	<script src="js/script.js"></script>
+	<script>
+		let elem = document.querySelector('#clients-left__numbers');
+		var csds = true;
+		window.addEventListener("scroll", 
+			function dsd(){
+				if(window.innerHeight >= elem.getBoundingClientRect().top + 100){
+					if(csds){
+						!function(t){t.extend(t.easing,{spincrementEasing:function(t,a,e,n,r){return a===r?e+n:n*(-Math.pow(2,-10*a/r)+1)+e}}),t.fn.spincrement=function(a){function e(t,a){if(t=t.toFixed(a),a>0&&"."!==r.decimalPoint&&(t=t.replace(".",r.decimalPoint)),r.thousandSeparator)for(;o.test(t);)t=t.replace(o,"$1"+r.thousandSeparator+"$2");return t}var n={from:0,to:null,decimalPlaces:null,decimalPoint:".",thousandSeparator:",",duration:1e3,leeway:50,easing:"spincrementEasing",fade:!0,complete:null},r=t.extend(n,a),o=new RegExp(/^(-?[0-9]+)([0-9]{3})/);return this.each(function(){var a=t(this),n=r.from;a.attr("data-from")&&(n=parseFloat(a.attr("data-from")));var o;if(a.attr("data-to"))o=parseFloat(a.attr("data-to"));else if(null!==r.to)o=r.to;else{var i=t.inArray(r.thousandSeparator,["\\","^","$","*","+","?","."])>-1?"\\"+r.thousandSeparator:r.thousandSeparator,l=new RegExp(i,"g");o=parseFloat(a.text().replace(l,""))}var c=r.duration;r.leeway&&(c+=Math.round(r.duration*(2*Math.random()-1)*r.leeway/100));var s;if(a.attr("data-dp"))s=parseInt(a.attr("data-dp"),10);else if(null!==r.decimalPlaces)s=r.decimalPlaces;else{var d=a.text().indexOf(r.decimalPoint);s=d>-1?a.text().length-(d+1):0}a.css("counter",n),r.fade&&a.css("opacity",0),a.animate({counter:o,opacity:1},{easing:r.easing,duration:c,step:function(t){a.html(e(t*o,s))},complete:function(){a.css("counter",null),a.html(e(o,s)),r.complete&&r.complete(a)}})})}}(jQuery);
+
+					$('.clients-left__numbers div span').spincrement({
+						thousandSeparator: "",
+						duration: 3000
+					});
+						csds = false;
+					}
+					console.log(csds);
+				}
+			}
+		);
+	
+		
+
+	</script>
 </body>
 </html>

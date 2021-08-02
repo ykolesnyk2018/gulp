@@ -376,6 +376,72 @@ img {
   justify-content: center;
   align-items: center;
 }
+.overlay_popup{
+  position: fixed;
+  z-index: 98;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(16, 25, 78, 0.8);
+}
+.popup{
+  width: 300px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background: #fff;
+  border-radius: 10px;
+  background: #fff;
+  z-index: 99;
+  padding: 0 0 20px 0;
+  max-height: 95vh;
+  overflow: auto;
+}
+.popup__title{
+  font-family: 'StolzlBold';
+  font-size: 24px;
+  text-align: center;
+  color: rgba(28, 38, 92, 1);
+  margin: 20px 0;
+}
+.popup form{
+  width: 100%;
+  display: block;
+}
+.popup form input{
+  display: flex;
+  height: 46px;
+  align-items: center;
+  box-sizing: border-box;
+  border: 1px solid #1C265C;
+  border-radius: 10px;
+  width: calc(100% - 40px);
+  margin: 0 auto 10px auto;
+  padding: 0 10px;
+  color: #1C265C;
+  font-family: 'StolzlMedium';
+}
+.popup form input::placeholder{
+  color: #1C265C;
+}
+.popup form .btn{
+  display: flex;
+  margin: 0 auto;
+  background: rgba(255, 46, 99, 1);
+  color: #fff;
+  margin: 20px auto 0 auto;
+  width: 180px;
+}
+.popup .close{
+  font-size: 28px;
+  color: rgba(255, 46, 99, 1);
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  transform: rotate(45deg);
+}
 @media only screen and (max-height: 811px) {
   .request-money__sum{
     margin: 30px 0 20px 0;
@@ -418,5 +484,9 @@ img {
   .request-money__buttons--iteam{
     flex-basis: 25%;
     height: 45px;
+  }
+  .container{
+    max-width: 420px;
+    margin: 0 auto;
   }
 }
