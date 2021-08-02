@@ -2556,4 +2556,11 @@ form button{
     transform: scale(1);
   }
 }
-@media (max-width: 359px) {}
+@media (max-width: 359px) {
+  .replace-data__btn .btn{
+    width: 100%;
+  }
+  .clients .clients-left__numbers div{
+    width: 50px;
+  }
+}
