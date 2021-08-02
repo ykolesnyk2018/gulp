@@ -2563,4 +2563,7 @@ form button{
   .clients .clients-left__numbers div{
     width: 50px;
   }
+  .btn{
+    min-width: 240px;
+  }
 }
